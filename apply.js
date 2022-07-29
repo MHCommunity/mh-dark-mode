@@ -119,6 +119,11 @@ function applyDarkModeBase() {
 
 //apply dark mode during any dom change
 function applyDarkModeDynamic() {
+    //overlay bg
+    const overlayBg = doc('#overlayBg');
+    overlayBg.style['background-image'] = 'none';
+    overlayBg.style['background'] = 'rgba(0,0,0,0.8)';
+
     //trap
     const trapView = doc('.trapImageView');
     trapView.style['background'] = theme.dgray;
@@ -127,8 +132,16 @@ function applyDarkModeDynamic() {
     trapValue.forEach(t => {
         t.style['background'] = theme.lgray;
         t.style['color'] = theme.black;
-
     })
+
+    const trapBg = doc('.campPage-trap-blueprintContainer')
+    const trapBgBrowser = doc('.campPage-trap-itemBrowser-itemContainer')
+    const trapBgArmed = doc('.campPage-trap-itemBrowser-armed')
+
+    trapBg.style['background-image'] = 'none';
+    trapBg.style['background'] = theme.secondaryDark;
+    // trapBgBrowser.style['background'] = theme.dgray;
+    // trapBgArmed.style['background'] = theme.dgray;
 
     //team
     // const teamDesc = doc('.teamPage-profile-description');
