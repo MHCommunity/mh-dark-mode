@@ -6,6 +6,8 @@ function setPageBackgroundColor() {
     });
 }
 
+
+//trigger on click
 changeColor.addEventListener("click", async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
@@ -14,6 +16,15 @@ changeColor.addEventListener("click", async () => {
         function: applyDarkMode,
     });
 });
+
+//trigger on load
+chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
+    if (tab.url.startsWith("https://www.mousehuntgame.com/") == false)
+        chrome.scripting.executeScript({
+            target: { tabId: tab.id },
+            function: applyDarkMode,
+        });
+})
 
 //main functions
 function applyDarkMode() {
