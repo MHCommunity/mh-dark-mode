@@ -3,7 +3,8 @@ function doc(clss, isAll) {
 }
 
 const theme = {
-    white: "#f1f1f1",
+    white: "#ebebeb",
+    black: '#0c0c0c',
     lgray: '#c8c8c8',
     mainDark: "#1a1a1a",
     secondaryDark: "#242424",
@@ -58,8 +59,14 @@ sideBarUserLink.forEach(l => {
 
 //sidebar scoreboard
 const sidebarTable = doc('.scoreboardRelativeRankingTableView-table', true);
+const sidebarTableText = doc('.scoreboardRelativeRankingTableView-table .highlight td:last-child', true);
+
 sidebarTable.forEach(st => {
     st.style['border'] = '0';
+})
+
+sidebarTableText.forEach(st => {
+    st.style['color'] = theme.black;
 })
 
 //header
