@@ -1,5 +1,5 @@
 function doc(clss, isAll) {
-    return isAll ? document.querySelectorAll('.PageCamp ' + clss) : document.querySelector('.PageCamp ' + clss);
+    return isAll ? document.querySelectorAll(clss) : document.querySelector(clss);
 }
 
 const theme = {
