@@ -91,3 +91,8 @@ newsTickerLabel.style['color'] = theme.blue;
 newsTickerLink.forEach(l => {
     l.style['color'] = theme.blue;
 })
+
+//team
+const teamDesc = doc('.teamPage-profile-description');
+
+teamDesc.style['color'] = theme.white;
