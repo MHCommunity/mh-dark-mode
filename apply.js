@@ -190,9 +190,24 @@ function applyDarkModeDynamic() {
     //premium shop
     const premiumShopRoot = doc('.MHCheckoutRootView-pageContainer');
     const premiumShopFoot = doc('.MHCheckoutRootView-footer');
+    const premiumShopFoot2 = doc('#overlayPopup .jsDialogContainer .suffix');
 
     premiumShopRoot.style['background'] = theme.lgray;
     premiumShopFoot.style['background'] = theme.lgray;
+    premiumShopFoot2.style['background'] = theme.dgray;
+
+    //marketplace
+    const marketplace = doc('.marketplaceView .marketplaceContentContainer');
+    const mpTabActive = doc('.marketplaceView-header-tabHeader.active');
+    const mpTabNotActive = doc('.marketplaceView-header-tabHeader:not(.active)', true);
+
+
+    marketplace.style['background'] = theme.lgray;
+    mpTabActive.style['background'] = theme.lgray;
+    mpTabNotActive.forEach(g => {
+        g.style['background'] = theme.dgray;
+        g.style['color'] = theme.black;
+    })
 
     //gift
     const giftHeader = doc('.giftSelectorView-inboxHeader');
