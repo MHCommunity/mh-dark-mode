@@ -1,0 +1,29 @@
+{
+    "name": "MouseHunt Dark Mode",
+    "description": "Replaces MouseHunt website's bright theme into a comfortable dark palette without compromising on the game's readability and art style.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "script.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icons": {
+            "16": "/icon.png",
+            "32": "/icon.png",
+            "48": "/icon.png",
+            "128": "/icon.png"
+        }
+    },
+    "icons": {
+        "16": "/icon.png",
+        "32": "/icon.png",
+        "48": "/icon.png",
+        "128": "/icon.png"
+    }
+}
