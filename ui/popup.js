@@ -1,36 +1,14 @@
-// changeColor.addEventListener("click", async () => {
-//     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+changeColor.addEventListener("click", async () => {
+    let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
-//     chrome.scripting.executeScript({
-//         target: { tabId: tab.id },
-//         function: doSomething,
-//     });
-// });
-
-//trigger on load
-chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-    if (tab.url.startsWith("https://www.mousehuntgame.com/") == false)
-        chrome.scripting.executeScript({
-            target: { tabId: tab.id },
-            function: applyDarkMode,
-        });
-})
+    chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        function: applyDarkMode,
+    });
+});
 
 //main functions
 function applyDarkMode() {
-    function doc(clss, isAll) {
-        return isAll ? document.querySelectorAll('.PageCamp ' + clss) : document.querySelector('.PageCamp ' + clss);
-    }
-
-    const theme = {
-        white: "#f1f1f1",
-        lgray: '#c8c8c8',
-        mainDark: "#1a1a1a",
-        secondaryDark: "#242424",
-        blue: '#009adf'
-    }
-
-    //wrapper
     const pageFrameViewContent = doc('.pageFrameView-content')
     const pageFrameViewContentContainer = doc('.pageFrameView-contentContainer')
 
@@ -78,8 +56,14 @@ function applyDarkMode() {
 
     //sidebar scoreboard
     const sidebarTable = doc('.scoreboardRelativeRankingTableView-table', true);
+    const sidebarTableText = doc('.scoreboardRelativeRankingTableView-table .highlight td:last-child', true);
+
     sidebarTable.forEach(st => {
         st.style['border'] = '0';
+    })
+
+    sidebarTableText.forEach(st => {
+        st.style['color'] = theme.black;
     })
 
     //header
@@ -103,5 +87,43 @@ function applyDarkMode() {
 
     newsTickerLink.forEach(l => {
         l.style['color'] = theme.blue;
+    })
+
+    //trap
+    const trapView = doc('.trapImageView');
+    trapView.style['background'] = theme.dgray;
+
+    const trapViewProfile = doc('.trapImageView-layer');
+    trapViewProfile.style['background'] = theme.dgray;
+
+    //team
+    const teamDesc = doc('.teamPage-profile-description');
+    teamDesc.style['color'] = theme.white;
+
+    //profile
+    const profileMessageTitle = doc('.messageBoardView-title');
+    const profileMessage = doc('.messageBoardView-message', true);
+    const profileMessageLinks = doc('.messageBoardView-message a', true);
+
+    profileMessageTitle.style['color'] = theme.white;
+
+    profileMessage.forEach(p => {
+        p.style['background'] = theme.secondaryDark;
+        p.style['color'] = theme.white;
+        p.style['border-width'] = '0px';
+    })
+
+    profileMessageLinks.forEach(p => {
+        p.style['color'] = theme.blue;
+    })
+
+    const pagination = doc('.pagerView-container');
+    const paginationBtnActive = doc('.pagerView-section.next.active .pagerView-link', true);
+
+    pagination.style['background'] = theme.secondaryDark;
+    pagination.style['color'] = theme.white;
+
+    paginationBtnActive.forEach(p => {
+        p.style['color'] = theme.white;
     })
 }
