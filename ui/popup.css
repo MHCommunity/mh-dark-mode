@@ -16,7 +16,7 @@ h4 {
 
 .wrapper {
     width: 100px;
-    height: 190px;
+    height: 150px;
 }
 
 .img-wrapper {
@@ -26,6 +26,8 @@ h4 {
 }
 
 button.apply {
+    display: none;
+
     height: 30px;
     width: 100%;
     outline: none;

@@ -27,7 +27,11 @@
     "content_scripts": [
         {
             "matches": [
-                "https://*.mousehuntgame.com/*"
+                "https://*.mousehuntgame.com/*",
+                "https://apps.facebook.com/mousehunt/*"
+            ],
+            "css": [
+                "darkmode.css"
             ],
             "js": [
                 "apply.js"
