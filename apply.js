@@ -19,7 +19,9 @@ const theme = {
     tertiaryDark: "#444444",
 
     blue: '#009adf',
-    yellow: '#9c8418'
+    yellow: '#9c8418',
+    brown: '#e2d6b5',
+    lbrown: '#F4EEE1'
 }
 
 //wrapper
@@ -27,7 +29,7 @@ function applyCss() {
     var darkmodeCSS = document.createElement("link");
     darkmodeCSS.setAttribute("rel", "stylesheet");
     darkmodeCSS.setAttribute("type", "text/css");
-    //darkmodeCSS.setAttribute("href", chrome.extension.getURL('darkmode.css'));
+    //darkmodeCSS.setAttribute("href", chrome.extension.getURL('darkmode.css'));3333
     document.getElementById("head").appendChild(darkmodeCSS);
 }
 
@@ -134,19 +136,73 @@ function applyDarkModeDynamic() {
         t.style['color'] = theme.black;
     })
 
-    const trapBg = doc('.campPage-trap-blueprintContainer')
-    const trapBgBrowser = doc('.campPage-trap-itemBrowser-itemContainer')
-    const trapBgArmed = doc('.campPage-trap-itemBrowser-armed')
+    // const trapBg = doc('.campPage-trap-blueprintContainer')
+    // const trapBgBrowser = doc('.campPage-trap-itemBrowser-itemContainer')
+    // const trapBgArmed = doc('.campPage-trap-itemBrowser-armed')
 
-    trapBg.style['background-image'] = 'none';
-    trapBg.style['background'] = theme.secondaryDark;
+    // trapBg.style['background-image'] = 'none';
+    // trapBg.style['background'] = theme.secondaryDark;
     // trapBgBrowser.style['background'] = theme.dgray;
     // trapBgArmed.style['background'] = theme.dgray;
 
     //team
-    // const teamDesc = doc('.teamPage-profile-description');
-    // teamDesc.style['color'] = theme.white;
+    const teamTab = doc('.mousehuntTabContentContainer-padding', true);
+    teamTab.forEach(t => {
+        t.style['background'] = theme.brown;
+    })
 
+    //treasure
+    const treasureMap = doc('.treasureMapRootView');
+    treasureMap.style['background'] = theme.lgray;
+
+    //shop
+    const shopContent = doc('.mousehuntHud-page-subTabContent.active', true);
+    shopContent.forEach(p => {
+        p.style['overflow'] = 'hidden';
+    })
+
+    //premium shop
+    const premiumShopRoot = doc('.MHCheckoutRootView-pageContainer');
+    const premiumShopFoot = doc('.MHCheckoutRootView-footer');
+    const premiumShopFoot2 = doc('#overlayPopup .jsDialogContainer .suffix');
+
+    premiumShopRoot.style['background'] = theme.lgray;
+    premiumShopFoot.style['background'] = theme.lgray;
+    premiumShopFoot2.style['background'] = theme.dgray;
+
+    //marketplace
+    const marketplace = doc('.marketplaceView .marketplaceContentContainer');
+    const mpTabActive = doc('.marketplaceView-header-tabHeader.active');
+    const mpTabNotActive = doc('.marketplaceView-header-tabHeader:not(.active)', true);
+
+
+    marketplace.style['background'] = theme.lgray;
+    mpTabActive.style['background'] = theme.lgray;
+    mpTabNotActive.forEach(g => {
+        g.style['background'] = theme.dgray;
+        g.style['color'] = theme.black;
+    })
+
+    //message box
+    const messageTitle = doc('.messageBoardView-title');
+    const message = doc('.messageBoardView-message', true);
+    const messageTextArea = doc('.messageBoardView-message-textarea', true);
+
+    messageTitle.style['color'] = theme.secondaryDark;
+
+    message.forEach(p => {
+        p.style['background'] = theme.lbrown;
+        p.style['border-width'] = '0px';
+    })
+
+    messageTextArea.forEach(m => {
+        m.style['background'] = theme.lbrown;
+        m.style['color'] = theme.white;
+    })
+}
+
+//performance heavy
+function applyDarkModeDynamicPhase2() {
     //message box
     const messageTitle = doc('.messageBoardView-title');
     const message = doc('.messageBoardView-message', true);
@@ -188,38 +244,6 @@ function applyDarkModeDynamic() {
     })
     paginationBtnActivePrev.forEach(p => {
         p.style['color'] = theme.white;
-    })
-
-    //treasure
-    const treasureMap = doc('.treasureMapRootView');
-    treasureMap.style['background'] = theme.lgray;
-
-    //shop
-    const shopContent = doc('.mousehuntHud-page-subTabContent.active', true);
-    shopContent.forEach(p => {
-        p.style['overflow'] = 'hidden';
-    })
-
-    //premium shop
-    const premiumShopRoot = doc('.MHCheckoutRootView-pageContainer');
-    const premiumShopFoot = doc('.MHCheckoutRootView-footer');
-    const premiumShopFoot2 = doc('#overlayPopup .jsDialogContainer .suffix');
-
-    premiumShopRoot.style['background'] = theme.lgray;
-    premiumShopFoot.style['background'] = theme.lgray;
-    premiumShopFoot2.style['background'] = theme.dgray;
-
-    //marketplace
-    const marketplace = doc('.marketplaceView .marketplaceContentContainer');
-    const mpTabActive = doc('.marketplaceView-header-tabHeader.active');
-    const mpTabNotActive = doc('.marketplaceView-header-tabHeader:not(.active)', true);
-
-
-    marketplace.style['background'] = theme.lgray;
-    mpTabActive.style['background'] = theme.lgray;
-    mpTabNotActive.forEach(g => {
-        g.style['background'] = theme.dgray;
-        g.style['color'] = theme.black;
     })
 
     //gift
@@ -335,7 +359,6 @@ function applyDarkModeDynamic() {
     giftSelectorFoot.forEach(g => {
         g.style['background'] = theme.mainDark;
     })
-
 }
 
 applyDarkModeBase();
