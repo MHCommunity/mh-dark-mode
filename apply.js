@@ -128,13 +128,13 @@ function applyDarkModeDynamic() {
 
     //trap
     const trapView = doc('.trapImageView');
-    trapView.style['background'] = theme.dgray;
+    trapView.style['background'] = theme.lbrown;
 
-    const trapValue = doc('.campPage-trap-trapStat .value', true)
-    trapValue.forEach(t => {
-        t.style['background'] = theme.lgray;
-        t.style['color'] = theme.black;
-    })
+    // const trapValue = doc('.campPage-trap-trapStat .value', true)
+    // trapValue.forEach(t => {
+    //     t.style['background'] = theme.brown;
+    //     t.style['color'] = theme.black;
+    // })
 
     // const trapBg = doc('.campPage-trap-blueprintContainer')
     // const trapBgBrowser = doc('.campPage-trap-itemBrowser-itemContainer')
@@ -148,7 +148,7 @@ function applyDarkModeDynamic() {
     //team
     const teamTab = doc('.mousehuntTabContentContainer-padding', true);
     teamTab.forEach(t => {
-        t.style['background'] = theme.brown;
+        t.style['background'] = theme.lbrown;
     })
 
     //treasure
@@ -166,18 +166,17 @@ function applyDarkModeDynamic() {
     const premiumShopFoot = doc('.MHCheckoutRootView-footer');
     const premiumShopFoot2 = doc('#overlayPopup .jsDialogContainer .suffix');
 
-    premiumShopRoot.style['background'] = theme.lgray;
-    premiumShopFoot.style['background'] = theme.lgray;
-    premiumShopFoot2.style['background'] = theme.dgray;
+    premiumShopRoot.style['background'] = theme.lbrown;
+    premiumShopFoot.style['background'] = theme.lbrown;
+    premiumShopFoot2.style['background'] = theme.brown;
 
     //marketplace
     const marketplace = doc('.marketplaceView .marketplaceContentContainer');
     const mpTabActive = doc('.marketplaceView-header-tabHeader.active');
     const mpTabNotActive = doc('.marketplaceView-header-tabHeader:not(.active)', true);
 
-
-    marketplace.style['background'] = theme.lgray;
-    mpTabActive.style['background'] = theme.lgray;
+    marketplace.style['background'] = theme.lbrown;
+    mpTabActive.style['background'] = theme.lbrown;
     mpTabNotActive.forEach(g => {
         g.style['background'] = theme.dgray;
         g.style['color'] = theme.black;
@@ -198,6 +197,13 @@ function applyDarkModeDynamic() {
     messageTextArea.forEach(m => {
         m.style['background'] = theme.lbrown;
         m.style['color'] = theme.white;
+    })
+
+    //pagination
+    const pagination = doc('.messageBoardView .pagerView-container', true);
+
+    pagination.forEach(p => {
+        p.style['background'] = theme.lbrown;
     })
 }
 
