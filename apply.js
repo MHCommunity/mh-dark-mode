@@ -196,7 +196,7 @@ function applyDarkModeDynamic() {
 
     messageTextArea.forEach(m => {
         m.style['background'] = theme.lbrown;
-        m.style['color'] = theme.white;
+        m.style['color'] = theme.black;
     })
 
     //pagination
