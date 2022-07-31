@@ -1,1 +1,1 @@
-Google Chrome extension to override MouseHunt website styling with a dark mode theme
+Google Chrome extension to override some of MouseHunt's browser CSS with a darker, more comfortable color palette
