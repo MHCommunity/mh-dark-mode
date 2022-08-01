@@ -3,6 +3,7 @@ body {
     color: #f1f1f1;
     margin: 0;
     padding: 20px;
+    font-size: 14px;
 }
 
 h3,
@@ -15,7 +16,7 @@ h4 {
 }
 
 .wrapper {
-    width: 100px;
+    width: 150px;
     height: 150px;
 }
 
@@ -23,6 +24,25 @@ h4 {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.author {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.author>* {
+    font-size: 0.8rem;
+}
+
+.author a {
+    margin-left: 5px;
+    color: #e9b50d;
+}
+
+.author a:visited {
+    color: #e9b50d;
 }
 
 button.apply {
@@ -54,9 +74,4 @@ button.apply {
     color: #ccc;
     font-size: 0.6rem;
     margin-top: 10px;
-}
-
-button.current {
-    box-shadow: 0 0 0 2px white,
-        0 0 0 4px black;
 }
