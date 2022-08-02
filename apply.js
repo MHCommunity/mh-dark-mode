@@ -12,6 +12,7 @@ function doc(clss, isAll) {
 const theme = {
     white: "#ebebeb",
     black: '#0c0c0c',
+    xlgray: '#e4e4e4',
     lgray: '#c8c8c8',
     dgray: '#9b9b9b',
     mainDark: "#1a1a1a",
@@ -43,7 +44,7 @@ function applyDarkModeBase() {
     const frameViewLeft = doc('.pageFrameView-column.left')
     const frameViewRight = doc('.pageFrameView-column.right')
 
-    pageFrameViewContent.style['background'] = theme.lgray;
+    pageFrameViewContent.style['background'] = theme.xlgray;
     pageFrameViewContentContainer.style['background'] = theme.secondaryDark;
 
     frameViewLeft.style['background-image'] = 'none';
@@ -153,7 +154,7 @@ function applyDarkModeDynamic() {
 
     //treasure
     const treasureMap = doc('.treasureMapRootView');
-    treasureMap.style['background'] = theme.lgray;
+    treasureMap.style['background'] = theme.xlgray;
 
     //shop
     const shopContent = doc('.mousehuntHud-page-subTabContent.active', true);
