@@ -1,0 +1,57 @@
+:root {
+    --white: "#ebebeb";
+    --black: '#0c0c0c';
+    --lgray: '#c8c8c8';
+    --dgray: '#9b9b9b';
+    --mainDark: '#1a1a1a';
+    --secondaryDark: '#242424';
+    --blue: '#009adf';
+}
+
+/* .pageFrameView .pageFrameView-content {
+    background: var(--lgray) !important;
+}
+
+.pageFrameView .pageFrameView-contentContainer {
+    background: var(--secondaryDark) !important;
+}
+
+.pageFrameView .pageFrameView-column.left {
+    background-image: none !important;
+    background: var(--mainDark) !important;
+    border-right-color: var(--secondaryDark) !important;
+}
+
+.pageFrameView .pageFrameView-column.right {
+    background-image: none !important;
+    background-color: var(--mainDark) !important;
+    border-left-color: var(--secondaryDark) !important;
+}
+
+.pageFrameView .pageSidebarView {
+    background: var(--secondaryDark) !important;
+} */
+
+/* .foo {
+    color: #9c8418
+} */
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #acacac;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #808080;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(138, 138, 138);
+}

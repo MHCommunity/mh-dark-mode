@@ -2,7 +2,7 @@
     "name": "MouseHunt Dark Mode",
     "description": "Dark mode for MouseHunt's browser version",
     "version": "0.0.1",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "permissions": [
         "scripting"
     ],
