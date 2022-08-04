@@ -8,6 +8,15 @@ changeColor.addEventListener("click", async () => {
 });
 
 //main functions
+function applyVersion() {
+    const manifestData = chrome.runtime.getManifest();
+    const VER = manifestData.version
+
+    document.querySelector('.ver').textContent = VER;
+}
+
 function applyDarkMode() {
 
 }
+
+applyVersion();

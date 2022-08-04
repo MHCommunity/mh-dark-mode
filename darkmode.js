@@ -25,6 +25,9 @@ const theme = {
     lbrown: '#F4EEE1'
 }
 
+const manifestData = chrome.runtime.getManifest();
+const VER = manifestData.version
+
 //wrapper
 function applyCss() {
     var darkmodeCSS = document.createElement("link");
@@ -36,7 +39,7 @@ function applyCss() {
 
 //apply base dark mode for wrappers etc that is used by mh site all throughout
 function applyDarkModeBase() {
-    console.log('MouseHunt Dark Mode v0.0.1 applied.');
+    console.log('MouseHunt Dark Mode ' + VER + ' applied.');
 
     const pageFrameViewContent = doc('.pageFrameView-content')
     const pageFrameViewContentContainer = doc('.pageFrameView-contentContainer')
