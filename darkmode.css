@@ -36,22 +36,30 @@
     color: #9c8418
 } */
 
-/* width */
+/*SCROLL BAR FOR NON BODY ELEMENTS*/
 body *::-webkit-scrollbar {
     width: 6px;
 }
 
-/* Track */
 body *::-webkit-scrollbar-track {
     background: #c5c5c5;
 }
 
-/* Handle */
 body *::-webkit-scrollbar-thumb {
     background: #808080;
 }
 
-/* Handle on hover */
 body *::-webkit-scrollbar-thumb:hover {
     background: #8a8a8a;
+}
+
+/*Non-JS overrides*/
+
+/* Shops */
+.mousehuntHud-page-tabContent.hasShop {
+    padding: 0 10px;
+}
+
+.mousehuntHud-page-tabContent.hasShop .itemViewStatBlock-stat {
+    background-color: #fff;
 }
