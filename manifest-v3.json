@@ -1,0 +1,37 @@
+{
+    "name": "MouseHunt Dark Mode",
+    "description": "Dark mode for MouseHunt's browser version",
+    "version": "0.0.1.2",
+    "manifest_version": 3,
+    "permissions": [
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "ui/popup.html",
+        "default_icons": {
+            "16": "assets/icon.png",
+            "32": "assets/icon.png",
+            "48": "assets/icon.png",
+            "128": "assets/icon.png"
+        }
+    },
+    "icons": {
+        "16": "assets/icon.png",
+        "32": "assets/icon.png",
+        "48": "assets/icon.png",
+        "128": "assets/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.mousehuntgame.com/*"
+            ],
+            "css": [
+                "darkmode.css"
+            ],
+            "js": [
+                "darkmode.js"
+            ]
+        }
+    ]
+}
