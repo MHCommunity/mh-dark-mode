@@ -11,6 +11,7 @@
 
     --mhdm-blue: #009adf;
     --mhdm-yellow: #9c8418;
+    --mhdm-yellow-self: #e6b963;
     --mhdm-brown: #e2d6b5;
     --mhdm-lbrown: #f4eee1;
 }
@@ -118,11 +119,6 @@ body *::-webkit-scrollbar-thumb:hover {
 
 .pageFrameView .scoreboardRelativeRankingTableView-table .highlight td:last-child {
     color: var(--mhdm-black)
-}
-
-/* Team */
-.teamPage-container .mousehuntTabContentContainer-padding {
-    background: var(--mhdm-lbrown) !important;
 }
 
 /* Shops */

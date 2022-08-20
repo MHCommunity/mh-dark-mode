@@ -1,0 +1,34 @@
+/* Team */
+.pageFrameView .teamPage-container .mousehuntTabContentContainer-padding {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white);
+}
+
+.pageFrameView .teamPage-container .teamPage-member-nameContainer a {
+    color: var(--mhdm-white);
+}
+
+.pageFrameView .teamPage-container .teamPage-member-environment {
+    color: var(--mhdm-dgray);
+}
+
+.pageFrameView .teamPage-container .teamPage-memberRow.self,
+.pageFrameView .teamPage-container .teamPage-memberRow.self * {
+    color: var(--mhdm-black) !important;
+}
+
+.pageFrameView .teamPage-container .teamPage-memberRow.self {
+    background: var(--mhdm-yellow-self);
+}
+
+.pageFrameView .teamPage-container .teamPage-memberRow.self {
+    background: var(--mhdm-yellow-self);
+}
+
+.pageFrameView .teamPage-container .teamPage-memberRow.available {
+    background: var(--mhdm-dark5);
+}
+
+.pageFrameView .teamPage-container .teamPage-memberRow.available .teamPage-member-name.empty {
+    color: var(--mhdm-white);
+}

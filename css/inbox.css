@@ -1,0 +1,51 @@
+.pageFrameView #messengerUINotification {
+    border: 0;
+    background: var(--mhdm-mainDark) !important;
+}
+
+.pageFrameView #messengerUINotification .notificationHeader {
+    background-color: var(--mhdm-mainDark);
+}
+
+.pageFrameView .pageFrameView-content #messengerUINotification .tabs a {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white);
+    border-bottom-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .pageFrameView-content #messengerUINotification .tabs a.active {
+    background: var(--mhdm-mainDark);
+    color: var(--mhdm-white);
+    border-bottom-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .pageFrameView-content #messengerUINotification .tabs a.active .arrow {
+    border-color: transparent transparent transparent var(--mhdm-mainDark);
+}
+
+.pageFrameView .pageFrameView-content #messengerUINotification .tabs a.active .arrowShadow {
+    display: none;
+}
+
+.pageFrameView #messengerUINotification .notificationMessageList {
+    border-left: 0;
+}
+
+.pageFrameView #messengerUINotification .notificationMessageList .message .date {
+    color: var(--mhdm-gray);
+    margin-left: 0;
+}
+
+.pageFrameView .pageFrameView-content .notificationMessageList .message {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white);
+    border-bottom: 0;
+}
+
+.pageFrameView .notificationMessageList .message:nth-child(even) {
+    background: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .notificationMessageList .message a {
+    color: var(--mhdm-blue);
+}

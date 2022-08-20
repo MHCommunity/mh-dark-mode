@@ -30,7 +30,9 @@
                 "css/main.css",
                 "css/messagebox.css",
                 "css/giftbox.css",
-                "css/trap.css"
+                "css/trap.css",
+                "css/inbox.css",
+                "css/team.css"
             ],
             "js": [
                 "main.js"
