@@ -1,0 +1,8 @@
+.trapImageView {
+    background: var(--mhdm-lbrown) !important;
+}
+
+.pageFrameView .campPage-trap {
+    border: 0;
+    box-shadow: none;
+}

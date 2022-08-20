@@ -1,0 +1,65 @@
+/* .pageFrameView .messageBoardView-title {
+    color: var(--mhdm-secondaryDark)
+}
+
+.pageFrameView .messageBoardView-message {
+    background: var(--mhdm-lbrown);
+    border-width: 0;
+}
+
+.pageFrameView .messageBoardView-message-textarea {
+    background: var(--mhdm-lbrown);
+    color: var(--mhdm-black)
+}
+
+.pageFrameView .messageBoardView .pagerView-container {
+    background: var(--mhdm-lbrown);
+} */
+
+.pageFrameView .messageBoardView-title {
+    color: var(--mhdm-tertiaryDark)
+}
+
+.pageFrameView .messageBoardView-message-name {
+    color: var(--mhdm-blue)
+}
+
+.pageFrameView .messageBoardView-message {
+    background: var(--mhdm-tertiaryDark);
+    border-width: 0;
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .messageBoardView-message-textarea {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .messageBoardView .pagerView-container {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .pagerView-section.next.active .pagerView-link,
+.pageFrameView .pagerView-section.previous.active .pagerView-link {
+    color: var(--mhdm-white);
+    border: 0;
+}
+
+.pageFrameView .pagerView-section.next.active .pagerView-link:hover,
+.pageFrameView .pagerView-section.previous.active .pagerView-link:hover {
+    color: var(--mhdm-white);
+    background: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .pagerView-section.previous .pagerView-link,
+.pageFrameView .pagerView-section.next .pagerView-link {
+    border: 0;
+    color: var(--mhdm-dgray);
+}
+
+.pageFrameView .pagerView-section.next .pagerView-link:hover,
+.pageFrameView .pagerView-section.previous .pagerView-link:hover {
+    color: var(--mhdm-dgray);
+    background: var(--mhdm-secondaryDark);
+}

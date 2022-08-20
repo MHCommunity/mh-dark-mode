@@ -1,0 +1,114 @@
+.pageFrameView .giftSelectorView-inboxHeader {
+    background: var(--mhdm-mainDark);
+    color: var(--mhdm-white);
+}
+
+.pageFrameView .giftSelectorView-inboxHeader a {
+    color: var(--mhdm-blue);
+}
+
+.pageFrameView .giftSelectorView-inboxGiftOfTheDay {
+    background: var(--mhdm-secondaryDark);
+
+}
+
+.pageFrameView .giftSelectorView-inboxGiftOfTheDay-label {
+    color: var(--mhdm-white);
+
+}
+
+.pageFrameView .giftSelectorView-inboxGiftOfTheDay abbr {
+    color: var(--mhdm-white);
+
+}
+
+.pageFrameView .giftSelectorView-inbox-footer {
+    background: var(--mhdm-mainDark);
+    color: var(--mhdm-white);
+
+}
+
+/* gift body */
+.pageFrameView .giftSelectorView-inbox-giftRow {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white);
+    border-bottom: none;
+}
+
+.pageFrameView .giftSelectorView-inbox-giftRow:nth-child(even) {
+    background: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .giftSelectorView-inbox-giftRow a {
+    color: var(--mhdm-blue);
+
+}
+
+.pageFrameView .giftSelectorView-inbox-gift-sent {
+    color: var(--mhdm-lgray);
+}
+
+/* gift more */
+
+.pageFrameView .giftSelectorView-content-rightBar,
+.pageFrameView .giftSelectorView-content-leftBar {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white);
+}
+
+.pageFrameView .giftSelectorView a {
+    color: var(--mhdm-blue);
+
+}
+
+.pageFrameView .giftSelectorView-tabHeader.active span {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white);
+}
+
+.pageFrameView .giftSelectorView-tabHeader:not(.active) span {
+    background: var(--mhdm-lgray);
+    color: var(--mhdm-black);
+}
+
+.pageFrameView .giftSelectorView-friend-sent {
+    color: var(--mhdm-lgray);
+}
+
+.pageFrameView .giftSelectorView-gift-padding {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white);
+}
+
+.pageFrameView .giftSelectorView-friend {
+    color: var(--mhdm-blue);
+}
+
+.pageFrameView .giftSelectorView-friend>.giftSelectorView-friend-padding {
+    background: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView.giftSelectorView-friend.selected>.giftSelectorView-friend-padding {
+    background: var(--mhdm-dgray);
+    color: var(--mhdm-black);
+}
+
+.pageFrameView .giftSelectorView-friend.warning>.giftSelectorView-friend-padding {
+    background: var(--mhdm-yellow);
+    color: var(--mhdm-black);
+}
+
+.pageFrameView .giftSelectorView-actionContainer {
+    background: var(--mhdm-mainDark);
+}
+
+.pageFrameView .giftSelectorView-tabContent,
+.pageFrameView .giftSelectorView-content-leftBar-highlightBlock {
+    background: var(--mhdm-secondaryDark);
+}
+
+/* search */
+.giftSelectorView-friend-search-input {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white);
+}

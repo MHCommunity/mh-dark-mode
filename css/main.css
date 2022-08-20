@@ -1,0 +1,181 @@
+:root {
+    --mhdm-white: #ebebeb;
+    --mhdm-black: #0c0c0c;
+    --mhdm-xlgray: #e4e4e4;
+    --mhdm-lgray: #c8c8c8;
+    --mhdm-dgray: #9b9b9b;
+    --mhdm-mainDark: #1a1a1a;
+    --mhdm-secondaryDark: #242424;
+    --mhdm-tertiaryDark: #2e2e2e;
+    --mhdm-dark5: #424242;
+
+    --mhdm-blue: #009adf;
+    --mhdm-yellow: #9c8418;
+    --mhdm-brown: #e2d6b5;
+    --mhdm-lbrown: #f4eee1;
+}
+
+/*SCROLL BAR FOR NON BODY ELEMENTS*/
+body *::-webkit-scrollbar {
+    width: 6px;
+}
+
+body *::-webkit-scrollbar-track {
+    background: #c5c5c5;
+}
+
+body *::-webkit-scrollbar-thumb {
+    background: #808080;
+}
+
+body *::-webkit-scrollbar-thumb:hover {
+    background: #8a8a8a;
+}
+
+/*Non-JS overrides*/
+
+/* Container */
+.pageFrameView .pageFrameView-content {
+    background: var(--mhdm-xlgray);
+}
+
+.pageFrameView .pageFrameView-contentContainer {
+    background: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .pageFrameView-column.left {
+    background-image: none;
+    background: var(--mhdm-mainDark);
+    border-right-color: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .pageFrameView-column.right {
+    background-image: none;
+    background: var(--mhdm-mainDark);
+    border-left-color: var(--mhdm-secondaryDark);
+}
+
+/* Header */
+
+.pageFrameView .mousehuntHeaderView {
+    background: var(--mhdm-mainDark);
+}
+
+.pageFrameView .mousehuntHeaderView-gameTabs {
+    background: var(--mhdm-mainDark);
+}
+
+.pageFrameView .mousehuntHeaderView .menuItem {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .mousehuntHeaderView-newsTicker {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .mousehuntHeaderView-newsTicker .label {
+    color: var(--mhdm-blue)
+}
+
+.pageFrameView .mousehuntHeaderView-newsTicker a {
+    color: var(--mhdm-blue)
+}
+
+/* Sidebar */
+.pageFrameView .pageSidebarView {
+    background: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .pageSidebarView-block {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white);
+}
+
+.pageFrameView .pageSidebarView-block a {
+    color: var(--mhdm-blue);
+}
+
+.pageFrameView .pageSidebarView .fb-page {
+    background: transparent;
+}
+
+.pageFrameView .pageSidebarView-user {
+    color: var(--mhdm-white);
+    border: 0;
+}
+
+.pageFrameView .pageSidebarView-user a {
+    color: var(--mhdm-blue);
+}
+
+/* Sidebar Scoreboard */
+
+.pageFrameView .scoreboardRelativeRankingTableView-table {
+    border: 0;
+}
+
+.pageFrameView .scoreboardRelativeRankingTableView-table .highlight td:last-child {
+    color: var(--mhdm-black)
+}
+
+/* Team */
+.teamPage-container .mousehuntTabContentContainer-padding {
+    background: var(--mhdm-lbrown) !important;
+}
+
+/* Shops */
+.mousehuntHud-page-tabContent.hasShop {
+    padding: 0 10px;
+}
+
+.mousehuntHud-page-tabContent.hasShop .itemViewStatBlock-stat {
+    background-color: #fff;
+}
+
+/* Overlay Modal */
+
+.pageFrameView #overlayBg {
+    background-image: none;
+    background: rgba(0, 0, 0, 0.8)
+}
+
+/* Treasure */
+
+.pageFrameView .treasureMapRootView {
+    background: var(--mhdm-xlgray);
+}
+
+/* shop */
+
+.pageFrameView .mousehuntHud-page-subTabContent.active {
+    overflow: hidden;
+}
+
+.pageFrameView .MHCheckoutRootView-pageContainer {
+    background: var(--mhdm-lbrown)
+}
+
+.pageFrameView .MHCheckoutRootView-footer {
+    background: var(--mhdm-lbrown)
+}
+
+.pageFrameView #overlayPopup .jsDialogContainer .suffix {
+    background: var(--mhdm-brown)
+}
+
+/* marketplace */
+
+.pageFrameView .marketplaceView .marketplaceContentContainer {
+    background: var(--mhdm-lbrown)
+}
+
+.marketplaceView-header-tabHeader.active {
+    background: var(--mhdm-lbrown)
+}
+
+.marketplaceView-header-tabHeader:not(.active) {
+    background: var(--mhdm-dgray);
+    color: var(--mhdm-black)
+}
