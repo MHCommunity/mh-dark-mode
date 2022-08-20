@@ -1,0 +1,23 @@
+/* marketplace */
+
+.pageFrameView .marketplaceView .marketplaceContentContainer {
+    background: var(--mhdm-lbrown)
+}
+
+/* .pageFrameView .marketplaceView .marketplaceContentContainer .marketplaceHome-block-carousel *,
+.pageFrameView .marketplaceView .marketplaceContentContainer .marketplaceHome-block.favourites * {
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .marketplaceView .marketplaceHome-blockMenu:not(.active) {
+    color: var(--mhdm-dgray)
+} */
+
+.marketplaceView-header-tabHeader.active {
+    background: var(--mhdm-lbrown)
+}
+
+.marketplaceView-header-tabHeader:not(.active) {
+    background: var(--mhdm-dgray);
+    color: var(--mhdm-black)
+}

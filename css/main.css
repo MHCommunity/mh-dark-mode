@@ -160,18 +160,3 @@ body *::-webkit-scrollbar-thumb:hover {
 .pageFrameView #overlayPopup .jsDialogContainer .suffix {
     background: var(--mhdm-brown)
 }
-
-/* marketplace */
-
-.pageFrameView .marketplaceView .marketplaceContentContainer {
-    background: var(--mhdm-lbrown)
-}
-
-.marketplaceView-header-tabHeader.active {
-    background: var(--mhdm-lbrown)
-}
-
-.marketplaceView-header-tabHeader:not(.active) {
-    background: var(--mhdm-dgray);
-    color: var(--mhdm-black)
-}
