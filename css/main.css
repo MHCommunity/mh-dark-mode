@@ -122,13 +122,37 @@ body *::-webkit-scrollbar-thumb:hover {
     color: var(--mhdm-black)
 }
 
-/* Shops */
+/* in game shop */
 .mousehuntHud-page-tabContent.hasShop {
     padding: 0 10px;
 }
 
 .mousehuntHud-page-tabContent.hasShop .itemViewStatBlock-stat {
     background-color: var(--mhdm-white);
+}
+
+/* inventory */
+
+.mousehuntPage-content[data-page='PageInventory'] .mousehuntHud-page-subTabHeader-container {
+    padding: 0 10px;
+}
+
+.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-item-name {
+    background: var(--mhdm-xlgray)
+}
+
+.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-tagDirectory-tag {
+    background: var(--mhdm-xlgray)
+}
+
+.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-tagDirectory-tag.active {
+    background: var(--mhdm-dgray)
+}
+
+.mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent-margin {
+    background: var(--mhdm-lbrown) !important;
+    border: 0;
+    box-shadow: none;
 }
 
 /* Overlay Modal */
@@ -169,6 +193,8 @@ body *::-webkit-scrollbar-thumb:hover {
 .pageFrameView #overlayPopup .jsDialogContainer .suffix {
     background: var(--mhdm-brown)
 }
+
+
 
 /* mice list */
 
