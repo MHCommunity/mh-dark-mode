@@ -3,9 +3,7 @@
     "description": "Dark mode for MouseHunt's browser version",
     "version": "0.0.2.2",
     "manifest_version": 3,
-    "permissions": [
-        "scripting"
-    ],
+    "permissions": [],
     "action": {
         "default_popup": "ui/popup.html",
         "default_icons": {
@@ -35,10 +33,10 @@
                 "css/team.css",
                 "css/marketplace.css",
                 "css/profile.css"
-            ],
-            "js": [
-                "main.js"
             ]
+            // "js": [
+            //     "main.js"
+            // ]
         }
     ]
 }
