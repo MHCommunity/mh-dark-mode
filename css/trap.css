@@ -2,7 +2,36 @@
     background: var(--mhdm-lbrown) !important;
 }
 
+.pageFrameView .campPage-trap-itemStats .campPage-trap-trapStat .value {
+    background: var(--mhdm-xlbrown);
+}
+
+/* 
 .pageFrameView .campPage-trap {
     border: 0;
     box-shadow: none;
 }
+
+.pageFrameView .campPage-trap-itemStats {
+    background: var(--mhdm-tertiaryDark);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView .campPage-trap-itemStats .campPage-trap-trapStat .value {
+    background: var(--mhdm-dark5);
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView .campPage-trap-trapEffectiveness {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView .campPage-trap-trapEffectiveness span {
+    color: var(--mhdm-dgray);
+} */

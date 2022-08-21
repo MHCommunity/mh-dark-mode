@@ -14,6 +14,7 @@
     --mhdm-yellow-self: #e6b963;
     --mhdm-brown: #e2d6b5;
     --mhdm-lbrown: #f4eee1;
+    --mhdm-xlbrown: #f6f3eb;
 }
 
 /*SCROLL BAR FOR NON BODY ELEMENTS*/
@@ -37,7 +38,7 @@ body *::-webkit-scrollbar-thumb:hover {
 
 /* Container */
 .pageFrameView .pageFrameView-content {
-    background: var(--mhdm-xlgray);
+    background: var(--mhdm-lbrown);
 }
 
 .pageFrameView .pageFrameView-contentContainer {
@@ -127,7 +128,7 @@ body *::-webkit-scrollbar-thumb:hover {
 }
 
 .mousehuntHud-page-tabContent.hasShop .itemViewStatBlock-stat {
-    background-color: #fff;
+    background-color: var(--mhdm-white);
 }
 
 /* Overlay Modal */
@@ -140,7 +141,15 @@ body *::-webkit-scrollbar-thumb:hover {
 /* Treasure */
 
 .pageFrameView .treasureMapRootView {
-    background: var(--mhdm-xlgray);
+    background: var(--mhdm-lbrown);
+}
+
+.pageFrameView .treasureMapView-goals-group-goal {
+    padding: 5px;
+}
+
+.pageFrameView .treasureMapView-goals-group-goal-name span {
+    font-size: 11px;
 }
 
 /* shop */
@@ -159,4 +168,14 @@ body *::-webkit-scrollbar-thumb:hover {
 
 .pageFrameView #overlayPopup .jsDialogContainer .suffix {
     background: var(--mhdm-brown)
+}
+
+/* mice list */
+
+.pageFrameView .mouseListView-categoryContent-category {
+    background: var(--mhdm-lbrown)
+}
+
+.pageFrameView .mouseListView-categoryContent:before {
+    display: none;
 }

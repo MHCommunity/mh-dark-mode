@@ -1,8 +1,8 @@
 {
     "name": "MouseHunt Dark Mode",
     "description": "Dark mode for MouseHunt's browser version",
-    "version": "0.0.2",
-    "manifest_version": 2,
+    "version": "0.0.2.1",
+    "manifest_version": 3,
     "permissions": [
         "scripting"
     ],
@@ -33,7 +33,8 @@
                 "css/trap.css",
                 "css/inbox.css",
                 "css/team.css",
-                "css/marketplace.css"
+                "css/marketplace.css",
+                "css/profile.css"
             ],
             "js": [
                 "main.js"

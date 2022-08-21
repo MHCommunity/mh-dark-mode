@@ -1,10 +1,14 @@
-/* .pageFrameView .messageBoardView-title {
+.pageFrameView .messageBoardView-title {
     color: var(--mhdm-secondaryDark)
 }
 
 .pageFrameView .messageBoardView-message {
     background: var(--mhdm-lbrown);
     border-width: 0;
+}
+
+.pageFrameView .messageBoardView-message.new {
+    border: 0 !important;
 }
 
 .pageFrameView .messageBoardView-message-textarea {
@@ -14,8 +18,9 @@
 
 .pageFrameView .messageBoardView .pagerView-container {
     background: var(--mhdm-lbrown);
-} */
+}
 
+/* 
 .pageFrameView .messageBoardView-title {
     color: var(--mhdm-tertiaryDark)
 }
@@ -33,6 +38,10 @@
 .pageFrameView .messageBoardView-message-textarea {
     background: var(--mhdm-tertiaryDark);
     color: var(--mhdm-white)
+}
+
+.pageFrameView .messageBoardView-message.new {
+    border: 0 !important;
 }
 
 .pageFrameView .messageBoardView .pagerView-container {
@@ -62,4 +71,4 @@
 .pageFrameView .pagerView-section.previous .pagerView-link:hover {
     color: var(--mhdm-dgray);
     background: var(--mhdm-secondaryDark);
-}
+} */

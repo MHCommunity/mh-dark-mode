@@ -1,4 +1,23 @@
 /* Team */
+.pageFrameView .teamPage-profile-description {
+    font-size: 1rem;
+}
+
+.pageFrameView .teamPage-container .mousehuntTabContentContainer-padding {
+    background: var(--mhdm-lbrown);
+}
+
+.pageFrameView .teamPage-profile-awardContainer-awardList {
+    background: var(--mhdm-lbrown);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView .teamPage-container .teamPage-memberRow.available {
+    background: var(--mhdm-lgray);
+}
+
+/* 
 .pageFrameView .teamPage-container .mousehuntTabContentContainer-padding {
     background: var(--mhdm-tertiaryDark);
     color: var(--mhdm-white);
@@ -32,3 +51,19 @@
 .pageFrameView .teamPage-container .teamPage-memberRow.available .teamPage-member-name.empty {
     color: var(--mhdm-white);
 }
+
+.pageFrameView .teamPage-profile-awardContainer-awardList {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView .teamPage-profile-awardContainer-awardList .quantity {
+    color: var(--mhdm-black);
+}
+
+.pageFrameView .teamPage-profile-awardContainer-awardList .teamPage-profile-awardContainerInfo {
+    color: var(--mhdm-gray);
+
+} */

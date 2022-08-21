@@ -115,8 +115,10 @@
     background: var(--mhdm-tertiaryDark);
 }
 
+.pageFrameView .giftSelectorView-scroller.giftSelectorView-claimableGiftContainer {}
+
 /* bottom shadow when collapsed */
-.pageFrameView .giftSelectorView-claimableGift:after {
+.pageFrameView .giftSelectorView-claimableGift:not(.expanded):not(.accordion_disabled):after {
     content: '';
     position: absolute;
     left: 0;
@@ -132,8 +134,57 @@
     pointer-events: none;
 }
 
+.pageFrameView .giftSelectorView-claimableGift.accordion_disabled:after {
+    display: none;
+}
+
 /* search */
 .giftSelectorView-friend-search-input {
     background: var(--mhdm-tertiaryDark);
     color: var(--mhdm-white);
+}
+
+/* buttons */
+
+.pageFrameView .giftSelectorView-inboxContainer .mousehuntActionButton,
+.pageFrameView .giftSelectorView-inbox-footer-viewMore .mousehuntActionButton {
+    background: var(--mhdm-dark5) !important;
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView .giftSelectorView-inboxContainer .mousehuntActionButton span {
+    color: var(--mhdm-white);
+    text-shadow: none;
+}
+
+.pageFrameView .giftSelectorView-inboxContainer .mousehuntActionButton:before {
+    display: none;
+}
+
+.pageFrameView .giftSelectorView-inbox-footer-viewMore a,
+.pageFrameView .giftSelectorView-actionContainer .mousehuntActionButton {
+    background: var(--mhdm-dark5) !important;
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.pageFrameView .giftSelectorView-actionContainer .mousehuntActionButton span {
+    color: var(--mhdm-white);
+    text-shadow: none;
+}
+
+.pageFrameView .giftSelectorView-actionContainer .mousehuntActionButton:before {
+    display: none;
+}
+
+.pageFrameView .giftSelectorView-friendRow-action {
+    background: var(--mhdm-dark5) !important;
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none !important;
+    text-shadow: none;
 }
