@@ -92,9 +92,10 @@
     background: var(--mhdm-tertiaryDark);
 }
 
-.pageFrameView.giftSelectorView-friend.selected>.giftSelectorView-friend-padding {
-    background: var(--mhdm-dgray);
+.pageFrameView .giftSelectorView-friend.selected>.giftSelectorView-friend-padding {
+    background: var(--mhdm-blue);
     color: var(--mhdm-black);
+    font-weight: 500;
 }
 
 .pageFrameView .giftSelectorView-friend.warning>.giftSelectorView-friend-padding {
@@ -145,7 +146,7 @@
 }
 
 /* buttons */
-
+/* 
 .pageFrameView .giftSelectorView-inboxContainer .mousehuntActionButton,
 .pageFrameView .giftSelectorView-inbox-footer-viewMore .mousehuntActionButton {
     background: var(--mhdm-dark5) !important;
@@ -196,4 +197,4 @@
 
 .pageFrameView .giftSelectorView-friendRow-action.selected {
     background: var(--mhdm-dark4) !important;
-}
+} */
