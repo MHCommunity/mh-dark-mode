@@ -20,19 +20,19 @@
 }
 
 /*SCROLL BAR FOR NON BODY ELEMENTS*/
-body *::-webkit-scrollbar {
+body .pageFrameView *::-webkit-scrollbar {
     width: 6px;
 }
 
-body *::-webkit-scrollbar-track {
+body .pageFrameView *::-webkit-scrollbar-track {
     background: #c5c5c5;
 }
 
-body *::-webkit-scrollbar-thumb {
+body .pageFrameView *::-webkit-scrollbar-thumb {
     background: #808080;
 }
 
-body *::-webkit-scrollbar-thumb:hover {
+body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     background: #8a8a8a;
 }
 
