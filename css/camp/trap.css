@@ -80,6 +80,11 @@
     box-shadow: none;
 }
 
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-itemStats .campPage-trap-trapStat .value b {
+    color: var(--mhdm-brown);
+    margin-top: 5px;
+}
+
 .pageFrameView #mousehuntContainer.PageCamp .campPage-trap-trapEffectiveness {
     background: var(--mhdm-tertiaryDark);
     color: var(--mhdm-white);

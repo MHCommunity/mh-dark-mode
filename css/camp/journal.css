@@ -55,3 +55,64 @@
 .pageFrameView #mousehuntContainer.PageCamp .journal-detailLinkContainer * {
     color: var(--mhdm-blue);
 }
+
+/* adventure book */
+
+.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner-adventureName,
+.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner-goalPadding {
+    background-color: var(--mhdm-lbrown);
+}
+
+/* .pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner-goalPadding::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+} */
+
+/* journal rows */
+
+.pageFrameView #mousehuntContainer.PageCamp .journal .content {
+    position: relative
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .journal .content .journalbody .journaltext {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .journal .content::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* .pageFrameView #mousehuntContainer.PageCamp .journal .content .catchfailure {
+    background: url('https://www.mousehuntgame.com/images/ui/journal/steal.gif?asset_cache_version=2') no-repeat 8px 8px;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .journal .content .catchfailuredamage {
+    background: #b97979 url('https://www.mousehuntgame.com/images/ui/journal/pillage.gif?asset_cache_version=2') no-repeat 8px 8px;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .journal .content .catchsuccess {
+    background-color: #f5f59d;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .journal .content .catchsuccessloot {
+    background-color: #e2d880;
+} */
