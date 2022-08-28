@@ -123,7 +123,8 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     border: 0;
 }
 
-.pageFrameView .scoreboardRelativeRankingTableView-table .highlight td:last-child {
+.pageFrameView .scoreboardRelativeRankingTableView-table .highlight td:last-child,
+.pageFrameView .scoreboardRelativeRankingTableView-table .highlight td:first-child {
     color: var(--mhdm-black)
 }
 
