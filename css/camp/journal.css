@@ -1,7 +1,32 @@
+/* mobile */
+
+.MobilePageCamp .pageFrameView .pageFrameView-content {
+    background: var(--mhdm-dark5);
+}
+
+.MobilePageCamp .pageFrameView .headerText,
+.MobilePageCamp .pageFrameView #mobileCountdown {
+    color: var(--mhdm-white);
+}
+
+.MobilePageCamp .pageFrameView .headerText .switch a,
+.MobilePageCamp .pageFrameView .mobileLinks a {
+    color: var(--mhdm-blue);
+}
+
+
+
+/*  */
+
 .pageFrameView #mousehuntContainer.PageCamp {
     background: var(--mhdm-dark5);
-
 }
+
+/* .pageFrameView #mousehuntContainer.PageCamp .mousehuntHud-marbleDrawer {
+    background: url(https://www.mousehuntgame.com/images/ui/hud/suede.jpg?asset_cache_version=2) repeat-y;
+    background-size: 101% 101%;
+    background-position: center;
+} */
 
 .pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabContentContainer {
     background: var(--mhdm-tertiaryDark);
@@ -29,5 +54,4 @@
 
 .pageFrameView #mousehuntContainer.PageCamp .journal-detailLinkContainer * {
     color: var(--mhdm-blue);
-
 }
