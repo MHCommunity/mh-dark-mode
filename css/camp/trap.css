@@ -17,7 +17,7 @@
 
 .pageFrameView #mousehuntContainer.PageCamp .campPage-trap-armedItem.bait {
     background: var(--mhdm-dark5);
-    border: 2px solid var(--mhdm-dark6);
+    border: 1px solid var(--mhdm-dark6);
     box-shadow: none;
     width: 312px;
 }
@@ -63,12 +63,14 @@
     border: 0;
     box-shadow: none;
     background: var(--mhdm-dark6);
+    padding: 4px;
 }
 
 .pageFrameView #mousehuntContainer.PageCamp .campPage-trap-itemStats {
     background: var(--mhdm-tertiaryDark);
     border: 0;
     box-shadow: none;
+    margin-bottom: 4px;
 }
 
 .pageFrameView #mousehuntContainer.PageCamp .campPage-trap-itemStats .campPage-trap-trapStat .value {
