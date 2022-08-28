@@ -1,7 +1,7 @@
 {
     "name": "MouseHunt Dark Mode",
     "description": "Dark mode for MouseHunt's browser version",
-    "version": "0.0.2.3",
+    "version": "0.0.3",
     "manifest_version": 3,
     "permissions": [],
     "action": {
@@ -32,7 +32,9 @@
                 "css/inbox.css",
                 "css/team.css",
                 "css/marketplace.css",
-                "css/profile.css"
+                "css/profile.css",
+                "css/camp/trap.css",
+                "css/camp/journal.css"
             ]
         }
     ]

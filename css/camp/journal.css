@@ -1,0 +1,33 @@
+.pageFrameView #mousehuntContainer.PageCamp {
+    background: var(--mhdm-dark5);
+
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabContentContainer {
+    background: var(--mhdm-tertiaryDark);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabContent[data-tab=journal] {
+    background: transparent;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabHeader span {
+    background: var(--mhdm-dark4);
+    color: var(--mhdm-white);
+    border: none;
+    box-shadow: none;
+    opacity: 0.9;
+}
+
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabHeader.active span {
+    background: var(--mhdm-tertiaryDark);
+    opacity: 1;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .journal-detailLinkContainer * {
+    color: var(--mhdm-blue);
+
+}

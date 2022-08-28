@@ -1,0 +1,105 @@
+.pageFrameView #mousehuntContainer.PageCamp .trapImageView {
+    background: rgb(160, 160, 160) !important;
+    background: linear-gradient(180deg, rgba(160, 160, 160, 1) 0%, rgba(136, 136, 136, 1) 60%, rgba(66, 66, 66, 1) 90%) !important;
+    border: 2px solid var(--mhdm-dark7);
+    box-shadow: none !important;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-itemStats .campPage-trap-trapStat .value {
+    background: var(--mhdm-xlbrown);
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap {
+    border: 0;
+    box-shadow: none;
+    background: var(--mhdm-dark4);
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-armedItem.bait {
+    background: var(--mhdm-dark5);
+    border: 2px solid var(--mhdm-dark6);
+    box-shadow: none;
+    width: 312px;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-baitLabel {
+    color: var(--mhdm-brown);
+
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-baitDetails {
+    color: var(--mhdm-white);
+    text-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-armedItem.skin {
+    background: var(--mhdm-dark5);
+    border: 1px solid var(--mhdm-dark6);
+    box-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-armedItem.skin .campPage-trap-armedItem-image {
+    background: var(--mhdm-dark5);
+    border: 1px solid var(--mhdm-dark6);
+    box-shadow: none;
+    color: var(--mhdm-white);
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-armedItem-skin-description {
+    background: var(--mhdm-dark5);
+    border: 0;
+    box-shadow: none;
+    color: var(--mhdm-brown);
+    height: 35px;
+    width: 195px;
+    margin-top: 5px;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-armedItem-skin-description-content b {
+    color: var(--mhdm-white);
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-statsContainer {
+    border: 0;
+    box-shadow: none;
+    background: var(--mhdm-dark6);
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-itemStats {
+    background: var(--mhdm-tertiaryDark);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-itemStats .campPage-trap-trapStat .value {
+    background: var(--mhdm-dark5);
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-trapEffectiveness {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-trapEffectiveness span {
+    color: var(--mhdm-brown);
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-friendContainer .label,
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-friendContainer .campPage-trap-friendContainer-toggleFriendsButton {
+    color: var(--mhdm-white);
+}
+
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-friendContainer span {
+    color: var(--mhdm-brown);
+
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-friendContainer .campPage-trap-friendContainer-toggleFriendsButton-arrow {
+    border-color: var(--mhdm-white) transparent transparent transparent;
+}
