@@ -168,6 +168,10 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.8)
 }
 
+.pageFrameView #overlayContainer {
+    padding-top: 0px;
+}
+
 /* Treasure */
 
 .pageFrameView .treasureMapRootView {

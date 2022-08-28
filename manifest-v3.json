@@ -1,11 +1,9 @@
 {
     "name": "MouseHunt Dark Mode",
     "description": "Dark mode for MouseHunt's browser version",
-    "version": "0.0.2.1",
+    "version": "0.0.3.1",
     "manifest_version": 3,
-    "permissions": [
-        "scripting"
-    ],
+    "permissions": [],
     "action": {
         "default_popup": "ui/popup.html",
         "default_icons": {
@@ -33,10 +31,10 @@
                 "css/trap.css",
                 "css/inbox.css",
                 "css/team.css",
-                "css/marketplace.css"
-            ],
-            "js": [
-                "main.js"
+                "css/marketplace.css",
+                "css/profile.css",
+                "css/camp/trap.css",
+                "css/camp/journal.css"
             ]
         }
     ]
