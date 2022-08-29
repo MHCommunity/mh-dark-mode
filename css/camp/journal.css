@@ -32,6 +32,7 @@
     background: var(--mhdm-tertiaryDark);
     border: 0;
     box-shadow: none;
+    position: relative;
 }
 
 .pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabContent[data-tab=journal] {
@@ -78,16 +79,12 @@
 
 /* journal rows */
 
-.pageFrameView #mousehuntContainer.PageCamp .journal .content {
+.pageFrameView #mousehuntContainer.PageCamp .journal {
     position: relative
 }
 
-.pageFrameView #mousehuntContainer.PageCamp .journal .content .journalbody .journaltext {
-    font-size: 12px;
-    font-weight: normal;
-}
-
-.pageFrameView #mousehuntContainer.PageCamp .journal .content::before {
+.pageFrameView #mousehuntContainer.PageCamp .journal::before {
+    /* dimming filter on journal */
     content: "";
     position: absolute;
     height: 100%;
@@ -99,6 +96,11 @@
     background: rgba(0, 0, 0, 0.12);
     pointer-events: none;
     z-index: 1;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .journal .content .journalbody .journaltext {
+    font-size: 12px;
+    font-weight: normal;
 }
 
 /* .pageFrameView #mousehuntContainer.PageCamp .journal .content .catchfailure {
