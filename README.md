@@ -1,4 +1,4 @@
-Google Chrome / Firefox extension to override some of MouseHunt's browser CSS with a darker, more comfortable color palette
+Google Chrome / Firefox extension to override some of the game's CSS with a darker, more comfortable color palette
 
 Chrome Web Store link:
 
