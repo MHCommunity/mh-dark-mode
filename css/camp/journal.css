@@ -93,7 +93,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.12);
+    background: var(--mhdm-dimming-filter);
     pointer-events: none;
     z-index: 1;
 }

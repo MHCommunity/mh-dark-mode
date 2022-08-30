@@ -20,6 +20,8 @@
     --mhdm-brown: #e2d6b5;
     --mhdm-lbrown: #f4eee1;
     --mhdm-xlbrown: #f6f3eb;
+
+    --mhdm-dimming-filter: rgba(0, 0, 0, 0.12);
 }
 
 /*SCROLL BAR FOR NON BODY ELEMENTS*/
