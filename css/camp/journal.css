@@ -1,4 +1,4 @@
-/* mobile */
+/* mobile / simple camp */
 
 .MobilePageCamp .pageFrameView .pageFrameView-content {
     background: var(--mhdm-dark5);
@@ -16,9 +16,10 @@
 
 
 
-/*  */
+/* normal camp page */
 
-.pageFrameView #mousehuntContainer.PageCamp {
+.pageFrameView #mousehuntContainer.PageCamp,
+.pageFrameView #mousehuntContainer.PageJournal {
     background: var(--mhdm-dark5);
 }
 
@@ -64,7 +65,11 @@
     background-color: var(--mhdm-lbrown);
 }
 
-/* .pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner-goalPadding::before {
+.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner {
+    position: relative;
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -73,17 +78,19 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.15);
+    background: var(--mhdm-dimming-filter);
     pointer-events: none;
-} */
+    z-index: 1;
+}
 
-/* journal rows */
+/* journal */
 
 .pageFrameView #mousehuntContainer.PageCamp .journal {
     position: relative
 }
 
-.pageFrameView #mousehuntContainer.PageCamp .journal::before {
+.pageFrameView #mousehuntContainer.PageCamp .journal::before,
+.pageFrameView #mousehuntContainer.PageJournal .journal::before {
     /* dimming filter on journal */
     content: "";
     position: absolute;
@@ -101,6 +108,12 @@
 .pageFrameView #mousehuntContainer.PageCamp .journal .content .journalbody .journaltext {
     font-size: 12px;
     font-weight: normal;
+}
+
+/* fix transparent journal content bg for some themes with white child element */
+.pageFrameView #mousehuntContainer.PageCamp .journal .content .journalEntries,
+.pageFrameView #mousehuntContainer.PageJournal .journal .content .journalEntries {
+    background: var(--mhdm-journal-bg)
 }
 
 /* .pageFrameView #mousehuntContainer.PageCamp .journal .content .catchfailure {

@@ -1,4 +1,5 @@
-.pageFrameView #mousehuntContainer.PageCamp .gameHeader::before {
+.pageFrameView #mousehuntContainer.PageCamp .gameHeader::before,
+.pageFrameView #mousehuntContainer.PageJournal .gameHeader::before {
     /* dimming filter on game HUD */
     content: "";
     position: absolute;
