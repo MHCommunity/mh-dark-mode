@@ -11,5 +11,5 @@
     bottom: 0;
     background: var(--mhdm-dimming-filter);
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
 }

@@ -80,7 +80,7 @@
     bottom: 0;
     background: var(--mhdm-dimming-filter);
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* journal */
@@ -102,7 +102,7 @@
     bottom: 0;
     background: var(--mhdm-dimming-filter);
     pointer-events: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 .pageFrameView #mousehuntContainer.PageCamp .journal .content .journalbody .journaltext {

@@ -4,6 +4,7 @@
     --mhdm-xlgray: #e4e4e4;
     --mhdm-lgray: #c8c8c8;
     --mhdm-dgray: #9b9b9b;
+    --mhdm-darkest: #0f0f0f;
     --mhdm-mainDark: #1a1a1a;
     --mhdm-secondaryDark: #242424;
     --mhdm-tertiaryDark: #2e2e2e;
@@ -21,7 +22,8 @@
     --mhdm-lbrown: #f4eee1;
     --mhdm-xlbrown: #f6f3eb;
 
-    --mhdm-dimming-filter: rgba(0, 0, 0, 0.12);
+    --mhdm-dimming-filter: rgba(0, 0, 0, 0.1);
+    --mhdm-dimming-filter2: rgba(0, 0, 0, 0.05);
     --mhdm-journal-bg: #f5f5f5;
 }
 

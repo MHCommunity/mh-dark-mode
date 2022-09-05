@@ -2,6 +2,10 @@
     border-top: 0;
 }
 
+.pageFrameView .giftSelectorView-inbox-giftContainer {
+    background: var(--mhdm-darkest);
+}
+
 .pageFrameView .giftSelectorView-inboxHeader {
     background: var(--mhdm-mainDark);
     color: var(--mhdm-white);

@@ -1,7 +1,7 @@
 .pageFrameView #mousehuntContainer.PageCamp .trapImageView {
     background: rgb(160, 160, 160) !important;
-    background: linear-gradient(180deg, rgb(218, 218, 218) 0%, rgba(160, 160, 160, 1) 25%, rgba(136, 136, 136, 1) 65%, rgba(66, 66, 66, 1) 95%) !important;
-    border: 2px solid var(--mhdm-dark7);
+    background: linear-gradient(180deg, rgb(218, 218, 218) 0%, rgba(160, 160, 160, 1) 25%, rgba(136, 136, 136, 1) 65%, rgb(66, 66, 66) 95%) !important;
+    border: 2px solid var(--mhdm-dark6);
     box-shadow: none !important;
 }
 
@@ -62,7 +62,7 @@
 .pageFrameView #mousehuntContainer.PageCamp .campPage-trap-statsContainer {
     border: 0;
     box-shadow: none;
-    background: var(--mhdm-dark6);
+    background: var(--mhdm-dark5);
     padding: 4px;
 }
 

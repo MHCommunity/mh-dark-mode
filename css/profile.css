@@ -1,3 +1,22 @@
+/* .pageFrameView #mousehuntContainer.PageHunterProfile {
+    background: var(--mhdm-tertiaryDark);
+} */
+
+/* .pageFrameView #mousehuntContainer.PageHunterProfile::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--mhdm-dimming-filter2);
+    pointer-events: none;
+    z-index: 2;
+} */
+
+
 .pageFrameView .hunterInfoView-achievementsBlock .mousehuntTabContentContainer-padding {
     background: var(--mhdm-lbrown);
 }
