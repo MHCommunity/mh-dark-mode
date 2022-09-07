@@ -36,6 +36,11 @@
     border-top: 0;
 }
 
+.pageFrameView .giftSelectorView-inboxContainer .giftSelectorView-empty *,
+.pageFrameView .giftSelectorView-inboxContainer .giftSelectorView-empty {
+    color: var(--mhdm-white);
+}
+
 /* gift body */
 .pageFrameView .giftSelectorView-inbox-giftRow {
     background: var(--mhdm-secondaryDark);
