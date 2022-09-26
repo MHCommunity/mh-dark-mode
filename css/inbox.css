@@ -3,6 +3,11 @@
     background: var(--mhdm-mainDark) !important;
 }
 
+
+.pageFrameView #messengerUINotification * {
+    font-size: 13px !important;
+}
+
 .pageFrameView #messengerUINotification .notificationHeader {
     background-color: var(--mhdm-mainDark);
 }

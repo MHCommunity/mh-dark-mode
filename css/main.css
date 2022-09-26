@@ -95,6 +95,20 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     color: var(--mhdm-blue)
 }
 
+.pageFrameView .mousehuntHud-gameInfo {
+    background: var(--mhdm-secondaryDark);
+    border-right: 1px solid var(--mhdm-white);
+    padding-bottom: 3px;
+}
+
+.pageFrameView .mousehuntHud-gameInfo span {
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .mousehuntHud-gameInfo a {
+    color: var(--mhdm-blue)
+}
+
 /* Sidebar */
 .pageFrameView .pageSidebarView {
     background: var(--mhdm-secondaryDark);
@@ -168,13 +182,31 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 
 /* Overlay Modal */
 
-.pageFrameView #overlayBg {
-    background-image: none;
-    background: rgba(0, 0, 0, 0.8)
-}
-
 .pageFrameView #overlayContainer {
     padding-top: 0px;
+}
+
+.pageFrameView #overlayBg {
+    background-image: none;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.pageFrameView #overlayContainer #overlayBg {
+    /* position: relative; */
+}
+
+.pageFrameView #overlayContainer #overlayBg::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--mhdm-dimming-filter2);
+    pointer-events: none;
+    z-index: 96;
 }
 
 /* Treasure */
