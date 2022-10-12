@@ -24,6 +24,7 @@
 
     --mhdm-dimming-filter: rgba(0, 0, 0, 0.1);
     --mhdm-dimming-filter2: rgba(0, 0, 0, 0.05);
+    --mhdm-dimming-filter-max: rgba(0, 0, 0, 0.5);
     --mhdm-journal-bg: #f5f5f5;
 }
 
@@ -65,6 +66,24 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     background-image: none;
     background: var(--mhdm-mainDark);
     border-left-color: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .pageFrameView-column {
+    position: relative
+}
+
+.pageFrameView .pageFrameView-column::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--mhdm-dimming-filter-max);
+    pointer-events: none;
+    z-index: 96;
 }
 
 /* Header */
