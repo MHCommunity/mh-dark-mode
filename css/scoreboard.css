@@ -1,0 +1,52 @@
+/*** Scoreboards ***/
+/* .pageFrameView .tournamentPage-tournamentHeading {
+    color: var(--text-normal);
+}
+
+.pageFrameView .scoreboardTableView-content a {
+    color: var(--text-link);
+}
+
+.pageFrameView .scoreboardTableView-content {
+    background-color: var(--background-secondary);
+    border-color: var(--background-border);
+    box-shadow: none;
+}
+
+.pageFrameView .scoreboardTableView,
+.pageFrameView .scoreboardTableView-filters label,
+.pageFrameView .scoreboardTableView-table th {
+    color: var(--text-normal);
+}
+
+.pageFrameView .scoreboardTableView-header {
+    background-color: var(--background-secondary);
+    border-color: var(--background-border);
+    box-shadow: none;
+    color: var(--text-normal);
+}
+
+.pageFrameView .scoreboardTableView-header-title {
+    text-shadow: none;
+}
+
+.pageFrameView .scoreboardTableView-separator hr {
+    background-color: var(--background-border);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .scoreboardTableView-row.highlight {
+    color: var(--hg-default-grey);
+}
+
+.pageFrameView .scoreboardTableView-tournament {
+    border-color: var(--background-border);
+}
+
+.pageFrameView .scoreboardTableView-tournament-property b {
+    color: var(--text-normal);
+}
+
+.pageFrameView .scoreboardTableView-tournament-property span {
+    color: var(--text-muted);
+} */

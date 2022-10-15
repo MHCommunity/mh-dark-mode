@@ -1,0 +1,57 @@
+/* XELLIS */
+/* 
+.pageFrameView .mousehuntHud-page-tabContent.hasShop a {
+    color: var(--text-link);
+}
+
+.pageFrameView .itemPurchaseView-action-container {
+    background-color: var(--background-accent);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .shopsPage-compareEquipment {
+    background-color: var(--background-accent);
+    color: var(--text-normal);
+}
+
+.pageFrameView .shopsPage-header-container {
+    background-color: var(--background-accent);
+    box-shadow: none;
+    color: var(--text-normal);
+}
+
+.pageFrameView .itemPurchaseView-container {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .itemPurchaseView-action-itemCost-table {
+    background-color: var(--background-secondary);
+    border-color: var(--background-border);
+    color: var(--text-normal);
+}
+
+.pageFrameView .itemPurchaseView-container.kingsCartItem .itemPurchaseView-action-container {
+    box-shadow: -1px 2px 18px var(--background-primary) inset;
+}
+
+.pageFrameView .itemPurchaseView-action-itemCost-table-cell.owned {
+    color: var(--text-muted);
+}
+
+.pageFrameView .itemPurchaseView-container.kingsCartItem .itemPurchaseView-content-details:after {
+    display: none;
+}
+
+.pageFrameView .itemPurchaseView-container.kingsCartItem:not(.expanded) .itemPurchaseView-content-details {
+    -webkit-mask-image: linear-gradient(to bottom,
+            black 60%,
+            transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    height: 70px;
+}
+
+.pageFrameView .shopsPage-empty {
+    color: var(--text-normal);
+} */

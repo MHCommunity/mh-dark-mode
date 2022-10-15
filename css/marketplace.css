@@ -21,3 +21,158 @@
     background: var(--mhdm-dgray);
     color: var(--mhdm-black)
 }
+
+/* XELLIS DARK MODE */
+
+
+.pageFrameView .marketplaceView-header-tabHeader {
+    background-color: var(--background-floating);
+    color: var(--text-normal);
+}
+
+
+.pageFrameView .marketplaceView-header-tabHeader:hover,
+
+.pageFrameView .marketplaceView-header-tabHeader.active {
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+}
+
+
+.pageFrameView .marketplaceView .marketplaceContentContainer {
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+}
+
+
+.pageFrameView .marketplaceView .marketplaceContentContainer a {
+    color: var(--text-link);
+}
+
+.pageFrameView .marketplaceHome-blockItem-value {
+    color: var(--text-muted);
+}
+
+.pageFrameView .marketplaceHome-blockItem {
+    color: var(--text-normal);
+}
+
+.pageFrameView .marketplaceView h1 {
+    color: var(--text-normal);
+}
+
+.pageFrameView .marketplaceView label {
+    color: var(--text-normal);
+}
+
+.pageFrameView .marketplaceView .mousehuntActionButton {
+    box-shadow: none;
+}
+
+.pageFrameView .marketplaceView-trendContainer {
+    background-color: var(--background-primary);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .marketplaceView-item-graphTable .marketplaceView-trendContainer {
+    color: var(--text-normal);
+}
+
+.pageFrameView .marketplaceView-breadcrumb,
+.pageFrameView .marketplaceHome-block-viewAll,
+.pageFrameView .marketplaceHome-block-carousel .marketplaceHome-block-viewAll,
+.pageFrameView .marketplaceView-moreLink {
+    background-color: var(--background-primary);
+    border-color: var(--background-border);
+    color: var(--text-normal);
+}
+
+.pageFrameView .marketplaceHome-block-viewAll:hover,
+.pageFrameView .marketplaceView-moreLink:hover,
+.pageFrameView .marketplaceView-breadcrumb:hover {
+    background: var(--background-accent);
+}
+
+.pageFrameView .marketplaceView-table tr:nth-child(odd) {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+/* .pageFrameView .marketplaceView-table-numeric,
+.pageFrameView .marketplace-sidebar-tsitu {
+    text-shadow: -1px -1px 0 var(--background-secondary),
+        1px -1px 0 var(--background-secondary),
+        -1px 1px 0 var(--background-secondary),
+        1px 1px 0 var(--background-secondary);
+}
+
+.pageFrameView .marketplaceView-table tr:nth-child(odd) .marketplaceView-table-numeric {
+    text-shadow: -1px -1px 0 var(--background-primary),
+        1px -1px 0 var(--background-primary),
+        -1px 1px 0 var(--background-primary),
+        1px 1px 0 var(--background-primary);
+} */
+
+.pageFrameView .marketplaceView-table tr:hover {
+    background-color: var(--background-accent);
+}
+
+.pageFrameView .marketplaceView-table-filterReminder,
+.pageFrameView .marketplaceView-table-empty {
+    background-color: var(--background-secondary);
+}
+
+.pageFrameView .marketplaceView-cell-progressBar,
+.pageFrameView .marketplaceView-floatingTooltip {
+    color: var(--hg-default-grey);
+}
+
+.pageFrameView .marketplaceView-item-footer .marketplaceView-table {
+    background-color: var(--background-secondary);
+}
+
+.pageFrameView .marketplaceView-item-quickListings th {
+    color: var(--text-normal);
+}
+
+.pageFrameView .marketplaceView-table tr.empty {
+    background-color: var(--background-secondary) !important;
+}
+
+.pageFrameView .marketplaceView-browse-sidebar-link {
+    background-color: var(--background-primary);
+}
+
+.pageFrameView .mousehuntCharacterGuideBox-content {
+    background-color: var(--background-primary);
+}
+
+.pageFrameView .PageMarketplaceLegacy {
+    color: var(--text-normal);
+}
+
+.pageFrameView .PageMarketplaceLegacy h1 {
+    color: var(--text-normal);
+}
+
+.pageFrameView .marketplaceLegacyPage-table {
+    background-color: var(--background-secondary);
+    border-color: var(--background-border);
+    color: var(--text-normal);
+}
+
+.pageFrameView .marketplaceLegacyPage-table th {
+    background-color: var(--background-secondary);
+}
+
+.pageFrameView .marketplaceLegacyPage-table a {
+    color: var(--text-link);
+}
+
+.pageFrameView .marketplaceLegacyPage-table tr:nth-child(odd) {
+    background-color: var(--background-primary);
+}
+
+.pageFrameView .marketplaceView tr.locked .marketplaceView-table-name {
+    color: #000;
+}

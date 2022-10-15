@@ -1,0 +1,248 @@
+/*** Inventory ***/
+/* .pageFrameView .inventoryContent a {
+    color: var(--text-link);
+}
+
+.pageFrameView .itemImage .quantity {
+    color: var(--text-contrast);
+}
+
+.pageFrameView .inventoryPage-item {
+    color: var(--text-normal);
+}
+
+.pageFrameView .inventoryPage-tagContent-tagTitle {
+    color: var(--text-normal);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .inventoryPage-item-margin,
+.pageFrameView .inventoryPage-item.small .inventoryPage-item-margin {
+    border-color: var(--background-border);
+    background-color: var(--background-secondary);
+}
+
+.pageFrameView .inventoryPage-item-name {
+    border-color: var(--background-border);
+    background-color: var(--background-primary);
+}
+
+.pageFrameView .inventoryPage-tagDirectory {
+    color: var(--text-normal);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .inventoryPage-tagDirectory-tag {
+    background-color: var(--background-primary);
+}
+
+.pageFrameView .inventoryPage-item-recipeOptions li {
+    border-color: var(--background-border);
+    background-color: var(--background-accent);
+}
+
+.pageFrameView .inventoryPage-item-recipeOptions li.inactive {
+    background-color: var(--background-secondary);
+    color: var(--text-muted);
+    border-color: transparent;
+}
+
+.pageFrameView .inventoryPage-item-recipeOptions li.selected {
+    color: var(--text-muted);
+}
+
+.pageFrameView .inventoryPage-item-recipeOptions li:hover {
+    background-color: inherit;
+}
+
+.pageFrameView .inventoryPage-item-content-description-gameTasks {
+    background-color: var(--background-primary);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .inventoryPage-item.component .inventoryPage-item-imageContainer .itemImage {
+    border-color: var(--background-border);
+}
+
+.pageFrameView .inventoryPage-item-larryLexicon {
+    background-color: var(--background-secondary);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .itemViewStatBlock {
+    border-color: var(--background-border);
+}
+
+.pageFrameView .itemViewStatBlock-stat-label {
+    background-color: var(--background-secondary);
+}
+
+.pageFrameView .itemViewStatBlock-stat-value {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+.pageFrameView .itemViewStatBlock-stat {
+    border-color: var(--background-border);
+    background-color: var(--background-primary);
+}
+
+.pageFrameView .itemViewStatBlock-stat-helper {
+    background-color: var(--background-floating);
+    color: var(--text-normal);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .inventoryPage-item.small .tooltip {
+    background-color: var(--background-floating);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .inventoryPage-item.small .tooltip .arrow {
+    border-color: var(--background-border) transparent transparent transparent;
+}
+
+.pageFrameView .inventoryPage-item.small .tooltip .arrow span {
+    border-color: var(--background-floating) transparent transparent transparent;
+}
+
+.pageFrameView .mousehuntHud-page-subTabContent.trinket .mousehuntHud-page-subTabContent-prefix {
+    background-color: var(--background-primary);
+    box-shadow: none;
+    border-color: var(--background-border);
+    color: var(--text-normal);
+}
+
+.pageFrameView .mousehuntHud-page-subTabContent-prefix-title {
+    color: var(--text-normal);
+    text-shadow: none;
+}
+
+.pageFrameView .campPage-trap-itemBrowser-itemDescriptionHover {
+    background-color: var(--background-floating);
+    border-color: var(--background-border);
+    color: var(--text-normal);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-itemDescriptionHover.mousehuntTooltip.left .mousehuntTooltip-arrow {
+    border-color: transparent transparent transparent var(--background-border);
+}
+
+.pageFrameView .inventoryPage-item-name a abbr {
+    text-decoration: none;
+}
+
+/*** Crafting ***/
+/* .pageFrameView #overlayBg.crafting .suffix,
+.pageFrameView #overlayBg.crafting .content {
+    background-color: var(--background-primary);
+    border-color: var(--background-border);
+    color: var(--text-normal);
+}
+
+.pageFrameView #overlayBg.crafting .title {
+    color: var(--text-normal);
+}
+
+.pageFrameView #overlayBg.crafting .img .name {
+    color: var(--text-normal);
+}
+
+.pageFrameView #overlayBg.crafting .img .description {
+    color: var(--text-muted);
+}
+
+.pageFrameView .mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent {
+    background-color: var(--background-secondary);
+    border-color: var(--background-border);
+    box-shadow: none;
+    color: var(--text-normal);
+}
+
+.pageFrameView .mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent-margin {
+    background-color: var(--background-floating);
+    border-color: var(--background-border);
+    box-shadow: none;
+}
+
+.pageFrameView .inventoryPage-item.recipe.disabled {
+    background-color: var(--background-accent);
+}
+
+.pageFrameView .mousehuntHud-page-subTabContent.crafting_table .inventoryPage-craftingTable {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    border-color: var(--background-border);
+    box-shadow: none;
+}
+
+.pageFrameView .inventoryPage-craftingTable-title {
+    color: var(--text-normal);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .inventoryPage-craftingTable-slot-item.empty .inventoryPage-craftingTable-slot-item-name {
+    color: var(--text-normal);
+}
+
+.pageFrameView .inventoryPage-craftingTable-slot-item-remove,
+.pageFrameView .inventoryPage-craftingTable-slot-item .itemImage {
+    box-shadow: none;
+}
+
+.pageFrameView .inventoryPage-craftingTable-action {
+    background-color: var(--background-primary);
+    border-color: var(--background-border);
+} */
+
+/*** Detailed Item View ***/
+.pageFrameView .itemViewContainer {
+    background-color: var(--background-secondary);
+}
+
+.pageFrameView .itemView-header {
+    border-color: var(--background-border);
+}
+
+.pageFrameView .itemView-character-name {
+    color: var(--text-normal);
+    text-shadow: none;
+}
+
+.pageFrameView .itemView-padding {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .itemView-loading {
+    background-image: none;
+    background-color: rgb(0, 0, 0, 0.3);
+    box-shadow: none;
+}
+
+.pageFrameView .itemViewContainer a {
+    color: var(--text-link);
+}
+
+.pageFrameView a.itemView-sidebar-checklistItem.checked:hover {
+    background-color: var(--background-accent);
+}
+
+.pageFrameView .itemViewContainer .mousehuntActionButton {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.pageFrameView #overlayPopup.itemViewPopup .suffix {
+    background-color: var(--background-secondary);
+    border-color: var(--background-border);
+}
+
+.pageFrameView #overlayPopup.itemViewPopup .button {
+    border-color: var(--background-border);
+}
+
+.pageFrameView .itemViewContainer .itemView-obtainHint {
+    border-color: var(--background-border);
+}

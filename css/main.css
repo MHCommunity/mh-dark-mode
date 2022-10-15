@@ -26,6 +26,36 @@
     --mhdm-dimming-filter2: rgba(0, 0, 0, 0.05);
     --mhdm-dimming-filter-max: rgba(0, 0, 0, 0.5);
     --mhdm-journal-bg: #f5f5f5;
+
+    /* XELLIS DARK MODE VARS*/
+    --text-normal: var(--custom-text-normal, #dcddde);
+    --text-muted: var(--custom-text-muted, #a3a6aa);
+    --text-link: var(--mhdm-blue);
+    --text-positive: var(--custom-text-positive, hsl(139, 51.6%, 52.2%));
+    --text-danger: var(--custom-text-danger, hsl(359, 82%, 73.9%));
+    --background-primary: var(--mhdm-mainDark);
+    /* background color for most elements */
+    --background-secondary: var(--mhdm-secondaryDark);
+    /* should be darker than primary */
+    --background-accent: var(--mhdm-tertiaryDark);
+    /* should be lighter than primary */
+    --background-floating: var(--mhdm-dark4);
+    /* should be darker than secondary */
+    --text-contrast: var(--mhdm-dark5);
+    /* used in situations where darker text is needed */
+    --background-trap: var(--custom-background-trap, var(--background-secondary));
+    /* background behind trap art */
+    --background-outer: var(--custom-background-outer, var(--background-floating));
+
+    --background-outer-secondary: var(--custom-background-outer-secondary, #232429);
+    /* page background outside UI */
+    --background-border: var(--custom-background-border, var(--background-accent));
+    /* almost every border */
+    --loader-brightness: 0.2;
+    /* used to dim full page instances of the white loader mouse */
+    --hg-default-black: #000;
+    --hg-default-grey: #333;
+    --hg-default-white: #fff;
 }
 
 /*SCROLL BAR FOR NON BODY ELEMENTS*/
@@ -94,16 +124,19 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 
 .pageFrameView .mousehuntHeaderView-gameTabs {
     background: var(--mhdm-mainDark);
+    border-color: rgb(102, 102, 102);
 }
 
 .pageFrameView .mousehuntHeaderView .menuItem {
     background: var(--mhdm-secondaryDark);
-    color: var(--mhdm-white)
+    color: var(--mhdm-white);
+    border-color: rgb(102, 102, 102);
 }
 
 .pageFrameView .mousehuntHeaderView-newsTicker {
     background: var(--mhdm-secondaryDark);
-    color: var(--mhdm-white)
+    color: var(--mhdm-white);
+    border-color: rgb(102, 102, 102);
 }
 
 .pageFrameView .mousehuntHeaderView-newsTicker .label {
@@ -117,6 +150,7 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 .pageFrameView .mousehuntHud-gameInfo {
     background: var(--mhdm-secondaryDark);
     border-right: 1px solid var(--mhdm-white);
+    border-color: rgb(102, 102, 102);
     padding-bottom: 3px;
 }
 
@@ -271,3 +305,95 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 .pageFrameView .mouseListView-categoryContent:before {
     display: none;
 }
+
+
+/* XELLIS */
+
+/*** Common/Pagination ***/
+/* .pageFrameView .travelPage-map-pieces-row {
+    background-color: var(--hg-default-white);
+}
+
+.pageFrameView .mousehuntPage-content input[type='text'],
+.pageFrameView .mousehuntPage-content input[type='password'],
+.pageFrameView .mousehuntPage-content select,
+.pageFrameView .mousehuntPage-content textarea {
+    background-color: var(--background-primary);
+    border-color: var(--background-accent);
+    color: var(--text-normal);
+}
+
+.pageFrameView .mousehuntHud-page-subTabHeader-container {
+    color: var(--text-normal);
+}
+
+.pageFrameView .mousehuntHud-page-subTabHeader span {
+    background-color: var(--background-primary);
+    border-color: var(--background-border);
+    color: var(--text-normal);
+    box-shadow: none;
+}
+
+.pageFrameView .mousehuntHud-page-subTabHeader.active span,
+.pageFrameView .mousehuntHud-page-subTabHeader:hover span {
+    background-color: var(--background-accent);
+}
+
+.pageFrameView .mousehuntHud-page-tabHeader span {
+    background-color: var(--background-secondary);
+    box-shadow: none;
+    border-color: var(--background-border);
+    color: var(--text-normal);
+}
+
+.pageFrameView .mousehuntHud-page-tabHeader.active span,
+.pageFrameView .mousehuntHud-page-tabHeader:hover span {
+    border-color: var(--mhdm-dark5);
+    background-color: var(--mhdm-dark5);
+}
+
+.pageFrameView .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
+    border-right-color: var(--background-accent);
+}
+
+.pageFrameView .mousehuntHud-page-subTabHeader.empty span,
+.pageFrameView .mousehuntHud-page-subTabHeader.empty:hover span {
+    background-color: var(--background-secondary);
+    box-shadow: none;
+}
+
+.pageFrameView .pagerView-container {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+.pageFrameView .pagerView-section.previous .pagerView-link,
+.pageFrameView .pagerView-section.next .pagerView-link {
+    color: var(--text-muted);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .pagerView-section.previous.active .pagerView-link,
+.pageFrameView .pagerView-section.next.active .pagerView-link {
+    color: var(--text-link);
+    border-color: var(--background-border);
+}
+
+.pageFrameView .mousehuntPage-content input[type='submit'],
+.pageFrameView .mousehuntPage-content input[type='button'] {
+    border-color: var(--background-border);
+}
+
+.pageFrameView #mousehuntContainer.PageDraw .mousehuntHud-page-tabContentContainer {
+    background-color: var(--hg-default-white);
+}
+
+.pageFrameView .mousehuntHud-page-tabContent-loading,
+.pageFrameView .mousehuntHud-page-subTabContent-loading,
+.pageFrameView .campPage-trap-trapEffectivenessContainer .loading,
+.pageFrameView .campPage-trap-itemBrowser-armed .loading,
+.pageFrameView .campPage-trap-itemBrowser-items .loading,
+.pageFrameView .campPage-tabs-tabContent-loading,
+.pageFrameView .campPage-trap-friendList.loading .campPage-trap-friendList-loading {
+    filter: brightness(var(--loader-brightness));
+} */
