@@ -1,173 +1,192 @@
-/* .pageFrameView #mousehuntContainer.PageHunterProfile {
-    background: var(--mhdm-tertiaryDark);
-} */
+/* XELLIS DARK MODE */
 
-/* .pageFrameView #mousehuntContainer.PageHunterProfile::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--mhdm-dimming-filter2);
-    pointer-events: none;
-    z-index: 2;
-} */
+/* profile tabs */
 
-
-.pageFrameView .hunterInfoView-achievementsBlock .mousehuntTabContentContainer-padding {
-    background: var(--mhdm-lbrown);
+.PageHunterProfile .pageFrameView .mousehuntPage-content input[type='text'],
+.PageHunterProfile .pageFrameView .mousehuntPage-content input[type='password'],
+.PageHunterProfile .pageFrameView .mousehuntPage-content select,
+.PageHunterProfile .pageFrameView .mousehuntPage-content textarea {
+    background-color: var(--background-primary);
+    border-color: var(--background-accent);
+    color: var(--text-normal);
 }
 
-/* .pageFrameView .hunterInfoView-achievementsBlock .mousehuntTabContentContainer-padding {
-    background: var(--mhdm-tertiaryDark);
-    color: var(--mhdm-white);
-    border: 0;
+.PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader-container {
+    color: var(--text-normal);
+}
+
+.PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader span {
+    background-color: var(--background-primary);
+    border-color: var(--background-border);
+    color: var(--text-normal);
     box-shadow: none;
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound {
-    color: #e73c3c;
+.PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader.active span,
+.PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader:hover span {
+    background-color: var(--background-accent);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound-label {
-    color: #e73c3c;
-} */
+.PageHunterProfile .pageFrameView .mousehuntHud-page-tabHeader span {
+    background-color: var(--background-secondary);
+    box-shadow: none;
+    border-color: var(--background-border);
+    color: var(--text-normal);
+}
 
+.PageHunterProfile .pageFrameView .mousehuntHud-page-tabHeader.active span,
+.PageHunterProfile .pageFrameView .mousehuntHud-page-tabHeader:hover span {
+    border-color: var(--mhdm-dark5);
+    background-color: var(--mhdm-dark5);
+}
 
-/* XELLIS DARK MODE */
-/* 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-left a {
+.PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
+    border-right-color: var(--background-accent);
+}
+
+.PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader.empty span,
+.PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader.empty:hover span {
+    background-color: var(--background-secondary);
+    box-shadow: none;
+}
+
+.PageHunterProfile .pageFrameView .pageFrameView-content {
+    background: var(--mhdm-dark5);
+}
+
+.PageHunterProfile .mousehuntHud-page-subTabHeader-container {
+    padding-left: 10px;
+}
+
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-left a {
     color: var(--text-link);
 }
 
-.pageFrameView .messageBoardView-message {
-    background-color: var(--background-primary);
+.PageHunterProfile .pageFrameView .messageBoardView-message {
+    background-color: var(--mhdm-tertiaryDark);
     color: var(--text-normal);
 }
 
-.pageFrameView .messageBoardView-message.new {
+.PageHunterProfile .pageFrameView .messageBoardView-message.new {
     border-color: var(--background-border) !important;
 }
 
-.pageFrameView .messageBoardView-message-description {
+.PageHunterProfile .pageFrameView .messageBoardView-message-description {
     color: var(--text-muted);
 }
 
-.pageFrameView .hunterInfoView-wrapper .messageBoardView-title {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .messageBoardView-title {
     color: var(--text-muted);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-weapon {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-weapon {
     background-color: var(--background-trap);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-title-container {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-title-container {
     background-color: var(--background-primary);
     border-color: var(--background-border);
     box-shadow: none;
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-container {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-container {
     background-color: var(--background-primary);
     border-color: var(--background-border);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-title {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-title {
     color: var(--text-normal);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-container,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-setup-container,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-setup-items,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-footer-stats,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-footer {
-    background-color: var(--background-primary);
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-container,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-setup-container,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-setup-items,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-footer-stats,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-footer {
+    background-color: var(--mhdm-mainDark);
     border-color: var(--background-border);
     background-image: none;
     box-shadow: none;
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock {
     background-color: var(--background-secondary);
     border-color: var(--background-border);
     box-shadow: none;
 }
 
-.pageFrameView .PageHunterProfile .friendsPage-friendRow {
+.PageHunterProfile .pageFrameView .PageHunterProfile .friendsPage-friendRow {
     color: var(--text-normal);
     background-image: none;
 }
 
-.pageFrameView .PageHunterProfile .friendsProfileView-container {
+.PageHunterProfile .pageFrameView .PageHunterProfile .friendsProfileView-container {
     background-color: var(--background-secondary);
     color: var(--text-normal);
     border-color: var(--background-border);
     box-shadow: none;
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-hunterId {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-hunterId {
     background-color: var(--background-accent);
     color: var(--text-normal);
 }
 
-.pageFrameView .hunterInfoView-hunterId-copyConfirmText {
+.PageHunterProfile .pageFrameView .hunterInfoView-hunterId-copyConfirmText {
     color: var(--text-link);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats .hunterInfoView-idCardBlock-stats-item-desc {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats .hunterInfoView-idCardBlock-stats-item-desc {
     color: var(--text-muted);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container:before,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container .teamEmblemView,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-huntingSince,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-horn-container {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container:before,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container .teamEmblemView,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-huntingSince,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-horn-container {
     background-color: var(--background-primary);
     border-color: var(--background-border);
 }
 
-.pageFrameView .hunterInfoView-idCardBlock-teamInfo span {
+.PageHunterProfile .pageFrameView .hunterInfoView-idCardBlock-teamInfo span {
     color: var(--text-normal);
 }
 
-.pageFrameView .PageHunterProfile .friendsPage-friendRow-statsContainer {
+.PageHunterProfile .pageFrameView .PageHunterProfile .friendsPage-friendRow-statsContainer {
     box-shadow: none;
     color: var(--text-normal);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-goldenShield-text {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-goldenShield-text {
     color: var(--hg-default-grey);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock {
     border-color: var(--background-border);
     box-shadow: none;
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-header {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-header {
     background-image: none;
     background-color: var(--background-primary);
     border-color: var(--background-border);
     color: var(--text-normal);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-content-mouseLabel {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-content-mouseLabel {
     color: var(--text-normal);
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-body {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-body {
     background-image: none;
     background-color: var(--background-secondary);
     border-color: var(--background-border);
     color: var(--text-normal);
 }
 
-.pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader span {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader span {
     background-color: var(--background-floating);
     border-color: var(--background-primary);
     color: var(--text-normal);
@@ -175,201 +194,220 @@
     text-shadow: none;
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabHeader:before,
-.pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader:before,
-.pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader.active span,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabHeader:hover span {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabHeader:before,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader:before,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader.active span,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabHeader:hover span {
     background-color: var(--background-primary);
     box-shadow: none;
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabContentContainer {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabContentContainer {
     background-color: var(--background-primary);
     border-color: var(--background-border);
     color: var(--text-normal);
     box-shadow: none;
 }
 
-.pageFrameView .hunterInfoView-achievementsBlock .mousehuntTabContentContainer-padding {
+.PageHunterProfile .pageFrameView .hunterInfoView-achievementsBlock .mousehuntTabContentContainer-padding {
     background-color: var(--background-accent);
     border-color: var(--background-border);
     box-shadow: none;
 }
 
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound-label,
-.pageFrameView .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound-label,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound {
     color: var(--text-normal);
 }
 
-.pageFrameView .hunterInfoView-wrapper .journalEntries {
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .journalEntries {
     background-color: var(--hg-default-white);
 }
 
 /*** Crowns ***/
-/* .pageFrameView .mouseCrownsView-group {
+.PageHunterProfile .pageFrameView .mouseCrownsView-group {
     color: var(--text-normal);
 }
 
-.pageFrameView .mouseCrownsView-group-header-subtitle {
+.PageHunterProfile .pageFrameView .mouseCrownsView-group-header-subtitle {
     color: var(--text-normal);
 }
 
-.pageFrameView .mouseCrownsView-group-mouse.highlight .mouseCrownsView-group-mouse-name,
-.pageFrameView .mouseCrownsView-group-mouse:not(.favourite) .mouseCrownsView-group-mouse-name {
+.PageHunterProfile .pageFrameView .mouseCrownsView-group-mouse.highlight .mouseCrownsView-group-mouse-name,
+.PageHunterProfile .pageFrameView .mouseCrownsView-group-mouse:not(.favourite) .mouseCrownsView-group-mouse-name {
     color: var(--text-normal);
 }
 
-.pageFrameView .mouseCrownsView-group-mouse:hover .mouseCrownsView-group-mouse-padding {
+.PageHunterProfile .pageFrameView .mouseCrownsView-group-mouse:hover .mouseCrownsView-group-mouse-padding {
     background-color: var(--background-primary);
-} */
+}
 
 /*** Profile Items ***/
-/* .pageFrameView .hunterProfileItemsView-category {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-category {
     filter: invert(1);
 }
 
-.pageFrameView .hunterProfileItemsView-category>div {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-category>div {
     color: var(--text-link);
     filter: invert(1);
 }
 
-.pageFrameView .hunterProfileItemsView-category.active {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-category.active {
     filter: none;
 }
 
-.pageFrameView .hunterProfileItemsView-category.active>div {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-category.active>div {
     color: var(--text-normal);
     filter: none;
 }
 
-.pageFrameView .hunterProfileItemsView-categoryContent-name {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-categoryContent-name {
     color: var(--text-normal);
 }
 
-.pageFrameView .hunterProfileItemsView-content-padding {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-content-padding {
     background-color: var(--background-secondary);
     color: var(--text-normal);
 }
 
-.pageFrameView .hunterProfileItemsView-content-padding a {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-content-padding a {
     color: var(--text-link);
 }
 
-.pageFrameView .hunterProfileItemsView-categoryContent-item-padding {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-categoryContent-item-padding {
     border-color: var(--background-border);
 }
 
-.pageFrameView .hunterProfileItemsView-categoryContent-item.uncollected .hunterProfileItemsView-categoryContent-item-padding {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-categoryContent-item.uncollected .hunterProfileItemsView-categoryContent-item-padding {
     color: var(--text-muted);
     background-color: var(--background-accent);
 }
 
-.pageFrameView .hunterProfileItemsView-filter:hover {
+.PageHunterProfile .pageFrameView .hunterProfileItemsView-filter:hover {
     background-color: var(--background-accent);
-} */
+}
 
 /*** Mice ***/
-.pageFrameView .mouseViewPopup .content {
+.PageHunterProfile .pageFrameView .mouseViewPopup .content {
     background-color: var(--background-secondary);
     color: var(--text-normal);
 }
 
-.pageFrameView .mouseViewPopup .mouseView-title {
+.PageHunterProfile .pageFrameView .mouseViewPopup .mouseView-title {
     color: var(--text-normal);
 }
 
-.pageFrameView .mouseViewPopup .mouseView-statsContainer-block {
+.PageHunterProfile .pageFrameView .mouseViewPopup .mouseView-statsContainer-block {
     background-color: var(--background-primary);
 }
 
-.pageFrameView .mouseView-categoryContent-subgroup-mouse-weaknesses-label {
+.PageHunterProfile .pageFrameView .mouseView-categoryContent-subgroup-mouse-weaknesses-label {
     border-color: var(--background-border);
 }
 
-.pageFrameView .mouseViewPopup a {
+.PageHunterProfile .pageFrameView .mouseViewPopup a {
     color: var(--link-text);
 }
 
-.pageFrameView #overlayPopup.mouseViewPopup .suffix {
+.PageHunterProfile .pageFrameView #overlayPopup.mouseViewPopup .suffix {
     background-color: var(--background-secondary);
     border-color: var(--background-border);
 }
 
-.pageFrameView .mouseViewPopup .mouseView-image {
+.PageHunterProfile .pageFrameView .mouseViewPopup .mouseView-image {
     background-color: var(--background-accent);
 }
 
-/* 
-.pageFrameView .mouseListView-category {
+
+.PageHunterProfile .pageFrameView .mouseListView-category {
     filter: invert(1);
 }
 
-.pageFrameView .mouseListView-category>div {
+.PageHunterProfile .pageFrameView .mouseListView-category>div {
     color: var(--text-link);
     filter: invert(1);
 }
 
-.pageFrameView .mouseListView-categoryContainer.active .mouseListView-category {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContainer.active .mouseListView-category {
     filter: none;
 }
 
-.pageFrameView .mouseListView-categoryContainer.active .mouseListView-category>div {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContainer.active .mouseListView-category>div {
     color: var(--text-normal);
     filter: none;
 }
 
-.pageFrameView .mouseListView-subcategory {
+.PageHunterProfile .pageFrameView .mouseListView-subcategory {
     background-color: var(--background-secondary);
     border-color: var(--background-border);
     color: var(--text-link);
 }
 
-.pageFrameView .mouseListView-categoryContent-category {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContent-category {
     background-color: var(--background-secondary);
     color: var(--text-normal);
 }
 
-.pageFrameView .mouseListView-categoryContent-category a {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContent-category a {
     color: var(--text-link);
 }
 
-.pageFrameView .mouseListView-categoryContent-subgroup-name {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContent-subgroup-name {
     background-color: var(--background-primary);
     color: var(--text-normal);
 }
 
-.pageFrameView .mouseListView-categoryContent-name {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContent-name {
     color: var(--text-normal);
 }
 
-.pageFrameView .adversariesPage-list-header {
+.PageHunterProfile .pageFrameView .adversariesPage-list-header {
     background-color: var(--background-secondary);
     box-shadow: none;
 }
 
-.pageFrameView .adversariesPage-list-header label {
+.PageHunterProfile .pageFrameView .adversariesPage-list-header label {
     color: var(--text-normal);
 }
 
-.pageFrameView .mouseListView-categoryContent-weaknessesContainer {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContent-weaknessesContainer {
     background-color: var(--background-primary);
     border-color: var(--background-border);
     color: var(--text-normal);
 }
 
-.pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats.header {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats.header {
     background-color: var(--background-accent) !important;
 }
 
-.pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats:nth-child(odd) {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats:nth-child(odd) {
     background-color: var(--background-primary);
 }
 
-.pageFrameView .mouseListView-categoryContent-filter-option {
+.PageHunterProfile .pageFrameView .mouseListView-categoryContent-filter-option {
     background-color: var(--background-primary);
 }
 
-.pageFrameView .personal_info,
-.pageFrameView .game_settings {
+.PageHunterProfile .pageFrameView .personal_info,
+.PageHunterProfile .pageFrameView .game_settings {
     color: var(--text-normal);
-} */
+}
+
+/* pagination */
+
+.PageHunterProfile .pageFrameView .pagerView-container {
+    background-color: var(--mhdm-tertiaryDark);
+    color: var(--text-normal);
+}
+
+.PageHunterProfile .pageFrameView .pagerView-section.previous .pagerView-link,
+.PageHunterProfile .pageFrameView .pagerView-section.next .pagerView-link {
+    color: var(--text-muted);
+    border-color: var(--background-border);
+}
+
+.PageHunterProfile .pageFrameView .pagerView-section.previous.active .pagerView-link,
+.PageHunterProfile .pageFrameView .pagerView-section.next.active .pagerView-link {
+    color: var(--text-link);
+    border-color: var(--background-border);
+}
