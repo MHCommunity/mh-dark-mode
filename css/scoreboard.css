@@ -1,5 +1,62 @@
-/*** Scoreboards ***/
-/* .pageFrameView .tournamentPage-tournamentHeading {
+/*** Xellis Scoreboards ***/
+
+/* scoreboard tabs */
+
+.PageScoreboards .pageFrameView .mousehuntPage-content input[type='text'],
+.PageScoreboards .pageFrameView .mousehuntPage-content input[type='password'],
+.PageScoreboards .pageFrameView .mousehuntPage-content select,
+.PageScoreboards .pageFrameView .mousehuntPage-content textarea {
+    background-color: var(--background-primary);
+    border-color: var(--background-accent);
+    color: var(--text-normal);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader-container {
+    color: var(--text-normal);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader span {
+    background-color: var(--background-primary);
+    border-color: var(--background-border);
+    color: var(--text-normal);
+    box-shadow: none;
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader.active span,
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader:hover span {
+    background-color: var(--background-accent);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-tabHeader span {
+    background-color: var(--background-secondary);
+    box-shadow: none;
+    border-color: var(--background-border);
+    color: var(--text-normal);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-tabHeader.active span,
+.PageScoreboards .pageFrameView .mousehuntHud-page-tabHeader:hover span {
+    border-color: var(--mhdm-dark5);
+    background-color: var(--mhdm-dark5);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
+    border-right-color: var(--background-accent);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader.empty span,
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader.empty:hover span {
+    background-color: var(--background-secondary);
+    box-shadow: none;
+}
+
+.PageScoreboards .pageFrameView .pageFrameView-content {
+    background: var(--mhdm-dark5);
+}
+
+/* scoreboard content */
+
+.pageFrameView .tournamentPage-tournamentHeading {
     color: var(--text-normal);
 }
 
@@ -49,4 +106,22 @@
 
 .pageFrameView .scoreboardTableView-tournament-property span {
     color: var(--text-muted);
-} */
+}
+
+/* pagination */
+.PageScoreboards .pageFrameView .pagerView-container {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+}
+
+.PageScoreboards .pageFrameView .pagerView-section.previous .pagerView-link,
+.PageScoreboards .pageFrameView .pagerView-section.next .pagerView-link {
+    color: var(--text-muted);
+    border-color: var(--background-border);
+}
+
+.PageScoreboards .pageFrameView .pagerView-section.previous.active .pagerView-link,
+.PageScoreboards .pageFrameView .pagerView-section.next.active .pagerView-link {
+    color: var(--text-link);
+    border-color: var(--background-border);
+}

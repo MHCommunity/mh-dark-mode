@@ -75,8 +75,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     background: #8a8a8a;
 }
 
-/*Non-JS overrides*/
-
 /* Container */
 .pageFrameView .pageFrameView-content {
     background: var(--mhdm-lbrown);
@@ -294,8 +292,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     background: var(--mhdm-brown)
 }
 
-
-
 /* mice list */
 
 .pageFrameView .mouseListView-categoryContent-category {
@@ -310,6 +306,7 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 /* XELLIS */
 
 /*** Common/Pagination ***/
+
 /* .pageFrameView .travelPage-map-pieces-row {
     background-color: var(--hg-default-white);
 }
