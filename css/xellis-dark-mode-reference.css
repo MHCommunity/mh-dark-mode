@@ -30,34 +30,34 @@ url-prefix("http://www.mousehuntgame.com") {
 
     /* Main */
     :root {
-        --text-normal: var(--custom-text-normal, #dcddde);
-        --text-muted: var(--custom-text-muted, #a3a6aa);
-        --text-link: var(--custom-text-link, hsl(197, 100%, 47.8%));
-        --text-positive: var(--custom-text-positive, hsl(139, 51.6%, 52.2%));
-        --text-danger: var(--custom-text-danger, hsl(359, 82%, 73.9%));
-        --background-primary: var(--custom-background-primary, #36393f);
+        --mhdm-text-normal: var(--custom-text-normal, #dcddde);
+        --mhdm-text-muted: var(--custom-text-muted, #a3a6aa);
+        --mhdm-text-link: var(--custom-text-link, hsl(197, 100%, 47.8%));
+        --mhdm-text-positive: var(--custom-text-positive, hsl(139, 51.6%, 52.2%));
+        --mhdm-text-danger: var(--custom-text-danger, hsl(359, 82%, 73.9%));
+        --mhdm-mainDark: var(--custom-background-primary, #36393f);
         /* background color for most elements */
-        --background-secondary: var(--custom-background-secondary, #2f3136);
+        --mhdm-secondaryDark: var(--custom-background-secondary, #2f3136);
         /* should be darker than primary */
-        --background-accent: var(--custom-background-accent, #4f545c);
+        --mhdm-tertiaryDark: var(--custom-background-accent, #4f545c);
         /* should be lighter than primary */
-        --background-floating: var(--custom-background-floating, #18191c);
+        --mhdm-dark4: var(--custom-background-floating, #18191c);
         /* should be darker than secondary */
-        --text-contrast: var(--custom-text-contrast, #4f545c);
+        --mhdm-dark5: var(--custom-text-contrast, #4f545c);
         /* used in situations where darker text is needed */
-        --background-trap: var(--custom-background-trap, var(--background-secondary));
+        --mhdm-secondaryDark: var(--custom-background-trap, var(--mhdm-secondaryDark));
         /* background behind trap art */
-        --background-outer: var(--custom-background-outer, var(--background-floating));
+        --mhdm-dark4: var(--custom-background-outer, var(--mhdm-dark4));
 
-        --background-outer-secondary: var(--custom-background-outer-secondary, #232429);
+        --mhdm-dark4-secondary: var(--custom-background-outer-secondary, #232429);
         /* page background outside UI */
-        --background-border: var(--custom-background-border, var(--background-accent));
+        --mhdm-tertiaryDark: var(--custom-background-border, var(--mhdm-tertiaryDark));
         /* almost every border */
-        --loader-brightness: 0.2;
+        --mhdm-loader-brightness: 0.2;
         /* used to dim full page instances of the white loader mouse */
-        --hg-default-black: #000;
-        --hg-default-grey: #333;
-        --hg-default-white: #fff;
+        --mhdm-default-black: #000;
+        --mhdm-default-grey: #333;
+        --mhdm-default-white: #fff;
         /* for resetting various things back to hg defaults */
     }
 
@@ -74,124 +74,124 @@ url-prefix("http://www.mousehuntgame.com") {
     /*** General/Outer HUD ***/
     .pageSidebarView a,
     .pageFrameView-footer a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     body.hasSidebar {
-        background-color: var(--background-outer);
+        background-color: var(--mhdm-dark4);
     }
 
     body.PageTermsOfService .tos,
     body.PagePrivacyPolicy .tos {
-        background-color: var(--hg-default-white);
-        color: var(--hg-default-grey);
+        background-color: var(--mhdm-default-white);
+        color: var(--mhdm-default-grey);
         padding: 5px;
     }
 
     .pageFrameView-column.left,
     .pageFrameView-column.right {
         background-image: none;
-        background-color: var(--background-outer);
-        border-color: var(--background-outer-secondary);
+        background-color: var(--mhdm-dark4);
+        border-color: var(--mhdm-dark4-secondary);
     }
 
     #mousehuntContainer.PageCamp {
-        box-shadow: inset 0px 0px 0px 1px var(--background-border);
+        box-shadow: inset 0px 0px 0px 1px var(--mhdm-tertiaryDark);
         /* darkens the 1px line on either side of the camp background image */
     }
 
     .pageFrameView-content {
-        background-color: var(--background-outer-secondary);
+        background-color: var(--mhdm-dark4-secondary);
     }
 
     .pageFrameView-contentContainer {
-        background-color: var(--background-outer-secondary);
+        background-color: var(--mhdm-dark4-secondary);
     }
 
     .mousehuntHeaderView {
-        background-color: var(--background-outer-secondary);
+        background-color: var(--mhdm-dark4-secondary);
     }
 
     .mousehuntHeaderView-gameTabs,
     .mousehuntHeaderView .menuItem {
         background-image: none;
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
         box-shadow: none;
-        border-color: var(--background-border);
-        background-color: var(--background-primary);
+        border-color: var(--mhdm-tertiaryDark);
+        background-color: var(--mhdm-mainDark);
     }
 
     .mousehuntHud-gameInfo {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntHud-gameInfo a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .mousehuntHeaderView-newsTicker .label {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntHeaderView-newsTicker a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .mousehuntHeaderView-newsTicker {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .pageSidebarView {
-        background-color: var(--background-outer-secondary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-dark4-secondary);
+        color: var(--mhdm-text-normal);
     }
 
     .pageSidebarView .fb-page {
-        background-color: var(--background-outer);
-        color: var(--text-muted);
+        background-color: var(--mhdm-dark4);
+        color: var(--mhdm-text-muted);
         border-color: transparent;
         height: auto;
     }
 
     .pageSidebarView-user {
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntHeaderView .dropdownContent {
-        background-color: var(--background-floating);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-dark4);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntHeaderView .dropdownContent a,
     .mousehuntHeaderView .dropdownContent a span {
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .scoreboardRelativeRankingTableView-table tr.highlight {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .scoreboardRelativeRankingTableView-table {
         border: none;
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     /*** Camp ***/
     .campPage-trap {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .campPage-trap .trapImageView {
-        background-color: var(--background-trap);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-armedItem {
@@ -199,240 +199,240 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .campPage-trap-armedItem.bait {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .campPage-trap-armedItem.bait .campPage-trap-armedItem-image {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-armedItem .quantity span {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
         box-shadow: none;
     }
 
     .campPage-trap-baitLabel {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .campPage-trap-baitDetails {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
         text-shadow: none;
     }
 
     .campPage-trap-armedItem.skin {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .campPage-trap-armedItem-empty {
-        background-color: var(--background-primary);
-        color: var(--text-muted);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-muted);
     }
 
     .campPage-trap-armedItem-skin-description {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-armedItem-skin-description-content b {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .campPage-trap-armedItem.skin .campPage-trap-armedItem-skin-description-content span {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-armedItem-image {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-armedItem.inactive {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .campPage-trap-armedItem.active {
-        box-shadow: -1px -1px 1px var(--background-secondary) inset,
-            2px 2px 8px var(--background-accent);
+        box-shadow: -1px -1px 1px var(--mhdm-secondaryDark) inset,
+            2px 2px 8px var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-statsContainer {
         box-shadow: none;
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-itemStats {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .campPage-trap-trapStat .value {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-trapStat .math {
-        background-color: var(--background-floating);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-dark4);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .campPage-trap-trapStat .math .arrow {
-        border-color: var(--background-border) transparent transparent transparent;
+        border-color: var(--mhdm-tertiaryDark) transparent transparent transparent;
     }
 
     .campPage-trap-trapStat .math .arrow span {
-        border-color: var(--background-floating) transparent transparent transparent;
+        border-color: var(--mhdm-dark4) transparent transparent transparent;
     }
 
     .campPage-trap-trapEffectiveness {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .campPage-trap-trapEffectiveness span {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-friendContainer .label {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .campPage-trap-friendContainer span {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-friendContainer-toggleFriendsButton {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-friendContainer-toggleFriendsButton-arrow {
-        border-color: var(--text-normal) transparent transparent transparent;
+        border-color: var(--mhdm-text-normal) transparent transparent transparent;
     }
 
     .campPage-trap-friendContainer.full .campPage-trap-friendContainer-toggleFriendsButton-arrow {
-        border-color: transparent transparent var(--text-normal) transparent;
+        border-color: transparent transparent var(--mhdm-text-normal) transparent;
     }
 
     .campPage-trap-friendList.full {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
-        box-shadow: 0 0 3px var(--background-border) inset;
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
+        box-shadow: 0 0 3px var(--mhdm-tertiaryDark) inset;
     }
 
     .campPage-trap-friendContainer-environment a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .campPage-tabs-tabHeader span {
-        background-color: var(--background-secondary);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .campPage-tabs-tabHeader.active span {
-        background-color: var(--background-primary);
-        border-bottom-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
+        border-bottom-color: var(--mhdm-mainDark);
     }
 
     .campPage-tabs-tabRow:hover .campPage-tabs-tabHeader span {
-        border-bottom-color: var(--background-border);
-        background-color: var(--background-secondary);
+        border-bottom-color: var(--mhdm-tertiaryDark);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .campPage-tabs-tabRow .campPage-tabs-tabHeader:hover span {
-        border-bottom-color: var(--background-primary);
-        background-color: var(--background-primary);
+        border-bottom-color: var(--mhdm-mainDark);
+        background-color: var(--mhdm-mainDark);
     }
 
     .campPage-tabs-tabContentContainer {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
         box-shadow: none;
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-tabs-tabContent[data-tab='journal'] {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .adventureBookBanner-adventureName {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
     }
 
     .journal-detailLinkContainer a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     /*** Trap Selector ***/
     .campPage-trap-itemBrowser-favorite-item-image-quantity {
-        color: var(--text-contrast);
+        color: var(--mhdm-dark5);
     }
 
     .campPage-trap-itemBrowser-item-powerType:after {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .cannotDisarm .campPage-trap-itemBrowser-item-armButton {
-        color: var(--hg-default-black);
+        color: var(--mhdm-default-black);
     }
 
     .armed .campPage-trap-itemBrowser-item-armButton {
-        color: var(--hg-default-white);
+        color: var(--mhdm-default-white);
     }
 
     .campPage-trap-itemBrowser-armed-item-content .campPage-trap-itemBrowser-item-disarmButton {
-        color: var(--hg-default-white);
+        color: var(--mhdm-default-white);
     }
 
     .campPage-trap-itemBrowser-armed-label {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-itemBrowser-tagGroup-name {
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-itemBrowser-tagGroup-empty {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .empty .campPage-trap-itemBrowser-favorite-item-image {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .campPage-trap-itemBrowser-favorite-item-image-frame {
         box-shadow: none;
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-itemBrowser-armed,
     .campPage-trap-itemBrowser-itemContainer,
     .campPage-trap-itemBrowser-favorites {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
         box-shadow: none;
     }
 
     .campPage-trap-itemBrowser-armed-item,
     .campPage-trap-itemBrowser-item {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-itemBrowser-item-statContainer {
@@ -440,84 +440,84 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .campPage-trap-itemBrowser-item-stat .value span {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-itemBrowser-item-stat {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .campPage-trap-itemBrowser-item-stat.worse .value span {
-        color: var(--text-danger);
+        color: var(--mhdm-text-danger);
     }
 
     .campPage-trap-itemBrowser-item-stat.better .value span {
-        color: var(--text-positive);
+        color: var(--mhdm-text-positive);
     }
 
     .campPage-trap-trapEffectivenessContainer {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .campPage-trap-trapEffectiveness-header {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-trapEffectiveness-difficultyGroup-label {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-trapEffectiveness-difficultyGroup {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-trapEffectiveness-mouse {
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-trapEffectiveness-mouse:hover {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .campPage-trap-blueprint-closeButton {
-        background-color: var(--background-secondary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-blueprintContainer input[type='text'],
     .campPage-trap-blueprintContainer select {
-        background-color: var(--background-primary);
-        border-color: var(--background-accent);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-quests-container {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
         box-shadow: none;
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-quests-title {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-quests-objective-container {
-        border-color: var(--background-border);
-        background-color: var(--background-primary);
+        border-color: var(--mhdm-tertiaryDark);
+        background-color: var(--mhdm-mainDark);
     }
 
     .campPage-quests-objective-container.complete {
-        border-color: var(--text-positive);
+        border-color: var(--mhdm-text-positive);
         background: #606d5e
     }
 
     .campPage-quests-objective-progressBar {
-        border-color: var(--background-border);
-        background-color: var(--background-accent);
+        border-color: var(--mhdm-tertiaryDark);
+        background-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
@@ -527,10 +527,10 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .campPage-quests-footer-smash {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-quests-footer-smash>div {
@@ -546,35 +546,35 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .campPage-tabs-tabContent-larryTip-container {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
         box-shadow: none;
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-tabs-tabContent-larryTip-container a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .campPage-tabs-tabContent-larryTip-environment {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .PageCamp .pagerView-container {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
     }
 
     .PageCamp .pagerView-section.previous .pagerView-link,
     .PageCamp .pagerView-section.next .pagerView-link {
-        color: var(--text-muted);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-muted);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .PageCamp .pagerView-section.previous.active .pagerView-link,
     .PageCamp .pagerView-section.next.active .pagerView-link {
-        color: var(--text-link);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-link);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .PageCamp .mousehuntHud-page-tabContent-loading,
@@ -584,7 +584,7 @@ url-prefix("http://www.mousehuntgame.com") {
     .PageCamp .campPage-trap-itemBrowser-items .loading,
     .PageCamp .campPage-tabs-tabContent-loading,
     .PageCamp .campPage-trap-friendList.loading .campPage-trap-friendList-loading {
-        filter: brightness(var(--loader-brightness));
+        filter: brightness(var(--mhdm-loader-brightness));
     }
 
     /*** Journal ***/
@@ -593,82 +593,82 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .journal .entry {
-        color: var(--hg-default-grey);
+        color: var(--mhdm-default-grey);
     }
 
     /*** Common/Pagination ***/
     .travelPage-map-pieces-row {
-        background-color: var(--hg-default-white);
+        background-color: var(--mhdm-default-white);
     }
 
     .mousehuntPage-content input[type='text'],
     .mousehuntPage-content input[type='password'],
     .mousehuntPage-content select,
     .mousehuntPage-content textarea {
-        background-color: var(--background-primary);
-        border-color: var(--background-accent);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntHud-page-subTabHeader-container {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntHud-page-subTabHeader span {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
         box-shadow: none;
     }
 
     .mousehuntHud-page-subTabHeader.active span,
     .mousehuntHud-page-subTabHeader:hover span {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .mousehuntHud-page-tabHeader span {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
         box-shadow: none;
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntHud-page-tabHeader.active span,
     .mousehuntHud-page-tabHeader:hover span {
-        border-color: var(--background-border);
-        background-color: var(--background-primary);
+        border-color: var(--mhdm-tertiaryDark);
+        background-color: var(--mhdm-mainDark);
     }
 
     .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
-        border-right-color: var(--background-accent);
+        border-right-color: var(--mhdm-tertiaryDark);
     }
 
     .mousehuntHud-page-subTabHeader.empty span,
     .mousehuntHud-page-subTabHeader.empty:hover span {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
         box-shadow: none;
     }
 
     .pagerView-container {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
     }
 
     .pagerView-section.previous .pagerView-link,
     .pagerView-section.next .pagerView-link {
-        color: var(--text-muted);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-muted);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .pagerView-section.previous.active .pagerView-link,
     .pagerView-section.next.active .pagerView-link {
-        color: var(--text-link);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-link);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .mousehuntPage-content input[type='submit'],
     .mousehuntPage-content input[type='button'] {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     #overlayBg {
@@ -677,7 +677,7 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     #mousehuntContainer.PageDraw .mousehuntHud-page-tabContentContainer {
-        background-color: var(--hg-default-white);
+        background-color: var(--mhdm-default-white);
     }
 
     .mousehuntHud-page-tabContent-loading,
@@ -687,73 +687,73 @@ url-prefix("http://www.mousehuntgame.com") {
     .campPage-trap-itemBrowser-items .loading,
     .campPage-tabs-tabContent-loading,
     .campPage-trap-friendList.loading .campPage-trap-friendList-loading {
-        filter: brightness(var(--loader-brightness));
+        filter: brightness(var(--mhdm-loader-brightness));
     }
 
     /*** Inbox ***/
     #messengerUINotification {
-        background-color: var(--background-primary) !important;
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark) !important;
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     #messengerUINotification .notificationMessageList {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .notificationMessageList .message {
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .notificationMessageList .message a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .notificationMessageList .message .date {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .notificationMessageList .message:nth-child(2n + 1) {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .notificationMessageList .message:nth-child(2n) {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .notificationMessageList .message img.item {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     #messengerUINotification .tabs a,
     #messengerUINotification .tabs a:hover,
     #messengerUINotification .tabs a:visited {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     #messengerUINotification .tabs a.active {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     #messengerUINotification .tabs a.active .arrow {
-        border-color: transparent transparent transparent var(--background-primary);
+        border-color: transparent transparent transparent var(--mhdm-mainDark);
     }
 
     #messengerUINotification .notificationHeader {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     /*** Gift Dropdown ***/
     #giftSelectorView-inbox {
-        color: var(--text-normal);
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     #giftSelectorView-inbox a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     #giftSelectorView-inbox .mousehuntActionButton {
@@ -762,87 +762,87 @@ url-prefix("http://www.mousehuntgame.com") {
 
     .giftSelectorView-inbox-footer,
     .giftSelectorView-inboxHeader {
-        color: var(--text-normal);
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .giftSelectorView-inbox-footer-viewMore a {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .giftSelectorView-inboxGiftOfTheDay-label {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
         margin-right: 4px;
     }
 
     .giftSelectorView-inboxHeader-closeButton:hover {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .giftSelectorView-inbox-gift-sent {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .giftSelectorView-inbox-giftRow {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .giftSelectorView-inbox-giftRow:nth-child(even):not(.complete) {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .giftSelectorView-inbox-giftRow.complete {
-        color: var(--hg-default-grey);
+        color: var(--mhdm-default-grey);
     }
 
     /*** Send Gift ***/
     .giftSelectorView-content-title,
     .giftSelectorView-friend-name span {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .giftSelectorView a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .giftSelectorView-headerContainer {
-        background-color: var(--background-accent)
+        background-color: var(--mhdm-tertiaryDark)
     }
 
     .giftSelectorView-tabHeader span {
-        background-color: var(--background-secondary);
-        color: var(--text-normal)
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-normal)
     }
 
     .giftSelectorView-tabHeader:hover span,
     .giftSelectorView-tabHeader.active span {
-        background-color: var(--background-primary)
+        background-color: var(--mhdm-mainDark)
     }
 
     .giftSelectorView-tabHeader.disabled span {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .giftSelectorView-tabContent {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .giftSelectorView-content-leftBar-highlightBlock {
-        background-color: var(--background-primary)
+        background-color: var(--mhdm-mainDark)
     }
 
     .giftSelectorView-content-rightBar {
-        background-color: var(--background-primary)
+        background-color: var(--mhdm-mainDark)
     }
 
     .giftSelectorView-content-subtitle {
-        color: var(--text-normal);
-        border-bottom-color: var(--background-border);
+        color: var(--mhdm-text-normal);
+        border-bottom-color: var(--mhdm-tertiaryDark);
     }
 
     .giftSelectorView-actionLimit {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
         color: #000
     }
 
@@ -882,7 +882,7 @@ url-prefix("http://www.mousehuntgame.com") {
 
     .giftSelectorView-gift,
     .giftSelectorView-content-selectedFriend {
-        color: var(--text-normal) !important
+        color: var(--mhdm-text-normal) !important
     }
 
     .giftSelectorView-gift.gift_of_the_day .giftSelectorView-gift-padding:after {
@@ -893,7 +893,7 @@ url-prefix("http://www.mousehuntgame.com") {
 
     .giftSelectorView-gift-padding {
         box-shadow: 0 0 1px #000 inset;
-        background-color: var(--background-primary)
+        background-color: var(--mhdm-mainDark)
     }
 
     .giftSelectorView-gift.paidgift .giftSelectorView-gift-padding {
@@ -926,7 +926,7 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .giftSelectorView-friend-search-label {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .giftSelectorView-friendRow-action {
@@ -943,7 +943,7 @@ url-prefix("http://www.mousehuntgame.com") {
 
     .giftSelectorView-friend-padding,
     .giftSelectorView-confirmPopup-block-actionItem .giftSelectorView-friend:hover .giftSelectorView-friend-padding {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
         box-shadow: 0 0 1px #fff inset
     }
 
@@ -1075,66 +1075,66 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .giftSelectorView-confirmOverlay.loading .giftSelectorView-confirmPopup-content {
-        filter: brightness(var(--loader-brightness));
+        filter: brightness(var(--mhdm-loader-brightness));
     }
 
     /*** Settings ***/
     .personal_info,
     .game_settings {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     /*** Inventory ***/
     .inventoryContent a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .itemImage .quantity {
-        color: var(--text-contrast);
+        color: var(--mhdm-dark5);
     }
 
     .inventoryPage-item {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .inventoryPage-tagContent-tagTitle {
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .inventoryPage-item-margin,
     .inventoryPage-item.small .inventoryPage-item-margin {
-        border-color: var(--background-border);
-        background-color: var(--background-secondary);
+        border-color: var(--mhdm-tertiaryDark);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .inventoryPage-item-name {
-        border-color: var(--background-border);
-        background-color: var(--background-primary);
+        border-color: var(--mhdm-tertiaryDark);
+        background-color: var(--mhdm-mainDark);
     }
 
     .inventoryPage-tagDirectory {
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .inventoryPage-tagDirectory-tag {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .inventoryPage-item-recipeOptions li {
-        border-color: var(--background-border);
-        background-color: var(--background-accent);
+        border-color: var(--mhdm-tertiaryDark);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .inventoryPage-item-recipeOptions li.inactive {
-        background-color: var(--background-secondary);
-        color: var(--text-muted);
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-muted);
         border-color: transparent;
     }
 
     .inventoryPage-item-recipeOptions li.selected {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .inventoryPage-item-recipeOptions li:hover {
@@ -1142,76 +1142,76 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .inventoryPage-item-content-description-gameTasks {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .inventoryPage-item.component .inventoryPage-item-imageContainer .itemImage {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .inventoryPage-item-larryLexicon {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .itemViewStatBlock {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .itemViewStatBlock-stat-label {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .itemViewStatBlock-stat-value {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
     }
 
     .itemViewStatBlock-stat {
-        border-color: var(--background-border);
-        background-color: var(--background-primary);
+        border-color: var(--mhdm-tertiaryDark);
+        background-color: var(--mhdm-mainDark);
     }
 
     .itemViewStatBlock-stat-helper {
-        background-color: var(--background-floating);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-dark4);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .inventoryPage-item.small .tooltip {
-        background-color: var(--background-floating);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-dark4);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .inventoryPage-item.small .tooltip .arrow {
-        border-color: var(--background-border) transparent transparent transparent;
+        border-color: var(--mhdm-tertiaryDark) transparent transparent transparent;
     }
 
     .inventoryPage-item.small .tooltip .arrow span {
-        border-color: var(--background-floating) transparent transparent transparent;
+        border-color: var(--mhdm-dark4) transparent transparent transparent;
     }
 
     .mousehuntHud-page-subTabContent.trinket .mousehuntHud-page-subTabContent-prefix {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
         box-shadow: none;
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntHud-page-subTabContent-prefix-title {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
         text-shadow: none;
     }
 
     .campPage-trap-itemBrowser-itemDescriptionHover {
-        background-color: var(--background-floating);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-dark4);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .campPage-trap-itemBrowser-itemDescriptionHover.mousehuntTooltip.left .mousehuntTooltip-arrow {
-        border-color: transparent transparent transparent var(--background-border);
+        border-color: transparent transparent transparent var(--mhdm-tertiaryDark);
     }
 
     .inventoryPage-item-name a abbr {
@@ -1221,54 +1221,54 @@ url-prefix("http://www.mousehuntgame.com") {
     /*** Crafting ***/
     #overlayBg.crafting .suffix,
     #overlayBg.crafting .content {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     #overlayBg.crafting .title {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     #overlayBg.crafting .img .name {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     #overlayBg.crafting .img .description {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent-margin {
-        background-color: var(--background-floating);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-dark4);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .inventoryPage-item.recipe.disabled {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .mousehuntHud-page-subTabContent.crafting_table .inventoryPage-craftingTable {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .inventoryPage-craftingTable-title {
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .inventoryPage-craftingTable-slot-item.empty .inventoryPage-craftingTable-slot-item-name {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .inventoryPage-craftingTable-slot-item-remove,
@@ -1277,28 +1277,28 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .inventoryPage-craftingTable-action {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     /*** Detailed Item View ***/
     .itemViewContainer {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .itemView-header {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .itemView-character-name {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
         text-shadow: none;
     }
 
     .itemView-padding {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .itemView-loading {
@@ -1308,11 +1308,11 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .itemViewContainer a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     a.itemView-sidebar-checklistItem.checked:hover {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .itemViewContainer .mousehuntActionButton {
@@ -1321,57 +1321,57 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     #overlayPopup.itemViewPopup .suffix {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     #overlayPopup.itemViewPopup .button {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .itemViewContainer .itemView-obtainHint {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     /*** Shop ***/
     .mousehuntHud-page-tabContent.hasShop a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .itemPurchaseView-action-container {
-        background-color: var(--background-accent);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-tertiaryDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .shopsPage-compareEquipment {
-        background-color: var(--background-accent);
-        color: var(--text-normal);
+        background-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .shopsPage-header-container {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .itemPurchaseView-container {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .itemPurchaseView-action-itemCost-table {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .itemPurchaseView-container.kingsCartItem .itemPurchaseView-action-container {
-        box-shadow: -1px 2px 18px var(--background-primary) inset;
+        box-shadow: -1px 2px 18px var(--mhdm-mainDark) inset;
     }
 
     .itemPurchaseView-action-itemCost-table-cell.owned {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .itemPurchaseView-container.kingsCartItem .itemPurchaseView-content-details:after {
@@ -1387,48 +1387,48 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .shopsPage-empty {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     /*** Profile ***/
     .hunterInfoView-wrapper .hunterInfoView-left a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .messageBoardView-message {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
     }
 
     .messageBoardView-message.new {
-        border-color: var(--background-border) !important;
+        border-color: var(--mhdm-tertiaryDark) !important;
     }
 
     .messageBoardView-message-description {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .hunterInfoView-wrapper .messageBoardView-title {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-trapBlock-weapon {
-        background-color: var(--background-trap);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-title-container {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-container {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-title {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-container,
@@ -1436,41 +1436,41 @@ url-prefix("http://www.mousehuntgame.com") {
     .hunterInfoView-wrapper .hunterInfoView-trapBlock-setup-items,
     .hunterInfoView-wrapper .hunterInfoView-trapBlock-footer-stats,
     .hunterInfoView-wrapper .hunterInfoView-trapBlock-footer {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
         background-image: none;
         box-shadow: none;
     }
 
     .hunterInfoView-wrapper .hunterInfoView-idCardBlock {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .PageHunterProfile .friendsPage-friendRow {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
         background-image: none;
     }
 
     .PageHunterProfile .friendsProfileView-container {
-        background-color: var(--background-secondary);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .hunterInfoView-wrapper .hunterInfoView-hunterId {
-        background-color: var(--background-accent);
-        color: var(--text-normal);
+        background-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .hunterInfoView-hunterId-copyConfirmText {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats .hunterInfoView-idCardBlock-stats-item-desc {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats,
@@ -1479,50 +1479,50 @@ url-prefix("http://www.mousehuntgame.com") {
     .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container .teamEmblemView,
     .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-huntingSince,
     .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-horn-container {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .hunterInfoView-idCardBlock-teamInfo span {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .PageHunterProfile .friendsPage-friendRow-statsContainer {
         box-shadow: none;
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-idCardBlock-goldenShield-text {
-        color: var(--hg-default-grey);
+        color: var(--mhdm-default-grey);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-favoritesBlock {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-header {
         background-image: none;
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-content-mouseLabel {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-body {
         background-image: none;
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .hunterInfoView-wrapper .mousehuntTabHeader span {
-        background-color: var(--background-floating);
-        border-color: var(--background-primary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-dark4);
+        border-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
         box-shadow: none;
         text-shadow: none;
     }
@@ -1531,48 +1531,48 @@ url-prefix("http://www.mousehuntgame.com") {
     .hunterInfoView-wrapper .mousehuntTabHeader:before,
     .hunterInfoView-wrapper .mousehuntTabHeader.active span,
     .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabHeader:hover span {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
         box-shadow: none;
     }
 
     .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabContentContainer {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
         box-shadow: none;
     }
 
     .hunterInfoView-achievementsBlock .mousehuntTabContentContainer-padding {
-        background-color: var(--background-accent);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-tertiaryDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound-label,
     .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .hunterInfoView-wrapper .journalEntries {
-        background-color: var(--hg-default-white);
+        background-color: var(--mhdm-default-white);
     }
 
     /*** Crowns ***/
     .mouseCrownsView-group {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .mouseCrownsView-group-header-subtitle {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .mouseCrownsView-group-mouse.highlight .mouseCrownsView-group-mouse-name,
     .mouseCrownsView-group-mouse:not(.favourite) .mouseCrownsView-group-mouse-name {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .mouseCrownsView-group-mouse:hover .mouseCrownsView-group-mouse-padding {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     /*** Profile Items ***/
@@ -1581,7 +1581,7 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .hunterProfileItemsView-category>div {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
         filter: invert(1);
     }
 
@@ -1590,52 +1590,52 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .hunterProfileItemsView-category.active>div {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
         filter: none;
     }
 
     .hunterProfileItemsView-categoryContent-name {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .hunterProfileItemsView-content-padding {
-        background-color: var(--background-secondary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .hunterProfileItemsView-content-padding a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .hunterProfileItemsView-categoryContent-item-padding {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .hunterProfileItemsView-categoryContent-item.uncollected .hunterProfileItemsView-categoryContent-item-padding {
-        color: var(--text-muted);
-        background-color: var(--background-accent);
+        color: var(--mhdm-text-muted);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .hunterProfileItemsView-filter:hover {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     /*** Mice ***/
     .mouseViewPopup .content {
-        background-color: var(--background-secondary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mouseViewPopup .mouseView-title {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .mouseViewPopup .mouseView-statsContainer-block {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .mouseView-categoryContent-subgroup-mouse-weaknesses-label {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .mouseViewPopup a {
@@ -1643,12 +1643,12 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     #overlayPopup.mouseViewPopup .suffix {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .mouseViewPopup .mouseView-image {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .mouseListView-category {
@@ -1656,7 +1656,7 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .mouseListView-category>div {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
         filter: invert(1);
     }
 
@@ -1665,87 +1665,87 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .mouseListView-categoryContainer.active .mouseListView-category>div {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
         filter: none;
     }
 
     .mouseListView-subcategory {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
-        color: var(--text-link);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-link);
     }
 
     .mouseListView-categoryContent-category {
-        background-color: var(--background-secondary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mouseListView-categoryContent-category a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .mouseListView-categoryContent-subgroup-name {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mouseListView-categoryContent-name {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .adversariesPage-list-header {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
         box-shadow: none;
     }
 
     .adversariesPage-list-header label {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .mouseListView-categoryContent-weaknessesContainer {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .mouseListView-categoryContent-subgroup-mouse.stats.header {
-        background-color: var(--background-accent) !important;
+        background-color: var(--mhdm-tertiaryDark) !important;
     }
 
     .mouseListView-categoryContent-subgroup-mouse.stats:nth-child(odd) {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .mouseListView-categoryContent-filter-option {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     /*** Scoreboards ***/
     .tournamentPage-tournamentHeading {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .scoreboardTableView-content a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .scoreboardTableView-content {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .scoreboardTableView,
     .scoreboardTableView-filters label,
     .scoreboardTableView-table th {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .scoreboardTableView-header {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .scoreboardTableView-header-title {
@@ -1753,61 +1753,61 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .scoreboardTableView-separator hr {
-        background-color: var(--background-border);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-tertiaryDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .scoreboardTableView-row.highlight {
-        color: var(--hg-default-grey);
+        color: var(--mhdm-default-grey);
     }
 
     .scoreboardTableView-tournament {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .scoreboardTableView-tournament-property b {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .scoreboardTableView-tournament-property span {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     /*** Marketplace ***/
     .marketplaceView-header-tabHeader {
-        background-color: var(--background-floating);
-        color: var(--text-normal);
+        background-color: var(--mhdm-dark4);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceView-header-tabHeader:hover,
     .marketplaceView-header-tabHeader.active {
-        background-color: var(--background-secondary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceView .marketplaceContentContainer {
-        background-color: var(--background-secondary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceView .marketplaceContentContainer a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .marketplaceHome-blockItem-value {
-        color: var(--text-muted);
+        color: var(--mhdm-text-muted);
     }
 
     .marketplaceHome-blockItem {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceView h1 {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceView label {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceView .mousehuntActionButton {
@@ -1815,124 +1815,124 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .marketplaceView-trendContainer {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .marketplaceView-item-graphTable .marketplaceView-trendContainer {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceView-breadcrumb,
     .marketplaceHome-block-viewAll,
     .marketplaceHome-block-carousel .marketplaceHome-block-viewAll,
     .marketplaceView-moreLink {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceHome-block-viewAll:hover,
     .marketplaceView-moreLink:hover,
     .marketplaceView-breadcrumb:hover {
-        background: var(--background-accent);
+        background: var(--mhdm-tertiaryDark);
     }
 
     .marketplaceView-table tr:nth-child(odd) {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceView-table-numeric,
     .marketplace-sidebar-tsitu {
-        text-shadow: -1px -1px 0 var(--background-secondary),
-            1px -1px 0 var(--background-secondary),
-            -1px 1px 0 var(--background-secondary),
-            1px 1px 0 var(--background-secondary);
+        text-shadow: -1px -1px 0 var(--mhdm-secondaryDark),
+            1px -1px 0 var(--mhdm-secondaryDark),
+            -1px 1px 0 var(--mhdm-secondaryDark),
+            1px 1px 0 var(--mhdm-secondaryDark);
     }
 
     .marketplaceView-table tr:nth-child(odd) .marketplaceView-table-numeric {
-        text-shadow: -1px -1px 0 var(--background-primary),
-            1px -1px 0 var(--background-primary),
-            -1px 1px 0 var(--background-primary),
-            1px 1px 0 var(--background-primary);
+        text-shadow: -1px -1px 0 var(--mhdm-mainDark),
+            1px -1px 0 var(--mhdm-mainDark),
+            -1px 1px 0 var(--mhdm-mainDark),
+            1px 1px 0 var(--mhdm-mainDark);
     }
 
     .marketplaceView-table tr:hover {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .marketplaceView-table-filterReminder,
     .marketplaceView-table-empty {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .marketplaceView-cell-progressBar,
     .marketplaceView-floatingTooltip {
-        color: var(--hg-default-grey);
+        color: var(--mhdm-default-grey);
     }
 
     .marketplaceView-item-footer .marketplaceView-table {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .marketplaceView-item-quickListings th {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceView-table tr.empty {
-        background-color: var(--background-secondary) !important;
+        background-color: var(--mhdm-secondaryDark) !important;
     }
 
     .marketplaceView-browse-sidebar-link {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .mousehuntCharacterGuideBox-content {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .PageMarketplaceLegacy {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .PageMarketplaceLegacy h1 {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceLegacyPage-table {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
-        color: var(--text-normal);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     .marketplaceLegacyPage-table th {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .marketplaceLegacyPage-table a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .marketplaceLegacyPage-table tr:nth-child(odd) {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     /*** Maps ***/
     #overlayPopup.treasureMapPopup .treasureMapRootView-content {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     #overlayPopup.treasureMapPopup .treasureMapRootView-content a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     #overlayPopup.treasureMapPopup a.treasureMapView-goals-group-goal {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .treasureMapView-goals-group-goal.complete .treasureMapView-goals-group-goal-name span {
-        color: var(--text-positive);
+        color: var(--mhdm-text-positive);
     }
 
     #overlayPopup.treasureMapPopup .mousehuntActionButton {
@@ -1940,36 +1940,36 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     #overlayPopup.treasureMapPopup .jsDialog.background {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     #overlayPopup.treasureMapPopup .jsDialogContainer .suffix {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .treasureMapListingsTableView th {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .treasureMapListingsTableView th.sortable.active,
     .treasureMapListingsTableView th.sortable:hover {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .treasureMapListingsTableView tbody tr:nth-child(even) {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .treasureMapView-block,
     .treasureMapView-block-content-heading,
     .treasureMapInventoryView-relicHunter,
     .treasureMapView-scoreboard {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .treasureMapView-block-content-heading-count {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .treasureMapPopup-shop-item-description-cost-image {
@@ -1977,41 +1977,41 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .treasureMapPopup-seasonContainer {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .treasureMapRootView-tab {
-        color: var(--text-normal);
-        background-color: var(--background-secondary);
+        color: var(--mhdm-text-normal);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .treasureMapRootView-tab.active,
     .treasureMapRootView-tab:hover {
-        background-color: var(--background-primary);
+        background-color: var(--mhdm-mainDark);
     }
 
     .treasureMapView-highlight-content {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .treasureMapView-previewBar {
-        color: var(--hg-default-grey);
+        color: var(--mhdm-default-grey);
     }
 
     .treasureMapView-allyTable .treasureMapView-allyRow:nth-child(even) {
-        background-color: var(--background-secondary);
+        background-color: var(--mhdm-secondaryDark);
     }
 
     .treasureMapView-goals-group-goal:hover:before,
     .treasureMapView-goals-group-goal.sticky:before {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .treasureMapView-highlight-catcher {
-        background-color: var(--background-primary);
-        color: var(--text-normal);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        color: var(--mhdm-text-normal);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .treasureMapView-reward,
@@ -2019,56 +2019,56 @@ url-prefix("http://www.mousehuntgame.com") {
     .treasureMapView-mapWarning,
     .treasureMapView-environment-progress,
     #overlayPopup.treasureMapPopup .treasureMapDialogView a.treasureMapView-goals-group-goal {
-        color: var(--hg-default-grey);
+        color: var(--mhdm-default-grey);
     }
 
     .treasureMapView-environment.inactive .treasureMapView-environment-progress {
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .treasureMapPopup-shop-environment.active:before {
-        background-color: var(--background-accent);
+        background-color: var(--mhdm-tertiaryDark);
     }
 
     .treasureMapRootView-subTabContainer {
-        background-color: var(--background-secondary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-secondaryDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .treasureMapRootView-subTab,
     .treasureMapRootView-subTabContainer:hover .treasureMapRootView-subTab.active {
-        border-color: var(--background-secondary);
+        border-color: var(--mhdm-secondaryDark);
     }
 
     .treasureMapRootView-subTab.active,
     .treasureMapRootView-subTabContainer:hover .treasureMapRootView-subTab:hover {
-        background-color: var(--background-primary);
-        border-color: var(--background-border);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     .treasureMapView textarea {
-        background-color: var(--background-primary);
-        border-color: var(--background-accent);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
     /*** Kings Reward ***/
     .mousehuntPage-puzzle {
         box-shadow: none;
-        background: var(--background-primary);
+        background: var(--mhdm-mainDark);
         border-color: #b59100;
-        color: var(--text-normal);
+        color: var(--mhdm-text-normal);
     }
 
     .mousehuntPage-puzzle input[type='text'] {
-        background-color: var(--background-primary);
-        border-color: var(--background-accent);
-        color: var(--text-normal);
+        background-color: var(--mhdm-mainDark);
+        border-color: var(--mhdm-tertiaryDark);
+        color: var(--mhdm-text-normal);
     }
 
 
     .mousehuntPage-puzzle a {
-        color: var(--text-link);
+        color: var(--mhdm-text-link);
     }
 
     .mousehuntPage-puzzle-form-captcha-image {
@@ -2080,19 +2080,19 @@ url-prefix("http://www.mousehuntgame.com") {
     }
 
     .mousehuntPage-puzzle-form-code-container {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
         box-shadow: none;
     }
 
     .mousehuntPage-puzzle-form-code-border {
-        border-color: var(--background-border);
+        border-color: var(--mhdm-tertiaryDark);
     }
 
     /*** Exceptions ***/
 
     /* Halloween Apothecary */
     .apothecary .itemPurchaseView-content-container {
-        color: var(--hg-default-grey);
+        color: var(--mhdm-default-grey);
     }
 
     body.halloween .pageFrameView-column {

@@ -1,37 +1,42 @@
 /* XELLIS DARK MODE */
 
+
+.PageHunterProfile .pageFrameView .pageFrameView-content {
+    background: var(--mhdm-dark5);
+}
+
 /* profile tabs */
 
 .PageHunterProfile .pageFrameView .mousehuntPage-content input[type='text'],
 .PageHunterProfile .pageFrameView .mousehuntPage-content input[type='password'],
 .PageHunterProfile .pageFrameView .mousehuntPage-content select,
 .PageHunterProfile .pageFrameView .mousehuntPage-content textarea {
-    background-color: var(--background-primary);
-    border-color: var(--background-accent);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader-container {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader span {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader.active span,
 .PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader:hover span {
-    background-color: var(--background-accent);
+    background-color: var(--mhdm-tertiaryDark);
 }
 
 .PageHunterProfile .pageFrameView .mousehuntHud-page-tabHeader span {
-    background-color: var(--background-secondary);
+    background-color: var(--mhdm-secondaryDark);
     box-shadow: none;
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mousehuntHud-page-tabHeader.active span,
@@ -41,17 +46,13 @@
 }
 
 .PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
-    border-right-color: var(--background-accent);
+    border-right-color: var(--mhdm-tertiaryDark);
 }
 
 .PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader.empty span,
 .PageHunterProfile .pageFrameView .mousehuntHud-page-subTabHeader.empty:hover span {
-    background-color: var(--background-secondary);
+    background-color: var(--mhdm-secondaryDark);
     box-shadow: none;
-}
-
-.PageHunterProfile .pageFrameView .pageFrameView-content {
-    background: var(--mhdm-dark5);
 }
 
 .PageHunterProfile .mousehuntHud-page-subTabHeader-container {
@@ -59,43 +60,47 @@
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-left a {
-    color: var(--text-link);
+    color: var(--mhdm-text-link);
 }
+
+/* message */
 
 .PageHunterProfile .pageFrameView .messageBoardView-message {
     background-color: var(--mhdm-tertiaryDark);
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .messageBoardView-message.new {
-    border-color: var(--background-border) !important;
+    border-color: var(--mhdm-tertiaryDark) !important;
 }
 
 .PageHunterProfile .pageFrameView .messageBoardView-message-description {
-    color: var(--text-muted);
+    color: var(--mhdm-text-muted);
 }
 
+/* content */
+
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .messageBoardView-title {
-    color: var(--text-muted);
+    color: var(--mhdm-text-muted);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-weapon {
-    background-color: var(--background-trap);
+    background-color: var(--mhdm-secondaryDark);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-title-container {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-container {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-title {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-header-container,
@@ -104,40 +109,40 @@
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-footer-stats,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-trapBlock-footer {
     background-color: var(--mhdm-mainDark);
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
     background-image: none;
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock {
-    background-color: var(--background-secondary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .PageHunterProfile .friendsPage-friendRow {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
     background-image: none;
 }
 
 .PageHunterProfile .pageFrameView .PageHunterProfile .friendsProfileView-container {
-    background-color: var(--background-secondary);
-    color: var(--text-normal);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-secondaryDark);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-hunterId {
-    background-color: var(--background-accent);
-    color: var(--text-normal);
+    background-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-hunterId-copyConfirmText {
-    color: var(--text-link);
+    color: var(--mhdm-text-link);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats .hunterInfoView-idCardBlock-stats-item-desc {
-    color: var(--text-muted);
+    color: var(--mhdm-text-muted);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats,
@@ -146,50 +151,50 @@
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container .teamEmblemView,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-huntingSince,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-horn-container {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-idCardBlock-teamInfo span {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .PageHunterProfile .friendsPage-friendRow-statsContainer {
     box-shadow: none;
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-goldenShield-text {
-    color: var(--hg-default-grey);
+    color: var(--mhdm-default-grey);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock {
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-header {
     background-image: none;
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-content-mouseLabel {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-favoritesBlock-body {
     background-image: none;
-    background-color: var(--background-secondary);
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader span {
-    background-color: var(--background-floating);
-    border-color: var(--background-primary);
-    color: var(--text-normal);
+    background-color: var(--mhdm-dark4);
+    border-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
     box-shadow: none;
     text-shadow: none;
 }
@@ -198,48 +203,48 @@
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader:before,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader.active span,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabHeader:hover span {
-    background-color: var(--background-primary);
+    background-color: var(--mhdm-mainDark);
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabContentContainer {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-achievementsBlock .mousehuntTabContentContainer-padding {
-    background-color: var(--background-accent);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-tertiaryDark);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound-label,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-treasureMaps-right-cluesFound {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .journalEntries {
-    background-color: var(--hg-default-white);
+    background-color: var(--mhdm-default-white);
 }
 
 /*** Crowns ***/
 .PageHunterProfile .pageFrameView .mouseCrownsView-group {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mouseCrownsView-group-header-subtitle {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mouseCrownsView-group-mouse.highlight .mouseCrownsView-group-mouse-name,
 .PageHunterProfile .pageFrameView .mouseCrownsView-group-mouse:not(.favourite) .mouseCrownsView-group-mouse-name {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mouseCrownsView-group-mouse:hover .mouseCrownsView-group-mouse-padding {
-    background-color: var(--background-primary);
+    background-color: var(--mhdm-mainDark);
 }
 
 /*** Profile Items ***/
@@ -248,7 +253,7 @@
 }
 
 .PageHunterProfile .pageFrameView .hunterProfileItemsView-category>div {
-    color: var(--text-link);
+    color: var(--mhdm-text-link);
     filter: invert(1);
 }
 
@@ -257,52 +262,52 @@
 }
 
 .PageHunterProfile .pageFrameView .hunterProfileItemsView-category.active>div {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
     filter: none;
 }
 
 .PageHunterProfile .pageFrameView .hunterProfileItemsView-categoryContent-name {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .hunterProfileItemsView-content-padding {
-    background-color: var(--background-secondary);
-    color: var(--text-normal);
+    background-color: var(--mhdm-secondaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .hunterProfileItemsView-content-padding a {
-    color: var(--text-link);
+    color: var(--mhdm-text-link);
 }
 
 .PageHunterProfile .pageFrameView .hunterProfileItemsView-categoryContent-item-padding {
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .PageHunterProfile .pageFrameView .hunterProfileItemsView-categoryContent-item.uncollected .hunterProfileItemsView-categoryContent-item-padding {
-    color: var(--text-muted);
-    background-color: var(--background-accent);
+    color: var(--mhdm-text-muted);
+    background-color: var(--mhdm-tertiaryDark);
 }
 
 .PageHunterProfile .pageFrameView .hunterProfileItemsView-filter:hover {
-    background-color: var(--background-accent);
+    background-color: var(--mhdm-tertiaryDark);
 }
 
 /*** Mice ***/
 .PageHunterProfile .pageFrameView .mouseViewPopup .content {
-    background-color: var(--background-secondary);
-    color: var(--text-normal);
+    background-color: var(--mhdm-secondaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mouseViewPopup .mouseView-title {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mouseViewPopup .mouseView-statsContainer-block {
-    background-color: var(--background-primary);
+    background-color: var(--mhdm-mainDark);
 }
 
 .PageHunterProfile .pageFrameView .mouseView-categoryContent-subgroup-mouse-weaknesses-label {
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .PageHunterProfile .pageFrameView .mouseViewPopup a {
@@ -310,12 +315,12 @@
 }
 
 .PageHunterProfile .pageFrameView #overlayPopup.mouseViewPopup .suffix {
-    background-color: var(--background-secondary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .PageHunterProfile .pageFrameView .mouseViewPopup .mouseView-image {
-    background-color: var(--background-accent);
+    background-color: var(--mhdm-tertiaryDark);
 }
 
 
@@ -324,7 +329,7 @@
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-category>div {
-    color: var(--text-link);
+    color: var(--mhdm-text-link);
     filter: invert(1);
 }
 
@@ -333,81 +338,81 @@
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-categoryContainer.active .mouseListView-category>div {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
     filter: none;
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-subcategory {
-    background-color: var(--background-secondary);
-    border-color: var(--background-border);
-    color: var(--text-link);
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-link);
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-categoryContent-category {
-    background-color: var(--background-secondary);
-    color: var(--text-normal);
+    background-color: var(--mhdm-secondaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-categoryContent-category a {
-    color: var(--text-link);
+    color: var(--mhdm-text-link);
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-categoryContent-subgroup-name {
-    background-color: var(--background-primary);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-categoryContent-name {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .adversariesPage-list-header {
-    background-color: var(--background-secondary);
+    background-color: var(--mhdm-secondaryDark);
     box-shadow: none;
 }
 
 .PageHunterProfile .pageFrameView .adversariesPage-list-header label {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-categoryContent-weaknessesContainer {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats.header {
-    background-color: var(--background-accent) !important;
+    background-color: var(--mhdm-tertiaryDark) !important;
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats:nth-child(odd) {
-    background-color: var(--background-primary);
+    background-color: var(--mhdm-mainDark);
 }
 
 .PageHunterProfile .pageFrameView .mouseListView-categoryContent-filter-option {
-    background-color: var(--background-primary);
+    background-color: var(--mhdm-mainDark);
 }
 
 .PageHunterProfile .pageFrameView .personal_info,
 .PageHunterProfile .pageFrameView .game_settings {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 /* pagination */
 
 .PageHunterProfile .pageFrameView .pagerView-container {
     background-color: var(--mhdm-tertiaryDark);
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageHunterProfile .pageFrameView .pagerView-section.previous .pagerView-link,
 .PageHunterProfile .pageFrameView .pagerView-section.next .pagerView-link {
-    color: var(--text-muted);
-    border-color: var(--background-border);
+    color: var(--mhdm-text-muted);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .PageHunterProfile .pageFrameView .pagerView-section.previous.active .pagerView-link,
 .PageHunterProfile .pageFrameView .pagerView-section.next.active .pagerView-link {
-    color: var(--text-link);
-    border-color: var(--background-border);
+    color: var(--mhdm-text-link);
+    border-color: var(--mhdm-tertiaryDark);
 }

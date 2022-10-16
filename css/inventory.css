@@ -1,54 +1,54 @@
 /*** Inventory ***/
 /* .pageFrameView .inventoryContent a {
-    color: var(--text-link);
+    color: var(--mhdm-text-link);
 }
 
 .pageFrameView .itemImage .quantity {
-    color: var(--text-contrast);
+    color: var(--mhdm-dark5);
 }
 
 .pageFrameView .inventoryPage-item {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .inventoryPage-tagContent-tagTitle {
-    color: var(--text-normal);
-    border-color: var(--background-border);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .inventoryPage-item-margin,
 .pageFrameView .inventoryPage-item.small .inventoryPage-item-margin {
-    border-color: var(--background-border);
-    background-color: var(--background-secondary);
+    border-color: var(--mhdm-tertiaryDark);
+    background-color: var(--mhdm-secondaryDark);
 }
 
 .pageFrameView .inventoryPage-item-name {
-    border-color: var(--background-border);
-    background-color: var(--background-primary);
+    border-color: var(--mhdm-tertiaryDark);
+    background-color: var(--mhdm-mainDark);
 }
 
 .pageFrameView .inventoryPage-tagDirectory {
-    color: var(--text-normal);
-    border-color: var(--background-border);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .inventoryPage-tagDirectory-tag {
-    background-color: var(--background-primary);
+    background-color: var(--mhdm-mainDark);
 }
 
 .pageFrameView .inventoryPage-item-recipeOptions li {
-    border-color: var(--background-border);
-    background-color: var(--background-accent);
+    border-color: var(--mhdm-tertiaryDark);
+    background-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .inventoryPage-item-recipeOptions li.inactive {
-    background-color: var(--background-secondary);
-    color: var(--text-muted);
+    background-color: var(--mhdm-secondaryDark);
+    color: var(--mhdm-text-muted);
     border-color: transparent;
 }
 
 .pageFrameView .inventoryPage-item-recipeOptions li.selected {
-    color: var(--text-muted);
+    color: var(--mhdm-text-muted);
 }
 
 .pageFrameView .inventoryPage-item-recipeOptions li:hover {
@@ -56,76 +56,76 @@
 }
 
 .pageFrameView .inventoryPage-item-content-description-gameTasks {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .inventoryPage-item.component .inventoryPage-item-imageContainer .itemImage {
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .inventoryPage-item-larryLexicon {
-    background-color: var(--background-secondary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .itemViewStatBlock {
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .itemViewStatBlock-stat-label {
-    background-color: var(--background-secondary);
+    background-color: var(--mhdm-secondaryDark);
 }
 
 .pageFrameView .itemViewStatBlock-stat-value {
-    background-color: var(--background-primary);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .itemViewStatBlock-stat {
-    border-color: var(--background-border);
-    background-color: var(--background-primary);
+    border-color: var(--mhdm-tertiaryDark);
+    background-color: var(--mhdm-mainDark);
 }
 
 .pageFrameView .itemViewStatBlock-stat-helper {
-    background-color: var(--background-floating);
-    color: var(--text-normal);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-dark4);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .inventoryPage-item.small .tooltip {
-    background-color: var(--background-floating);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-dark4);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .inventoryPage-item.small .tooltip .arrow {
-    border-color: var(--background-border) transparent transparent transparent;
+    border-color: var(--mhdm-tertiaryDark) transparent transparent transparent;
 }
 
 .pageFrameView .inventoryPage-item.small .tooltip .arrow span {
-    border-color: var(--background-floating) transparent transparent transparent;
+    border-color: var(--mhdm-dark4) transparent transparent transparent;
 }
 
 .pageFrameView .mousehuntHud-page-subTabContent.trinket .mousehuntHud-page-subTabContent-prefix {
-    background-color: var(--background-primary);
+    background-color: var(--mhdm-mainDark);
     box-shadow: none;
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .mousehuntHud-page-subTabContent-prefix-title {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
     text-shadow: none;
 }
 
 .pageFrameView .campPage-trap-itemBrowser-itemDescriptionHover {
-    background-color: var(--background-floating);
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    background-color: var(--mhdm-dark4);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .campPage-trap-itemBrowser-itemDescriptionHover.mousehuntTooltip.left .mousehuntTooltip-arrow {
-    border-color: transparent transparent transparent var(--background-border);
+    border-color: transparent transparent transparent var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .inventoryPage-item-name a abbr {
@@ -135,54 +135,54 @@
 /*** Crafting ***/
 /* .pageFrameView #overlayBg.crafting .suffix,
 .pageFrameView #overlayBg.crafting .content {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView #overlayBg.crafting .title {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView #overlayBg.crafting .img .name {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView #overlayBg.crafting .img .description {
-    color: var(--text-muted);
+    color: var(--mhdm-text-muted);
 }
 
 .pageFrameView .mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent {
-    background-color: var(--background-secondary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent-margin {
-    background-color: var(--background-floating);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-dark4);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
 }
 
 .pageFrameView .inventoryPage-item.recipe.disabled {
-    background-color: var(--background-accent);
+    background-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .mousehuntHud-page-subTabContent.crafting_table .inventoryPage-craftingTable {
-    background-color: var(--background-primary);
-    color: var(--text-normal);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
 }
 
 .pageFrameView .inventoryPage-craftingTable-title {
-    color: var(--text-normal);
-    border-color: var(--background-border);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .inventoryPage-craftingTable-slot-item.empty .inventoryPage-craftingTable-slot-item-name {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .inventoryPage-craftingTable-slot-item-remove,
@@ -191,28 +191,28 @@
 }
 
 .pageFrameView .inventoryPage-craftingTable-action {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
 } */
 
 /*** Detailed Item View ***/
 .pageFrameView .itemViewContainer {
-    background-color: var(--background-secondary);
+    background-color: var(--mhdm-secondaryDark);
 }
 
 .pageFrameView .itemView-header {
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .itemView-character-name {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
     text-shadow: none;
 }
 
 .pageFrameView .itemView-padding {
-    background-color: var(--background-primary);
-    color: var(--text-normal);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .itemView-loading {
@@ -222,11 +222,11 @@
 }
 
 .pageFrameView .itemViewContainer a {
-    color: var(--text-link);
+    color: var(--mhdm-text-link);
 }
 
 .pageFrameView a.itemView-sidebar-checklistItem.checked:hover {
-    background-color: var(--background-accent);
+    background-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .itemViewContainer .mousehuntActionButton {
@@ -235,14 +235,14 @@
 }
 
 .pageFrameView #overlayPopup.itemViewPopup .suffix {
-    background-color: var(--background-secondary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView #overlayPopup.itemViewPopup .button {
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .itemViewContainer .itemView-obtainHint {
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
 }

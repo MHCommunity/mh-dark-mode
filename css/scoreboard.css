@@ -6,32 +6,32 @@
 .PageScoreboards .pageFrameView .mousehuntPage-content input[type='password'],
 .PageScoreboards .pageFrameView .mousehuntPage-content select,
 .PageScoreboards .pageFrameView .mousehuntPage-content textarea {
-    background-color: var(--background-primary);
-    border-color: var(--background-accent);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader-container {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader span {
-    background-color: var(--background-primary);
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
     box-shadow: none;
 }
 
 .PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader.active span,
 .PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader:hover span {
-    background-color: var(--background-accent);
+    background-color: var(--mhdm-tertiaryDark);
 }
 
 .PageScoreboards .pageFrameView .mousehuntHud-page-tabHeader span {
-    background-color: var(--background-secondary);
+    background-color: var(--mhdm-secondaryDark);
     box-shadow: none;
-    border-color: var(--background-border);
-    color: var(--text-normal);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageScoreboards .pageFrameView .mousehuntHud-page-tabHeader.active span,
@@ -41,12 +41,12 @@
 }
 
 .PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
-    border-right-color: var(--background-accent);
+    border-right-color: var(--mhdm-tertiaryDark);
 }
 
 .PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader.empty span,
 .PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader.empty:hover span {
-    background-color: var(--background-secondary);
+    background-color: var(--mhdm-secondaryDark);
     box-shadow: none;
 }
 
@@ -57,30 +57,30 @@
 /* scoreboard content */
 
 .pageFrameView .tournamentPage-tournamentHeading {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .scoreboardTableView-content a {
-    color: var(--text-link);
+    color: var(--mhdm-text-link);
 }
 
 .pageFrameView .scoreboardTableView-content {
-    background-color: var(--background-secondary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
 }
 
 .pageFrameView .scoreboardTableView,
 .pageFrameView .scoreboardTableView-filters label,
 .pageFrameView .scoreboardTableView-table th {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .scoreboardTableView-header {
-    background-color: var(--background-secondary);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .scoreboardTableView-header-title {
@@ -88,40 +88,40 @@
 }
 
 .pageFrameView .scoreboardTableView-separator hr {
-    background-color: var(--background-border);
-    border-color: var(--background-border);
+    background-color: var(--mhdm-tertiaryDark);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .scoreboardTableView-row.highlight {
-    color: var(--hg-default-grey);
+    color: var(--mhdm-default-grey);
 }
 
 .pageFrameView .scoreboardTableView-tournament {
-    border-color: var(--background-border);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .scoreboardTableView-tournament-property b {
-    color: var(--text-normal);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .scoreboardTableView-tournament-property span {
-    color: var(--text-muted);
+    color: var(--mhdm-text-muted);
 }
 
 /* pagination */
 .PageScoreboards .pageFrameView .pagerView-container {
-    background-color: var(--background-primary);
-    color: var(--text-normal);
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
 }
 
 .PageScoreboards .pageFrameView .pagerView-section.previous .pagerView-link,
 .PageScoreboards .pageFrameView .pagerView-section.next .pagerView-link {
-    color: var(--text-muted);
-    border-color: var(--background-border);
+    color: var(--mhdm-text-muted);
+    border-color: var(--mhdm-tertiaryDark);
 }
 
 .PageScoreboards .pageFrameView .pagerView-section.previous.active .pagerView-link,
 .PageScoreboards .pageFrameView .pagerView-section.next.active .pagerView-link {
-    color: var(--text-link);
-    border-color: var(--background-border);
+    color: var(--mhdm-text-link);
+    border-color: var(--mhdm-tertiaryDark);
 }
