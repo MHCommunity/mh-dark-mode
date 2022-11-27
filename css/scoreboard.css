@@ -56,9 +56,9 @@
 
 /* scoreboard content */
 
-.pageFrameView .tournamentPage-tournamentHeading {
+/* .pageFrameView .tournamentPage-tournamentHeading {
     color: var(--mhdm-text-normal);
-}
+} */
 
 .pageFrameView .scoreboardTableView-content a {
     color: var(--mhdm-text-link);

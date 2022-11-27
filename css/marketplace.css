@@ -94,7 +94,7 @@
 }
 
 .pageFrameView .marketplaceView-table tr:nth-child(odd) {
-    background-color: var(--mhdm-mainDark);
+    background-color: var(--mhdm-mainDark) !important;
     color: var(--mhdm-text-normal);
 }
 

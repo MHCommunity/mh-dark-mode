@@ -118,8 +118,22 @@
     color: var(--mhdm-text-normal);
 }
 
+.pageFrameView .itemViewStatBlock .itemViewStatBlock-stat-value {
+    background: transparent;
+}
+
+.pageFrameView .itemViewStatBlock .itemViewStatBlock-stat-value span {
+    color: var(--mhdm-default-black);
+}
+
 /* event */
 
 .apothecary .itemPurchaseView-content-container {
     color: var(--mhdm-default-grey);
+}
+
+/* premium shop */
+
+.pageFrameView .MHCheckoutReviewCartPageView-stepProgress {
+    color: var(--mhdm-default-black)
 }
