@@ -62,6 +62,10 @@
 
 /* content */
 
+.pageFrameView .mousehuntHud-page-tabContent.hasShop {
+    padding: 0 10px;
+}
+
 .pageFrameView .mousehuntHud-page-tabContent.hasShop a {
     color: var(--mhdm-text-link);
 }
@@ -118,12 +122,21 @@
     color: var(--mhdm-text-normal);
 }
 
+.pageFrameView .itemViewStatBlock {
+    margin-top: 5px;
+    border: 1px solid var(--mhdm-dark5);
+}
+
+.pageFrameView .itemViewStatBlock .itemViewStatBlock-stat-label {
+    background: var(--mhdm-dark4);
+}
+
 .pageFrameView .itemViewStatBlock .itemViewStatBlock-stat-value {
-    background: transparent;
+    background: var(--mhdm-secondaryDark);
 }
 
 .pageFrameView .itemViewStatBlock .itemViewStatBlock-stat-value span {
-    color: var(--mhdm-default-black);
+    color: var(--mhdm-text-normal);
 }
 
 /* event */

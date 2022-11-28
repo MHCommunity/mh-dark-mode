@@ -180,14 +180,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     color: var(--mhdm-black)
 }
 
-/* in game shop */
-.mousehuntHud-page-tabContent.hasShop {
-    padding: 0 10px;
-}
-
-.mousehuntHud-page-tabContent.hasShop .itemViewStatBlock-stat {
-    background-color: var(--mhdm-white);
-}
 
 /* inventory */
 
