@@ -6,32 +6,216 @@
     background: var(--mhdm-xlbrown);
 }
 
-/* 
-.pageFrameView .campPage-trap {
-    border: 0;
+/* XELLIS DARKMODE */
+/*** Trap Selector ***/
+.pageFrameView .campPage-trap-itemBrowser-favorite-item-image-quantity {
+    color: var(--mhdm-dark5);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-item-powerType:after {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .cannotDisarm .campPage-trap-itemBrowser-item-armButton {
+    color: var(--mhdm-default-black);
+}
+
+.pageFrameView .armed .campPage-trap-itemBrowser-item-armButton {
+    color: var(--mhdm-default-white);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-armed-item-content .campPage-trap-itemBrowser-item-disarmButton {
+    color: var(--mhdm-default-white);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-armed-label {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-tagGroup-name {
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-tagGroup-empty {
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .empty .campPage-trap-itemBrowser-favorite-item-image {
+    background-color: var(--mhdm-mainDark);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-favorite-item-image-frame {
+    box-shadow: none;
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-armed,
+.pageFrameView .campPage-trap-itemBrowser-itemContainer,
+.pageFrameView .campPage-trap-itemBrowser-favorites {
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
     box-shadow: none;
 }
 
-.pageFrameView .campPage-trap-itemStats {
-    background: var(--mhdm-tertiaryDark);
-    border: 0;
+.pageFrameView .campPage-trap-itemBrowser-armed-item,
+.pageFrameView .campPage-trap-itemBrowser-item {
+    background-color: var(--mhdm-dark4);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-item-statContainer {
+    border-radius: 5px;
+}
+
+.pageFrameView .campPage-trap-itemBrowser-item-stat .value span {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-item-stat {
+    background-color: var(--mhdm-dark5);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-item-stat.worse .value span {
+    color: var(--mhdm-text-danger);
+}
+
+.pageFrameView .campPage-trap-itemBrowser-item-stat.better .value span {
+    color: var(--mhdm-text-positive);
+}
+
+.pageFrameView .campPage-trap-trapEffectivenessContainer {
+    background-color: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .campPage-trap-trapEffectiveness-header {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-trap-trapEffectiveness-difficultyGroup-label {
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .campPage-trap-trapEffectiveness-difficultyGroup {
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-trap-trapEffectiveness-mouse {
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-trap-trapEffectiveness-mouse:hover {
+    background-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .campPage-trap-blueprint-closeButton {
+    background-color: var(--mhdm-secondaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-trap-blueprintContainer input[type='text'],
+.pageFrameView .campPage-trap-blueprintContainer select {
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-quests-container {
+    background-color: var(--mhdm-secondaryDark);
+    box-shadow: none;
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-quests-title {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-quests-objective-container {
+    border-color: var(--mhdm-tertiaryDark);
+    background-color: var(--mhdm-mainDark);
+}
+
+.pageFrameView .campPage-quests-objective-container.complete {
+    border-color: var(--mhdm-text-positive);
+    background: #606d5e
+}
+
+.pageFrameView .campPage-quests-objective-progressBar {
+    border-color: var(--mhdm-tertiaryDark);
+    background-color: var(--mhdm-tertiaryDark);
     box-shadow: none;
 }
 
-.pageFrameView .campPage-trap-itemStats .campPage-trap-trapStat .value {
-    background: var(--mhdm-dark5);
-    color: var(--mhdm-white);
-    border: 0;
+.pageFrameView .campPage-quests-objective-progressBar span {
+    background: #c4b200;
     box-shadow: none;
 }
 
-.pageFrameView .campPage-trap-trapEffectiveness {
-    background: var(--mhdm-tertiaryDark);
-    color: var(--mhdm-white);
-    border: 0;
+.pageFrameView .campPage-quests-footer-smash {
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    box-shadow: none;
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-quests-footer-smash>div {
+    filter: invert(1);
+}
+
+.pageFrameView .campPage-quests-footer-lny {
+    color: red
+}
+
+.pageFrameView .campPage-quests-objective-container.locked {
     box-shadow: none;
 }
 
-.pageFrameView .campPage-trap-trapEffectiveness span {
-    color: var(--mhdm-dgray);
-} */
+.pageFrameView .campPage-tabs-tabContent-larryTip-container {
+    background-color: var(--mhdm-secondaryDark);
+    box-shadow: none;
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-tabs-tabContent-larryTip-container a {
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView .campPage-tabs-tabContent-larryTip-environment {
+    color: var(--mhdm-text-muted);
+}
+
+.pageFrameView .PageCamp .pagerView-container {
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .PageCamp .pagerView-section.previous .pagerView-link,
+.pageFrameView .PageCamp .pagerView-section.next .pagerView-link {
+    color: var(--mhdm-text-muted);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .PageCamp .pagerView-section.previous.active .pagerView-link,
+.pageFrameView .PageCamp .pagerView-section.next.active .pagerView-link {
+    color: var(--mhdm-text-link);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .PageCamp .mousehuntHud-page-tabContent-loading,
+.pageFrameView .PageCamp .mousehuntHud-page-subTabContent-loading,
+.pageFrameView .PageCamp .campPage-trap-trapEffectivenessContainer .loading,
+.pageFrameView .pageFrameView .PageCamp .campPage-trap-itemBrowser-armed .loading,
+.pageFrameView .PageCamp .campPage-trap-itemBrowser-items .loading,
+.pageFrameView .PageCamp .campPage-tabs-tabContent-loading,
+.pageFrameView .PageCamp .campPage-trap-friendList.loading .campPage-trap-friendList-loading {
+    filter: brightness(var(--mhdm-loader-brightness));
+}

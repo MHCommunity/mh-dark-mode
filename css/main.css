@@ -26,6 +26,18 @@
     --mhdm-dimming-filter2: rgba(0, 0, 0, 0.05);
     --mhdm-dimming-filter-max: rgba(0, 0, 0, 0.5);
     --mhdm-journal-bg: #f5f5f5;
+
+    --mhdm-default-black: #000;
+    --mhdm-default-grey: #333;
+    --mhdm-default-white: #fff;
+
+    --mhdm-loader-brightness: 0.2;
+
+    --mhdm-text-normal: #dcddde;
+    --mhdm-text-muted: #a3a6aa;
+    --mhdm-text-link: var(--mhdm-blue);
+    --mhdm-text-positive: hsl(139, 51.6%, 52.2%);
+    --mhdm-text-danger: hsl(359, 82%, 73.9%);
 }
 
 /*SCROLL BAR FOR NON BODY ELEMENTS*/
@@ -44,8 +56,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb {
 body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     background: #8a8a8a;
 }
-
-/*Non-JS overrides*/
 
 /* Container */
 .pageFrameView .pageFrameView-content {
@@ -94,16 +104,19 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 
 .pageFrameView .mousehuntHeaderView-gameTabs {
     background: var(--mhdm-mainDark);
+    border-color: rgb(102, 102, 102);
 }
 
 .pageFrameView .mousehuntHeaderView .menuItem {
     background: var(--mhdm-secondaryDark);
-    color: var(--mhdm-white)
+    color: var(--mhdm-white);
+    border-color: rgb(102, 102, 102);
 }
 
 .pageFrameView .mousehuntHeaderView-newsTicker {
     background: var(--mhdm-secondaryDark);
-    color: var(--mhdm-white)
+    color: var(--mhdm-white);
+    border-color: rgb(102, 102, 102);
 }
 
 .pageFrameView .mousehuntHeaderView-newsTicker .label {
@@ -117,6 +130,7 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 .pageFrameView .mousehuntHud-gameInfo {
     background: var(--mhdm-secondaryDark);
     border-right: 1px solid var(--mhdm-white);
+    border-color: rgb(102, 102, 102);
     padding-bottom: 3px;
 }
 
@@ -166,14 +180,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     color: var(--mhdm-black)
 }
 
-/* in game shop */
-.mousehuntHud-page-tabContent.hasShop {
-    padding: 0 10px;
-}
-
-.mousehuntHud-page-tabContent.hasShop .itemViewStatBlock-stat {
-    background-color: var(--mhdm-white);
-}
 
 /* inventory */
 
@@ -228,20 +234,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     z-index: 96;
 }
 
-/* Treasure */
-
-.pageFrameView .treasureMapRootView {
-    background: var(--mhdm-lbrown);
-}
-
-.pageFrameView .treasureMapView-goals-group-goal {
-    padding: 5px;
-}
-
-.pageFrameView .treasureMapView-goals-group-goal-name span {
-    font-size: 11px;
-}
-
 /* shop */
 
 .pageFrameView .mousehuntHud-page-subTabContent.active {
@@ -259,8 +251,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 .pageFrameView #overlayPopup .jsDialogContainer .suffix {
     background: var(--mhdm-brown)
 }
-
-
 
 /* mice list */
 

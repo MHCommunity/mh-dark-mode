@@ -1,0 +1,127 @@
+/*** Xellis Scoreboards ***/
+
+/* scoreboard tabs */
+
+.PageScoreboards .pageFrameView .mousehuntPage-content input[type='text'],
+.PageScoreboards .pageFrameView .mousehuntPage-content input[type='password'],
+.PageScoreboards .pageFrameView .mousehuntPage-content select,
+.PageScoreboards .pageFrameView .mousehuntPage-content textarea {
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader-container {
+    color: var(--mhdm-text-normal);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader span {
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+    box-shadow: none;
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader.active span,
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader:hover span {
+    background-color: var(--mhdm-tertiaryDark);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-tabHeader span {
+    background-color: var(--mhdm-secondaryDark);
+    box-shadow: none;
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-tabHeader.active span,
+.PageScoreboards .pageFrameView .mousehuntHud-page-tabHeader:hover span {
+    border-color: var(--mhdm-dark5);
+    background-color: var(--mhdm-dark5);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
+    border-right-color: var(--mhdm-tertiaryDark);
+}
+
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader.empty span,
+.PageScoreboards .pageFrameView .mousehuntHud-page-subTabHeader.empty:hover span {
+    background-color: var(--mhdm-secondaryDark);
+    box-shadow: none;
+}
+
+.PageScoreboards .pageFrameView .pageFrameView-content {
+    background: var(--mhdm-dark5);
+}
+
+/* scoreboard content */
+
+/* .pageFrameView .tournamentPage-tournamentHeading {
+    color: var(--mhdm-text-normal);
+} */
+
+.pageFrameView .scoreboardTableView-content a {
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView .scoreboardTableView-content {
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
+    box-shadow: none;
+}
+
+.pageFrameView .scoreboardTableView,
+.pageFrameView .scoreboardTableView-filters label,
+.pageFrameView .scoreboardTableView-table th {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .scoreboardTableView-header {
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
+    box-shadow: none;
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .scoreboardTableView-header-title {
+    text-shadow: none;
+}
+
+.pageFrameView .scoreboardTableView-separator hr {
+    background-color: var(--mhdm-tertiaryDark);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .scoreboardTableView-row.highlight {
+    color: var(--mhdm-default-grey);
+}
+
+.pageFrameView .scoreboardTableView-tournament {
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .scoreboardTableView-tournament-property b {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .scoreboardTableView-tournament-property span {
+    color: var(--mhdm-text-muted);
+}
+
+/* pagination */
+.PageScoreboards .pageFrameView .pagerView-container {
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
+}
+
+.PageScoreboards .pageFrameView .pagerView-section.previous .pagerView-link,
+.PageScoreboards .pageFrameView .pagerView-section.next .pagerView-link {
+    color: var(--mhdm-text-muted);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.PageScoreboards .pageFrameView .pagerView-section.previous.active .pagerView-link,
+.PageScoreboards .pageFrameView .pagerView-section.next.active .pagerView-link {
+    color: var(--mhdm-text-link);
+    border-color: var(--mhdm-tertiaryDark);
+}

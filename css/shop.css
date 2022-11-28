@@ -1,0 +1,152 @@
+/* XELLIS */
+
+.PageShops .pageFrameView .pageFrameView-content {
+    background: var(--mhdm-dark5);
+}
+
+.PageShops .pageFrameView .mousehuntPage-content input[type='text'],
+.PageShops .pageFrameView .mousehuntPage-content input[type='password'],
+.PageShops .pageFrameView .mousehuntPage-content select,
+.PageShops .pageFrameView .mousehuntPage-content textarea {
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.PageShops .pageFrameView .mousehuntHud-page-subTabHeader-container {
+    color: var(--mhdm-text-normal);
+}
+
+.PageShops .pageFrameView .mousehuntHud-page-subTabHeader span {
+    background-color: var(--mhdm-mainDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+    box-shadow: none;
+}
+
+.PageShops .pageFrameView .mousehuntHud-page-subTabHeader.active span,
+.PageShops .pageFrameView .mousehuntHud-page-subTabHeader:hover span {
+    background-color: var(--mhdm-tertiaryDark);
+}
+
+.PageShops .pageFrameView .mousehuntHud-page-tabHeader span {
+    background-color: var(--mhdm-secondaryDark);
+    box-shadow: none;
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.PageShops .pageFrameView .mousehuntHud-page-tabHeader.active span,
+.PageShops .pageFrameView .mousehuntHud-page-tabHeader:hover span {
+    border-color: var(--mhdm-dark5);
+    background-color: var(--mhdm-dark5);
+}
+
+.PageShops .pageFrameView .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
+    border-right-color: var(--mhdm-tertiaryDark);
+}
+
+.PageShops .pageFrameView .mousehuntHud-page-subTabHeader.empty span,
+.PageShops .pageFrameView .mousehuntHud-page-subTabHeader.empty:hover span {
+    background-color: var(--mhdm-secondaryDark);
+    box-shadow: none;
+}
+
+.PageShops .mousehuntHud-page-subTabHeader-container {
+    padding-left: 10px;
+}
+
+.PageShops .pageFrameView .hunterInfoView-wrapper .hunterInfoView-left a {
+    color: var(--mhdm-text-link);
+}
+
+/* content */
+
+.pageFrameView .mousehuntHud-page-tabContent.hasShop {
+    padding: 0 10px;
+}
+
+.pageFrameView .mousehuntHud-page-tabContent.hasShop a {
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView .itemPurchaseView-action-container {
+    background-color: var(--mhdm-tertiaryDark);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .shopsPage-compareEquipment {
+    background-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .shopsPage-header-container {
+    background-color: var(--mhdm-tertiaryDark);
+    box-shadow: none;
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .itemPurchaseView-container {
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .itemPurchaseView-action-itemCost-table {
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .itemPurchaseView-container.kingsCartItem .itemPurchaseView-action-container {
+    box-shadow: -1px 2px 18px var(--mhdm-mainDark) inset;
+}
+
+.pageFrameView .itemPurchaseView-action-itemCost-table-cell.owned {
+    color: var(--mhdm-text-muted);
+}
+
+.pageFrameView .itemPurchaseView-container.kingsCartItem .itemPurchaseView-content-details:after {
+    display: none;
+}
+
+.pageFrameView .itemPurchaseView-container.kingsCartItem:not(.expanded) .itemPurchaseView-content-details {
+    -webkit-mask-image: linear-gradient(to bottom,
+            black 60%,
+            transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    height: 70px;
+}
+
+.pageFrameView .shopsPage-empty {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .itemViewStatBlock {
+    margin-top: 5px;
+    border: 1px solid var(--mhdm-dark5);
+}
+
+.pageFrameView .itemViewStatBlock .itemViewStatBlock-stat-label {
+    background: var(--mhdm-dark4);
+}
+
+.pageFrameView .itemViewStatBlock .itemViewStatBlock-stat-value {
+    background: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .itemViewStatBlock .itemViewStatBlock-stat-value span {
+    color: var(--mhdm-text-normal);
+}
+
+/* event */
+
+.apothecary .itemPurchaseView-content-container {
+    color: var(--mhdm-default-grey);
+}
+
+/* premium shop */
+
+.pageFrameView .MHCheckoutReviewCartPageView-stepProgress {
+    color: var(--mhdm-default-black)
+}
