@@ -416,3 +416,103 @@
     color: var(--mhdm-text-link);
     border-color: var(--mhdm-tertiaryDark);
 }
+
+/* profile trap */
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .trapImageView {
+    background: rgb(160, 160, 160) !important;
+    background: linear-gradient(180deg, rgb(218, 218, 218) 0%, rgba(160, 160, 160, 1) 25%, rgba(136, 136, 136, 1) 65%, rgb(66, 66, 66) 95%) !important;
+    border: 2px solid var(--mhdm-dark6);
+    box-shadow: none !important;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-itemStats .campPage-trap-trapStat .value {
+    background: var(--mhdm-xlbrown);
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap {
+    border: 0;
+    box-shadow: none;
+    background: var(--mhdm-dark4);
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-armedItem.bait {
+    background: var(--mhdm-dark5);
+    border: 1px solid var(--mhdm-dark6);
+    box-shadow: none;
+    width: 312px;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-baitLabel {
+    color: var(--mhdm-brown);
+
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-baitDetails {
+    color: var(--mhdm-white);
+    text-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-armedItem.skin {
+    background: var(--mhdm-dark5);
+    border: 1px solid var(--mhdm-dark6);
+    box-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-armedItem.skin .campPage-trap-armedItem-image {
+    background: var(--mhdm-dark5);
+    border: 1px solid var(--mhdm-dark6);
+    box-shadow: none;
+    color: var(--mhdm-white);
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-armedItem-skin-description {
+    background: var(--mhdm-dark5);
+    border: 0;
+    box-shadow: none;
+    color: var(--mhdm-brown);
+    height: 35px;
+    width: 195px;
+    margin-top: 5px;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-armedItem-skin-description-content b {
+    color: var(--mhdm-white);
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-statsContainer {
+    border: 0;
+    box-shadow: none;
+    background: var(--mhdm-dark5);
+    padding: 4px;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-itemStats {
+    background: var(--mhdm-tertiaryDark);
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 4px;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-itemStats .campPage-trap-trapStat .value {
+    background: var(--mhdm-dark5);
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-itemStats .campPage-trap-trapStat .value b {
+    color: var(--mhdm-brown);
+    margin-top: 5px;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-trapEffectiveness {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-trapEffectiveness span {
+    color: var(--mhdm-brown);
+}

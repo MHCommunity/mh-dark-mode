@@ -98,6 +98,11 @@
     color: var(--mhdm-text-normal);
 }
 
+.pageFrameView .marketplaceView-table tr:nth-child(even) {
+    background-color: var(--mhdm-secondaryDark) !important;
+    color: var(--mhdm-text-normal);
+}
+
 /* .pageFrameView .marketplaceView-table-numeric,
 .pageFrameView .marketplace-sidebar-tsitu {
     text-shadow: -1px -1px 0 var(--mhdm-secondaryDark),
