@@ -149,6 +149,10 @@
     background: #56295a;
 }
 
+.pageFrameView .itemImage .quantity {
+    color: black
+}
+
 /* message & pagination */
 
 .pageFrameView .treasureMapView .messageBoardView-message {
