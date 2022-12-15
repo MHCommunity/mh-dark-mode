@@ -21,7 +21,13 @@
 }
 
 .pageFrameView #overlayPopup.treasureMapPopup a.treasureMapView-goals-group-goal {
-    color: var(--mhdm-text-normal);
+    color: var(--mhdm-default-black);
+    padding: 0;
+    background-color: #fff;
+}
+
+.pageFrameView #overlayPopup.treasureMapPopup a.treasureMapView-goals-group-goal .treasureMapView-goals-group-goal-padding:hover {
+    background-color: #fff;
 }
 
 .pageFrameView .treasureMapView-goals-group-goal.complete .treasureMapView-goals-group-goal-name span {
@@ -47,12 +53,17 @@
 
 .pageFrameView .treasureMapListingsTableView th.sortable.active,
 .pageFrameView .treasureMapListingsTableView th.sortable:hover {
-    background-color: var(--mhdm-tertiaryDark);
+    background-color: var(--mhdm-secondaryDark);
 }
 
 .pageFrameView .treasureMapListingsTableView tbody tr:nth-child(even) {
     background-color: var(--mhdm-secondaryDark);
 }
+
+.pageFrameView .treasureMapListingsTableView tr.selected {
+    background: #1e491e;
+}
+
 
 .pageFrameView .treasureMapView-block,
 .pageFrameView .treasureMapView-block-content-heading,
@@ -187,4 +198,20 @@
 .pageFrameView .treasureMapView .pagerView-section.next.active .pagerView-link {
     color: var(--mhdm-text-link);
     border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .treasureMapView-rightBlock {
+    background: var(--mhdm-dark5);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.pageFrameView .treasureMapListingsTableView-filterMessage {
+    background-color: var(--mhdm-dark5);
+}
+
+/* scavenger */
+
+.pageFrameView .treasureMapView-scavengerHunt {
+    background-color: var(--mhdm-dark5);
 }
