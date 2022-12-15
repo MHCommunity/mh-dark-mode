@@ -61,6 +61,10 @@
     color: var(--mhdm-lgray);
 }
 
+.pageFrameView .giftSelectorView-inbox-giftRow.complete {
+    background-color: #385511;
+}
+
 /* gift more */
 
 .pageFrameView .giftSelectorView-content-rightBar,

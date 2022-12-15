@@ -246,3 +246,11 @@
 .pageFrameView .itemViewContainer .itemView-obtainHint {
     border-color: var(--mhdm-tertiaryDark);
 }
+
+.pageFrameView .inventoryPage-item-recipeOptions li:hover {
+    color: var(--mhdm-default-black)
+}
+
+.pageFrameView .inventoryPage-item-recipeOptions li.selected {
+    color: var(--mhdm-default-black)
+}

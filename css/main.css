@@ -42,7 +42,7 @@
 
 /*SCROLL BAR FOR NON BODY ELEMENTS*/
 body .pageFrameView *::-webkit-scrollbar {
-    width: 6px;
+    width: 3px;
 }
 
 body .pageFrameView *::-webkit-scrollbar-track {
@@ -261,3 +261,5 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 .pageFrameView .mouseListView-categoryContent:before {
     display: none;
 }
+
+/* friends */

@@ -150,6 +150,7 @@
 
 .pageFrameView .mousehuntCharacterGuideBox-content {
     background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
 }
 
 .pageFrameView .PageMarketplaceLegacy {
@@ -179,5 +180,11 @@
 }
 
 .pageFrameView .marketplaceView tr.locked .marketplaceView-table-name {
-    color: #000;
+    /* color: #000; */
+}
+
+/* mod support */
+
+.pageFrameView .marketplace-sidebar-tsitu span {
+    background-color: none !important;
 }
