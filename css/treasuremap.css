@@ -21,13 +21,13 @@
 }
 
 .pageFrameView #overlayPopup.treasureMapPopup a.treasureMapView-goals-group-goal {
-    color: var(--mhdm-default-black);
+    /* color: var(--mhdm-default-black); */
     padding: 0;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .pageFrameView #overlayPopup.treasureMapPopup a.treasureMapView-goals-group-goal .treasureMapView-goals-group-goal-padding:hover {
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .pageFrameView .treasureMapView-goals-group-goal.complete .treasureMapView-goals-group-goal-name span {
@@ -214,4 +214,22 @@
 
 .pageFrameView .treasureMapView-scavengerHunt {
     background-color: var(--mhdm-dark5);
+}
+
+/* map preview */
+
+.pageFrameView .treasureMapRootView .treasureMapDialogView {
+    background-color: var(--mhdm-mainDark);
+}
+
+.pageFrameView .treasureMapRootView .treasureMapDialogView * {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .treasureMapRootView .treasureMapDialogView a {
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView .treasureMapRootView .treasureMapDialogView a.mousehuntActionButton span {
+    color: #000;
 }
