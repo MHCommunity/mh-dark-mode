@@ -1,7 +1,11 @@
 /* MAPS */
 
 .pageFrameView .treasureMapRootView {
-    background: var(--mhdm-tertiaryDark)
+    background: var(--mhdm-mainDark)
+}
+
+.pageFrameView .treasureMapRootView-subTab-label {
+    color: var(--mhdm-text-normal)
 }
 
 .pageFrameView .treasureMapView-goals-group-goal {
@@ -200,8 +204,10 @@
     border-color: var(--mhdm-tertiaryDark);
 }
 
+/* right block */
+
 .pageFrameView .treasureMapView-rightBlock {
-    background: var(--mhdm-dark5);
+    background: var(--mhdm-dark4);
     padding: 5px;
     box-sizing: border-box;
 }
