@@ -183,6 +183,11 @@
     /* color: #000; */
 }
 
+.pageFrameView .marketplaceView .MHCheckout-goldenShield-tiny>div {
+    color: var(--mhdm-default-black);
+
+}
+
 /* mod support */
 
 .pageFrameView .marketplace-sidebar-tsitu span {

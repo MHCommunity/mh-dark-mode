@@ -1,3 +1,17 @@
+/* premium shop */
+
+.pageFrameView .MHCheckoutRootView-pageContainer {
+    background: var(--mhdm-lbrown)
+}
+
+.pageFrameView .MHCheckoutRootView-footer {
+    background: var(--mhdm-lbrown)
+}
+
+.pageFrameView #overlayPopup .jsDialogContainer .suffix {
+    background: var(--mhdm-brown)
+}
+
 /* XELLIS */
 
 .PageShops .pageFrameView .pageFrameView-content {
