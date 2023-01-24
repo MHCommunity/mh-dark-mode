@@ -247,3 +247,7 @@
 .pageFrameView .treasureMapRootView .mousehuntActionButton.selected span {
     color: #fff !important;
 }
+
+.pageFrameView .treasureMapRootView .convertibleOpenView-item-image .quantity {
+    color: var(--mhdm-default-black);
+}
