@@ -158,8 +158,13 @@
     color: var(--mhdm-white);
 }
 
+.pageFrameView .giftSelectorView-confirmPopup-padding {
+    border: var(--mhdm-default-black);
+    box-shadow: 0 0 10px var(--mhdm-lgray);
+}
+
 /* buttons */
-/* 
+/*
 .pageFrameView .giftSelectorView-inboxContainer .mousehuntActionButton,
 .pageFrameView .giftSelectorView-inbox-footer-viewMore .mousehuntActionButton {
     background: var(--mhdm-dark5) !important;
