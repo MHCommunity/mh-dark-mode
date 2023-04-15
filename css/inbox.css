@@ -43,8 +43,8 @@
 
 .pageFrameView .pageFrameView-content .notificationMessageList .message {
     background: var(--mhdm-secondaryDark);
-    color: var(--mhdm-white);
-    border-bottom: 0;
+    color: var(--mhdm-text-normal);
+    border-bottom: 1px solid var(--mhdm-default-black);
 }
 
 .pageFrameView .notificationMessageList .message:nth-child(even) {
