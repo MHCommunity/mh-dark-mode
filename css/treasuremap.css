@@ -228,7 +228,7 @@
     background-color: var(--mhdm-mainDark);
 }
 
-.pageFrameView .treasureMapRootView .treasureMapDialogView * {
+.pageFrameView .treasureMapRootView .treasureMapDialogView *:not(a) {
     color: var(--mhdm-text-normal);
 }
 
@@ -237,5 +237,17 @@
 }
 
 .pageFrameView .treasureMapRootView .treasureMapDialogView a.mousehuntActionButton span {
-    color: #000;
+    color: var(--mhdm-default-black)
+}
+
+.pageFrameView .treasureMapRootView .treasureMapDialogView-chest-item-padding::before {
+    color: var(--mhdm-default-black)
+}
+
+.pageFrameView .treasureMapRootView .mousehuntActionButton.selected span {
+    color: #fff !important;
+}
+
+.pageFrameView .treasureMapRootView .convertibleOpenView-item-image .quantity {
+    color: var(--mhdm-default-black);
 }
