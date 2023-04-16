@@ -59,7 +59,7 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 
 /* Container */
 .pageFrameView .pageFrameView-content {
-    background: var(--mhdm-dark4);
+    background: var(--mhdm-lbrown);
 }
 
 .pageFrameView .pageFrameView-contentContainer {
@@ -94,23 +94,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     background: var(--mhdm-dimming-filter-max);
     pointer-events: none;
     z-index: 96;
-}
-
-.pageFrameView .mousehuntHud-page-subTabContent-margin {
-    background-color: var(--mhdm-dark4);
-}
-
-.pageFrameView .mousehuntHud-page-tabContentContainer.clear-block {
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView h1,
-.pageFrameView h2,
-.pageFrameView h3,
-.pageFrameView h4,
-.pageFrameView h5,
-.pageFrameView h6 {
-    color: var(--mhdm-default-white);
 }
 
 /* Header */
@@ -159,60 +142,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     color: var(--mhdm-blue)
 }
 
-/* Loading */
-
-.pageFrameView .giftSelectorView-confirmOverlay.loading .giftSelectorView-confirmPopup-content {
-    background-image: url(https://www.mousehuntgame.com/images/ui/loaders/mouse_loading_small.gif?asset_cache_version=2) 50% 50% no-repeat;
-    background-color: var(--mhdm-dark5);
-}
-
-.pageFrameView .mousehuntHud-page-tabContent-loading, .mousehuntHud-page-subTabContent-loading {
-    /* same as current but without the overlay image */
-    background: url(https://www.mousehuntgame.com/images/ui/loaders/mouse_loading_large.gif?asset_cache_version=2) 50% 50% no-repeat;
-}
-
-/* Tabs */
-
-.pageFrameView .mousehuntHud-page-tabHeader span {
-    background-color: var(--mhdm-dark4);
-    color: var(--mhdm-default-white);
-    box-shadow: 1px 1px var(--mhdm-black);
-    border-color: var(--mhdm-black);
-}
-
-.pageFrameView .mousehuntHud-page-tabHeader.active span,
-.pageFrameView .mousehuntHude-page-tabHeader:focus span,
-.pageFrameView .mousehuntHud-page-tabHeader:hover span {
-    border-color: var(--mhdm-black);
-}
-
-.pageFrameView .mousehuntHud-page-subTabHeader-prefix {
-    color: var(--mhdm-white);
-}
-
-.pageFrameView .mousehuntHud-page-subTabHeader span,
-.pageFrameView .mousehuntHud-page-subTabContent-prefix-filter-option {
-    background: var(--mhdm-tertiaryDark);
-    border-color: var(--mhdm-secondaryDark);
-    box-shadow: 1px 1px 1px var(--mhdm-secondaryDark) inset;
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
-    border-color: var(--mhdm-secondaryDark);
-}
-
-.pageFrameView .mousehuntHud-page-subTabHeader.active span,
-.pageFrameView .mousehuntHud-page-subTabHeader:hover span,
-.pageFrameView .mousehuntHud-page-subTabHeader:focus span,
-.pageFrameView .mousehuntHud-page-subTabContent-prefix-filter-option.active,
-.pageFrameView .mousehuntHud-page-subTabContent-prefix-filter-option:hover,
-.pageFrameView .mousehuntHud-page-subTabContent-prefix-filter-option:focus {
-    background-color: var(--mhdm-dark6);
-    color: var(--mhdm-default-white);
-}
-
-
 /* Sidebar */
 .pageFrameView .pageSidebarView {
     background: var(--mhdm-secondaryDark);
@@ -259,30 +188,21 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 }
 
 .mousehuntPage-content[data-page='PageInventory'] .inventoryPage-item-name {
-    background-color: var(--mhdm-tertiaryDark);
-    border-color: var(--mhdm-dark5);
-}
-
-.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-item-name a {
-    color: var(--mhdm-default-white);
-}
-
-.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-item-content-description-text {
-    color: var(--mhdm-text-muted);
+    background: var(--mhdm-xlgray)
 }
 
 .mousehuntPage-content[data-page='PageInventory'] .inventoryPage-tagDirectory-tag {
-    background: var(--mhdm-dark5);
-    color: var(--mhdm-default-white);
+    background: var(--mhdm-xlgray)
 }
 
 .mousehuntPage-content[data-page='PageInventory'] .inventoryPage-tagDirectory-tag.active {
     background: var(--mhdm-dgray)
 }
 
-.pageFrameView .mousehuntHud-page-subTabContent-prefix-title {
-    color: var(--mhdm-text-normal);
-    text-shadow: none;
+.mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent-margin {
+    background: var(--mhdm-lbrown) !important;
+    border: 0;
+    box-shadow: none;
 }
 
 /* Overlay Modal */
@@ -294,25 +214,6 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 .pageFrameView #overlayBg {
     background-image: none;
     background: rgba(0, 0, 0, 0.8);
-}
-
-.pageFrameView #overlayPopup .jsDialogContainer,
-.pageFrameView #overlayPopup .jsDialogContainer .convertibleOpenView-header {
-    background-color: var(--mhdm-mainDark);
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView #overlayPopup .jsDialogContainer .convertibleOpenView a {
-    color: var(--mhdm-text-link);
-}
-
-.pageFrameView #overlayPopup .title {
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView #overlayPopup .jsDialogContainer .suffix {
-    background-color: var(--mhdm-dark4);
-    border-top-color: var(--mhdm-dark5);
 }
 
 .pageFrameView #overlayContainer #overlayBg {
@@ -333,93 +234,16 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     z-index: 96;
 }
 
-.pageFrameView .inventoryPage-confirmPopup-itemContainer, .inventoryPage-confirmPopup-itemContainer.received {
-    background-color: var(--mhdm-dark5);
-}
-
-.pageFrameView .inventoryPage-confirmPopup-itemTable {
-    background-color: var(--mhdm-dark4);
-}
-
-.pageFrameView .inventoryPage-confirmPopup-suffix-quantityContainer-setMax {
-    color: var(--mhdm-brown);
-}
-
 /* mice list */
 
 .pageFrameView .mouseListView-categoryContent-category {
-    background-color: var(--mhdm-secondaryDark);
+    background: var(--mhdm-lbrown)
 }
 
 .pageFrameView .mouseListView-categoryContent:before {
     display: none;
 }
 
-.pageFrameView .mouseView-title {
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView .mouseView-statsContainer-block {
-    background: var(--mhdm-dark4);
-}
-
-.pageFrameView .adversariesPage-list-header {
-    background-color: var(--mhdm-secondaryDark);
-    background: var(--mhdm-secondaryDark);
-    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView .adversariesPage-list-header label {
-    color: var(--mhdm-text-normal);
-}
-
-.mouseListView-categoryContent-subgroup-miceContainer {
-    background-color: var(--mhdm-dark5);
-}
-
-.pageFrameView .mouseListView-categoryContent-subgroup-name {
-    background-color: var(--mhdm-dark5);
-    margin-bottom: 1px;
-}
-
-.pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats.header {
-    background-color: var(--mhdm-dark5) !important;
-}
-
-.pageFrameView .mouseListView-categoryContent-name {
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView .mouseListView-categoryContent-subgroup-mouse-margin {
-    color: var(--mhdm-text-nomral);
-    box-shadow: none;
-}
-
-.pageFrameView .mouseListView-categoryContent-subgroup-mouse-margin a {
-    color: var(--mhdm-text-link);
-}
-
-.pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats:nth-child(odd) {
-    background-color: var(--mhdm-dark4);
-}
-
-.pageFrameView .mouseListView-categoryContent-filter-option {
-    background-color: var(--mhdm-dark4);
-    color: var(--mhdm-text-normal);
-    border-color: var(--mhdm-black);
-}
-
-.pageFrameView .mouseListView-categoryContent-weaknessesContainer {
-    background: var(--mhdm-dark4);
-    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
-    border-color: var(--mhdm-secondaryDark);
-}
-
-.pageFrameView .mouseListView-categoryContent-subgroup-mouse-numCatches,
-.pageFrameView .mouseListView-categoryContent-subgroup-mouse-name {
-    color: var(--mhdm-text-link);
-}
 
 /* claim gift */
 
@@ -444,184 +268,4 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     background: var(--mhdm-dimming-filter2);
     pointer-events: none;
     z-index: 96;
-}
-
-
-/* Input Fields */
-
-.pageFrameView .inventoryPage-tagDirectory-searchBar {
-    color: var(--mhdm-default-white);
-}
-
-.pageFrameView .mousehuntPage-content input,
-.pageFrameView .mousehuntPage-content input[type=text],
-.pageFrameView .mousehuntPage-content input[type=password],
-.pageFrameView .mousehuntPage-content select,
-.pageFrameView .mousehuntPage-content textarea,
-.pageFrameView input.treasureMapView-block-search-text,
-.pageFrameView .select2-search input {
-    background-color: var(--mhdm-lgray);
-    border-color: var(--mhdm-tertiaryDark);
-    color: var(--mhdm-black);
-}
-
-.pageFrameView #overlayPopup .button,
-.pageFrameView input[type="button"],
-.pageFrameView input[type="submit"],
-.pageFrameView .mousehuntPage-content input[type=submit],
-.pageFrameView .mousehuntPage-content input[type=button]
-    background-color: var(--mhdm-yellow-self);
-    color: var(--mhdm-secondaryDark);
-    border: 1px inset var(--mhdm-dark5);
-}
-
-.pageFrameView #overlayPopup .button:hover,
-.pageFrameView #overlayPopup .button:focus,
-.pageFrameView input[type="button"]:hover,
-.pageFrameView input[type="button"]:focus,
-.pageFrameView .mousehuntPage-content input[type="button"]:hover,
-.pageFrameView .mousehuntPage-content input[type="button"]:focus {
-    filter: brightness(1.1);
-}
-
-.pageFrameView input.treasureMapView-block-search-text {
-    border-width: 1px;
-}
-
-body .select2-search input {
-    background: var(--mhdm-default-white);
-}
-
-body .select2-drop {
-    background: var(--mhdm-lgray);
-}
-
-body .select2-container .select2-choice {
-    background-color: var(--mhdm-lgray);
-    background-image: linear-gradient(to top, var(--mhdm-dgray) 0%, var(--mhdm-lgray) 50%);
-}
-
-/* Adventure Book */
-
-.pageFrameView .adventureBookPopup-adventure-details-block-goalGroup.visible {
-    background: var(--mhdm-dark4);
-    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
-}
-
-.pageFrameView .adventureBookPopup-adventure-details-powerTypeContainer {
-    background: var(--mhdm-dark6);
-    border-color: var(--mhdm-dark5);
-}
-
-.pageFrameView .adventureBookPopup-adventure-details-description-reason {
-    background-color: var(--mhdm-yellow-self);
-    color: var(--mhdm-tertiaryDark);
-}
-
-.pageFrameView .pageFrameView .mousehuntPage-content input[type="button"] {
-    background-color: var(--mhdm-default-black);
-    color: var(--mhdm-default-white);
-    border: 2px inset var(--mhdm-dark5);
-}
-
-/* Friend List */
-
-.pageFrameView .friendsPage-list-header,
-.pageFrameView .friendsPage-friendRow {
-    background: var(--mhdm-secondaryDark);
-    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView label.friendsPage-list-filter {
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView .friendsPage-friendRow-statsContainer {
-    background: var(--mhdm-dark6);
-    box-shadow: 0 10px 40px var(--mhdm-secondaryDark) inset;
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView .friendsPage-friendRow-stat span,
-.pageFrameView .friendsPage-friendRow-stat a {
-    color: var(--mhdm-text-link);
-}
-
-.pageFrameView .friendsPage-friendRow-stat-fullValue {
-    background-color: var(--mhdm-secondaryDark);
-    border-color: var(--mhdm-black);
-}
-
-.pageFrameView .friendsPage-friendRow-stat.hasHover:hover,
-.pageFrameView .friendsPage-friendRow-stat.hasHover:focus {
-    background-color: var(--mhdm-secondaryDark);
-}
-
-.pageFrameView .friendsPage-list-header {
-    background-color: var(--mhdm-secondaryDark);
-    background: var(--mhdm-secondaryDark);
-    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView .friendsPage-list-header label {
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView .campPage-trap-friendList.full {
-    background-color: var(--mhdm-secondaryDark);
-}
-
-
-/* Pagination */
-
-.pageFrameView .pagerView-container {
-    background: var(--mhdm-default-black);
-    color: var(--mhdm-text-muted);
-}
-
-.pageFrameView .friendsPage-subduedLink {
-    background-color: var(--mhdm-secondaryDark);
-    color: var(--mhdm-text-link);
-}
-
-
-/* Supply Transfer */
-
-.pageFrameView .flexibleDialogWarmBrown {
-    background: var(--mhdm-secondaryDark);
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView #supplytransfer .drawer {
-    background-color: var(--mhdm-tertiaryDark);
-}
-
-.pageFrameView #supplytransfer .drawer .tabContent h2 {
-    color: var(--mhdm-text-normal);
-}
-
-.pageFrameView #supplytransfer .listContainer a.element {
-    border-color: var(--mhdm-dark6);
-    color: var(--mhdm-text-link);
-}
-
-.pageFrameView #supplytransfer .categoryMenu {
-    background: var(--mhdm-secondaryDark);
-}
-
-.pageFrameView #supplytransfer .categoryMenu a {
-    background-color: var(--mhdm-dark5);
-    color: var(--mhdm-text-link);
-    padding-right: 5px;
-}
-
-.pageFrameView #supplytransfer .categoryMenu a:hover,
-.pageFrameView #supplytransfer .categoryMenu a:focus {
-    background: var(--mhdm-lgray);
-}
-
-.pageFrameView #supplytransfer .drawer .tabContent .summary .box {
-    background-color: var(--mhdm-dark5);
 }
