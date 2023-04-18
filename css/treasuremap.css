@@ -236,6 +236,13 @@
     color: var(--mhdm-text-link);
 }
 
+.pageFrameView .treasureMapRootView .treasureMapDialogView .treasureMapView-mapMenu-aura-tooltipTitle,
+.pageFrameView .treasureMapRootView .treasureMapDialogView .treasureMapView-mapMenu-aura-tooltipTitle *,
+.pageFrameView .treasureMapRootView .treasureMapDialogView .treasureMapView-mapMenu-aura-tooltipTitle~i,
+.pageFrameView .treasureMapRootView .treasureMapDialogView .treasureMapView-mapMenu-aura-tooltipTitle~i * {
+    color: var(--mhdm-default-black);
+}
+
 .pageFrameView .treasureMapRootView .treasureMapDialogView a.mousehuntActionButton span {
     color: var(--mhdm-default-black)
 }
