@@ -232,8 +232,20 @@
     color: var(--mhdm-text-normal);
 }
 
-.pageFrameView .treasureMapRootView .treasureMapDialogView a {
+.pageFrameView .treasureMapRootView .treasureMapDialogView .treasureMapView-hunter-miceCaught {
+    color: var(--mhdm-default-black);
+}
+
+.pageFrameView .treasureMapRootView .treasureMapDialogView a.treasureMapRootView-subTab,
+.pageFrameView .treasureMapRootView .treasureMapDialogView a.treasureMapView-travelButton,
+.pageFrameView .treasureMapRootView .treasureMapDialogView a.treasureMapView-travelButton {
     color: var(--mhdm-text-link);
+}
+
+.pageFrameView .treasureMapRootView .treasureMapView-block-cell.name {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
 .pageFrameView .treasureMapRootView .treasureMapDialogView .treasureMapView-mapMenu-aura-tooltipTitle,
