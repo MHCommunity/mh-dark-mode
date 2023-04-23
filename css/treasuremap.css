@@ -164,7 +164,11 @@
     background: #56295a;
 }
 
-.pageFrameView .itemImage .quantity {
+.pageFrameView .treasureMapInventoryView-scrollCase-image.itemImage .quantity {
+    color: black
+}
+
+.pageFrameView .treasureMapRootView .treasureMapView-environment-title:hover .treasureMapView-environment-progress {
     color: black
 }
 
