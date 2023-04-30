@@ -3,7 +3,7 @@
 }
 
 .pageFrameView .giftSelectorView-inbox-giftContainer {
-    background: var(--mhdm-darkest);
+    background: var(--mhdm-tertiaryDark);
 }
 
 .pageFrameView .giftSelectorView-inboxHeader {
@@ -17,17 +17,14 @@
 
 .pageFrameView .giftSelectorView-inboxGiftOfTheDay {
     background: var(--mhdm-secondaryDark);
-
 }
 
 .pageFrameView .giftSelectorView-inboxGiftOfTheDay-label {
     color: var(--mhdm-white);
-
 }
 
 .pageFrameView .giftSelectorView-inboxGiftOfTheDay abbr {
     color: var(--mhdm-white);
-
 }
 
 .pageFrameView .giftSelectorView-inbox-footer {
@@ -41,7 +38,7 @@
     color: var(--mhdm-white);
 }
 
-/* gift body */
+/* Gift body */
 .pageFrameView .giftSelectorView-inbox-giftRow {
     background: var(--mhdm-secondaryDark);
     color: var(--mhdm-white);
@@ -54,7 +51,6 @@
 
 .pageFrameView .giftSelectorView-inbox-giftRow a {
     color: var(--mhdm-blue);
-
 }
 
 .pageFrameView .giftSelectorView-inbox-gift-sent {
@@ -65,8 +61,7 @@
     background-color: #385511;
 }
 
-/* gift more */
-
+/* Bigger gift popup */
 .pageFrameView .giftSelectorView-content-rightBar,
 .pageFrameView .giftSelectorView-content-leftBar {
     background: var(--mhdm-secondaryDark);
@@ -75,7 +70,6 @@
 
 .pageFrameView .giftSelectorView a:not(.giftSelectorView-friendRow-action) {
     color: var(--mhdm-blue);
-
 }
 
 .pageFrameView .giftSelectorView-tabHeader.active span {
@@ -129,37 +123,30 @@
     background: var(--mhdm-tertiaryDark);
 }
 
-.pageFrameView .giftSelectorView-scroller.giftSelectorView-claimableGiftContainer {}
-
-/* bottom shadow when collapsed */
-.pageFrameView .giftSelectorView-claimableGift:not(.expanded):not(.accordion_disabled):after {
+/* Bottom shadow when collapsed */
+.pageFrameView .giftSelectorView-claimableGift:not(.expanded, .accordion_disabled)::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
     height: 30px;
-    -webkit-box-shadow: 0 -1px 1px #000 inset, 0 -20px 50px #111111 inset;
-    -moz-box-shadow: 0 -1px 1px #000 inset, 0 -20px 50px #111111 inset;
-    box-shadow: 0 -1px 1px #000 inset, 0 -20px 50px #111111 inset;
-    -webkit-border-radius: 0 0 10px 10px;
-    -moz-border-radius: 0 0 10px 10px;
+    box-shadow: 0 -1px 1px #000 inset, 0 -20px 50px #111 inset;
     border-radius: 0 0 10px 10px;
     pointer-events: none;
 }
 
-.pageFrameView .giftSelectorView-claimableGift.accordion_disabled:after {
+.pageFrameView .giftSelectorView-claimableGift.accordion_disabled::after {
     display: none;
 }
 
-/* search */
+/* Search */
 .giftSelectorView-friend-search-input {
     background: var(--mhdm-tertiaryDark);
     color: var(--mhdm-white);
 }
 
-/* buttons */
-/* 
+/* Buttons */
 .pageFrameView .giftSelectorView-inboxContainer .mousehuntActionButton,
 .pageFrameView .giftSelectorView-inbox-footer-viewMore .mousehuntActionButton {
     background: var(--mhdm-dark5) !important;
@@ -168,7 +155,7 @@
     box-shadow: none;
 }
 
-.pageFrameView .giftSelectorView-inboxContainer .mousehuntActionButton:before {
+.pageFrameView .giftSelectorView-inboxContainer .mousehuntActionButton::before {
     display: none;
 }
 
@@ -196,7 +183,7 @@
     text-shadow: none;
 }
 
-.pageFrameView .giftSelectorView-actionContainer .mousehuntActionButton:before {
+.pageFrameView .giftSelectorView-actionContainer .mousehuntActionButton::before {
     display: none;
 }
 
@@ -210,4 +197,13 @@
 
 .pageFrameView .giftSelectorView-friendRow-action.selected {
     background: var(--mhdm-dark4) !important;
-} */
+}
+
+/* Claim gift */
+.pageFrameView .PageClaimGift {
+    background-color: var(--mhdm-mainDark);
+}
+
+.pageFrameView .PageClaimGift .mousehuntPage-content {
+    padding: 0 10px;
+}

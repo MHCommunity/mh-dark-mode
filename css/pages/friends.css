@@ -1,0 +1,83 @@
+.pageFrameView .friendsPage-list-header,
+.pageFrameView .friendsPage-friendRow {
+    background: var(--mhdm-secondaryDark);
+    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView label.friendsPage-list-filter {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .friendsPage-friendRow-statsContainer {
+    background: var(--mhdm-dark6);
+    box-shadow: 0 10px 40px var(--mhdm-secondaryDark) inset;
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .friendsPage-friendRow-stat span,
+.pageFrameView .friendsPage-friendRow-stat a {
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView .friendsPage-friendRow-stat-fullValue {
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-black);
+}
+
+.pageFrameView .friendsPage-friendRow-stat.hasHover:hover,
+.pageFrameView .friendsPage-friendRow-stat.hasHover:focus {
+    background-color: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .friendsPage-list-header {
+    background-color: var(--mhdm-secondaryDark);
+    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .friendsPage-list-header label {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .campPage-trap-friendList.full {
+    background-color: var(--mhdm-secondaryDark);
+}
+
+/* Supply Transfer */
+.pageFrameView .flexibleDialogWarmBrown {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView #supplytransfer .drawer {
+    background-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView #supplytransfer .drawer .tabContent h2 {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView #supplytransfer .listContainer a.element {
+    border-color: var(--mhdm-dark6);
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView #supplytransfer .categoryMenu {
+    background: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView #supplytransfer .categoryMenu a {
+    background-color: var(--mhdm-dark5);
+    color: var(--mhdm-text-link);
+    padding-right: 5px;
+}
+
+.pageFrameView #supplytransfer .categoryMenu a:hover,
+.pageFrameView #supplytransfer .categoryMenu a:focus {
+    background: var(--mhdm-lgray);
+}
+
+.pageFrameView #supplytransfer .drawer .tabContent .summary .box {
+    background-color: var(--mhdm-dark5);
+}

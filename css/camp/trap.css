@@ -3,16 +3,15 @@
 }
 
 .pageFrameView .campPage-trap-itemStats .campPage-trap-trapStat .value {
-    background: var(--mhdm-xlbrown);
+    background: var(--mhdm-lbrown);
 }
 
-/* XELLIS DARKMODE */
-/*** Trap Selector ***/
+/* Trap Selector */
 .pageFrameView .campPage-trap-itemBrowser-favorite-item-image-quantity {
     color: var(--mhdm-dark5);
 }
 
-.pageFrameView .campPage-trap-itemBrowser-item-powerType:after {
+.pageFrameView .campPage-trap-itemBrowser-item-powerType::after {
     color: var(--mhdm-text-normal);
 }
 
@@ -155,7 +154,7 @@
 }
 
 .pageFrameView .campPage-quests-objective-progressBar span {
-    background: #c4b200;
+    background: var(--mhdm-yellow-self);
     box-shadow: none;
 }
 
@@ -171,7 +170,7 @@
 }
 
 .pageFrameView .campPage-quests-footer-lny {
-    color: red
+    color: var(--mhdm-text-danger)
 }
 
 .pageFrameView .campPage-quests-objective-container.locked {
@@ -217,5 +216,5 @@
 .pageFrameView .PageCamp .campPage-trap-itemBrowser-items .loading,
 .pageFrameView .PageCamp .campPage-tabs-tabContent-loading,
 .pageFrameView .PageCamp .campPage-trap-friendList.loading .campPage-trap-friendList-loading {
-    filter: brightness(var(--mhdm-loader-brightness));
+    filter: brightness(0.2);
 }

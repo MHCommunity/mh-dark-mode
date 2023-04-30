@@ -1,0 +1,73 @@
+.pageFrameView .mouseListView-categoryContent-category {
+    background-color: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .mouseListView-categoryContent::before {
+    display: none;
+}
+
+.pageFrameView .mouseView-title {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .mouseView-statsContainer-block {
+    background: var(--mhdm-dark4);
+}
+
+.pageFrameView .adversariesPage-list-header {
+    background: var(--mhdm-secondaryDark);
+    background-color: var(--mhdm-secondaryDark);
+    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .adversariesPage-list-header label {
+    color: var(--mhdm-text-normal);
+}
+
+.mouseListView-categoryContent-subgroup-miceContainer {
+    background-color: var(--mhdm-dark5);
+}
+
+.pageFrameView .mouseListView-categoryContent-subgroup-name {
+    background-color: var(--mhdm-dark5);
+    margin-bottom: 1px;
+}
+
+.pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats.header {
+    background-color: var(--mhdm-dark5) !important;
+}
+
+.pageFrameView .mouseListView-categoryContent-name {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .mouseListView-categoryContent-subgroup-mouse-margin {
+    color: var(--mhdm-text-nomral);
+    box-shadow: none;
+}
+
+.pageFrameView .mouseListView-categoryContent-subgroup-mouse-margin a {
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView .mouseListView-categoryContent-subgroup-mouse.stats:nth-child(odd) {
+    background-color: var(--mhdm-dark4);
+}
+
+.pageFrameView .mouseListView-categoryContent-filter-option {
+    background-color: var(--mhdm-dark4);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-black);
+}
+
+.pageFrameView .mouseListView-categoryContent-weaknessesContainer {
+    background: var(--mhdm-dark4);
+    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
+    border-color: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .mouseListView-categoryContent-subgroup-mouse-numCatches,
+.pageFrameView .mouseListView-categoryContent-subgroup-mouse-name {
+    color: var(--mhdm-text-link);
+}

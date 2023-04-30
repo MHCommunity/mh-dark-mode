@@ -1,12 +1,12 @@
 .pageFrameView #mousehuntContainer.PageCamp .trapImageView {
-    background: rgb(160, 160, 160) !important;
-    background: linear-gradient(180deg, rgb(218, 218, 218) 0%, rgba(160, 160, 160, 1) 25%, rgba(136, 136, 136, 1) 65%, rgb(66, 66, 66) 95%) !important;
+    background: rgb(160 160 160) linear-gradient(
+        180deg, rgb(218 218 218) 0%,
+        rgb(160 160 160) 25%,
+        rgb(136 136 136) 65%,
+        rgb(66 66 66) 95%
+    ) !important;
     border: 2px solid var(--mhdm-dark6);
     box-shadow: none !important;
-}
-
-.pageFrameView #mousehuntContainer.PageCamp .campPage-trap-itemStats .campPage-trap-trapStat .value {
-    background: var(--mhdm-xlbrown);
 }
 
 .pageFrameView #mousehuntContainer.PageCamp .campPage-trap {
@@ -104,7 +104,6 @@
 
 .pageFrameView #mousehuntContainer.PageCamp .campPage-trap-friendContainer span {
     color: var(--mhdm-brown);
-
 }
 
 .pageFrameView #mousehuntContainer.PageCamp .campPage-trap-friendContainer .campPage-trap-friendContainer-toggleFriendsButton-arrow {

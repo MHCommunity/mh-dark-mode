@@ -1,12 +1,8 @@
-/* XELLIS DARK MODE */
-
-
 .PageHunterProfile .pageFrameView .pageFrameView-content {
     background: var(--mhdm-dark5);
 }
 
-/* profile tabs */
-
+/** Tabs **/
 .PageHunterProfile .pageFrameView .mousehuntPage-content input[type='text'],
 .PageHunterProfile .pageFrameView .mousehuntPage-content input[type='password'],
 .PageHunterProfile .pageFrameView .mousehuntPage-content select,
@@ -63,8 +59,7 @@
     color: var(--mhdm-text-link);
 }
 
-/* message */
-
+/* Messages */
 .PageHunterProfile .pageFrameView .messageBoardView-message {
     background-color: var(--mhdm-tertiaryDark);
     color: var(--mhdm-text-normal);
@@ -78,8 +73,7 @@
     color: var(--mhdm-text-muted);
 }
 
-/* content */
-
+/* Content */
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .messageBoardView-title {
     color: var(--mhdm-text-muted);
 }
@@ -147,7 +141,7 @@
 
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container,
-.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container:before,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container::before,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-teamInfo-container .teamEmblemView,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-huntingSince,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-idCardBlock-stats-horn-container {
@@ -199,8 +193,8 @@
     text-shadow: none;
 }
 
-.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabHeader:before,
-.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader:before,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabHeader::before,
+.PageHunterProfile .pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader::before,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .mousehuntTabHeader.active span,
 .PageHunterProfile .pageFrameView .hunterInfoView-wrapper .hunterInfoView-achievementsBlock .mousehuntTabHeader:hover span {
     background-color: var(--mhdm-mainDark);
@@ -229,7 +223,7 @@
     background-color: var(--mhdm-default-white);
 }
 
-/*** Crowns ***/
+/* Crowns */
 .PageHunterProfile .pageFrameView .mouseCrownsView-group {
     color: var(--mhdm-text-normal);
 }
@@ -247,7 +241,7 @@
     background-color: var(--mhdm-mainDark);
 }
 
-/*** Profile Items ***/
+/* Profile Items */
 .PageHunterProfile .pageFrameView .hunterProfileItemsView-category {
     filter: invert(1);
 }
@@ -292,7 +286,7 @@
     background-color: var(--mhdm-tertiaryDark);
 }
 
-/*** Mice ***/
+/* Mice */
 .PageHunterProfile .pageFrameView .mouseViewPopup .content {
     background-color: var(--mhdm-secondaryDark);
     color: var(--mhdm-text-normal);
@@ -398,8 +392,7 @@
     color: var(--mhdm-text-normal);
 }
 
-/* pagination */
-
+/* Pagination */
 .PageHunterProfile .pageFrameView .pagerView-container {
     background-color: var(--mhdm-tertiaryDark);
     color: var(--mhdm-text-normal);
@@ -417,17 +410,11 @@
     border-color: var(--mhdm-tertiaryDark);
 }
 
-/* profile trap */
-
+/* Profile trap */
 .pageFrameView #mousehuntContainer.PageHunterProfile .trapImageView {
-    background: rgb(160, 160, 160) !important;
-    background: linear-gradient(180deg, rgb(218, 218, 218) 0%, rgba(160, 160, 160, 1) 25%, rgba(136, 136, 136, 1) 65%, rgb(66, 66, 66) 95%) !important;
+    background: linear-gradient(180deg, rgb(218 218 218) 0%, rgb(160 160 160 / 100%) 25%, rgb(136 136 136 / 100%) 65%, rgb(66 66 66) 95%) !important;
     border: 2px solid var(--mhdm-dark6);
     box-shadow: none !important;
-}
-
-.pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap-itemStats .campPage-trap-trapStat .value {
-    background: var(--mhdm-xlbrown);
 }
 
 .pageFrameView #mousehuntContainer.PageHunterProfile .campPage-trap {

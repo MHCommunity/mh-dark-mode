@@ -10,7 +10,6 @@ h3,
 h4 {
     width: 100%;
     text-align: center;
-
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -47,14 +46,12 @@ h4 {
 
 button.apply {
     display: none;
-
     height: 30px;
     width: 100%;
     outline: none;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0;
     border: none;
     border-radius: 2px;
-
     cursor: pointer;
     background: #242424;
     color: #f1f1f1;

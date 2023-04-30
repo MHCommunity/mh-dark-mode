@@ -1,7 +1,4 @@
-/*** Xellis Scoreboards ***/
-
-/* scoreboard tabs */
-
+/* Tabs */
 .PageScoreboards .pageFrameView .mousehuntPage-content input[type='text'],
 .PageScoreboards .pageFrameView .mousehuntPage-content input[type='password'],
 .PageScoreboards .pageFrameView .mousehuntPage-content select,
@@ -54,12 +51,7 @@
     background: var(--mhdm-dark5);
 }
 
-/* scoreboard content */
-
-/* .pageFrameView .tournamentPage-tournamentHeading {
-    color: var(--mhdm-text-normal);
-} */
-
+/* Content */
 .pageFrameView .scoreboardTableView-content a {
     color: var(--mhdm-text-link);
 }
@@ -108,7 +100,7 @@
     color: var(--mhdm-text-muted);
 }
 
-/* pagination */
+/* Pagination */
 .PageScoreboards .pageFrameView .pagerView-container {
     background-color: var(--mhdm-mainDark);
     color: var(--mhdm-text-normal);
@@ -124,4 +116,18 @@
 .PageScoreboards .pageFrameView .pagerView-section.next.active .pagerView-link {
     color: var(--mhdm-text-link);
     border-color: var(--mhdm-tertiaryDark);
+}
+
+/* Sidebar Scoreboard */
+table.scoreboardRelativeRankingTableView-table {
+    border: 1px solid var(--mhdm-dark5);
+}
+
+.pageFrameView .scoreboardRelativeRankingTableView-table .highlight td:last-child,
+.pageFrameView .scoreboardRelativeRankingTableView-table .highlight td:first-child {
+    color: var(--mhdm-black)
+}
+
+.pageFrameView .scoreboardRelativeRankingTableView-table tr.highlight {
+    background-color: var(--mhdm-dark7);
 }

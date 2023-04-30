@@ -1,0 +1,171 @@
+.mousehuntPage-content[data-page='PageInventory'] .mousehuntHud-page-subTabHeader-container {
+    padding: 0 10px;
+}
+
+.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-item-name {
+    background-color: var(--mhdm-tertiaryDark);
+    border-color: var(--mhdm-dark5);
+}
+
+.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-item-name a {
+    color: var(--mhdm-default-white);
+}
+
+.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-item-content-description-text {
+    color: var(--mhdm-text-muted);
+}
+
+.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-tagDirectory-tag {
+    background: var(--mhdm-dark5);
+    color: var(--mhdm-default-white);
+}
+
+.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-tagDirectory-tag.active {
+    background: var(--mhdm-dgray)
+}
+
+.pageFrameView .mousehuntHud-page-subTabContent-prefix-title {
+    color: var(--mhdm-text-normal);
+    text-shadow: none;
+}
+
+/** Detailed Item View **/
+.pageFrameView .itemViewContainer {
+    background-color: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .itemView-header {
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .itemView-character-name {
+    color: var(--mhdm-text-normal);
+    text-shadow: none;
+}
+
+.pageFrameView .itemView-padding {
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .itemView-loading {
+    background-image: none;
+    background-color: rgb(0 0 0 / 30%);
+    box-shadow: none;
+}
+
+.pageFrameView .itemViewContainer a {
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView a.itemView-sidebar-checklistItem.checked:hover {
+    background-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .itemViewContainer .mousehuntActionButton {
+    box-shadow: none;
+}
+
+.pageFrameView #overlayPopup.itemViewPopup .suffix {
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView #overlayPopup.itemViewPopup .button {
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .itemViewContainer .itemView-obtainHint {
+    border-color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .inventoryPage-item-recipeOptions li:hover {
+    color: var(--mhdm-default-black)
+}
+
+.pageFrameView .inventoryPage-item-recipeOptions li.selected {
+    color: var(--mhdm-default-black)
+}
+
+.pageFrameView .inventoryPage-item-margin.clear-block,
+.pageFrameView .inventoryPage-item.small .inventoryPage-item-margin,
+.pageFrameView .inventoryPage-tagContent-tagTitle {
+    border-color: var(--mhdm-dark5);
+    color: var(--mhdm-default-white);
+}
+
+.pageFrameView .inventoryPage-tagDirectory {
+    border-color: var(--mhdm-mainDark);
+}
+
+.pageFrameView .mousehuntPage-content[data-page='PageInventory'] .inventoryPage-tagDirectory-tag {
+    background: var(--mhdm-dark5);
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView .inventoryPage-item.component .inventoryPage-item-imageContainer .itemImage {
+    border-color: var(--mhdm-dark5);
+}
+
+.pageFrameView .inventoryPage-item.small .tooltip {
+    background-color: var(--mhdm-dark4);
+}
+
+.pageFrameView .inventoryPage-item.small:hover .inventoryPage-item-margin {
+    box-shadow: 1px 1px 1px var(--mhdm-black);
+}
+
+.inventoryPage-item-recipeOptions li,
+.pageFrameView .inventoryPage-item-recipeOptions li.inactive {
+    background: transparent;
+    border-color: var(--mhdm-dark6);
+    color: var(--mhdm-text-muted);
+}
+
+.pageFrameView .inventoryPage-item.recipe.disabled {
+    background-color: var(--mhdm-dark4);
+    opacity: .8;
+}
+
+.inventoryPage-item.component .inventoryPage-item-imageContainer .itemImage {
+    box-shadow: none;
+}
+
+/** Crafting **/
+.pageFrameView .mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent {
+    background-color: var(--mhdm-dark5);
+    color: var(--mhdm-text-normal);
+    box-shadow: none;
+    border-color: var(--mhdm-default-black);
+}
+
+.pageFrameView .mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent-margin {
+    border-color: transparent;
+    background-color: var(--mhdm-tertiaryDark) !important;
+    box-shadow: none;
+    border: 1px solid var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .mousehuntHud-page-subTabContent.crafting_table .inventoryPage-craftingTable,
+.pageFrameView .inventoryPage-craftingTable-action {
+    color: var(--mhdm-default-white);
+    background-color: var(--mhdm-dark4);
+    box-shadow: none;
+    border: 1px solid var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .inventoryPage-craftingTable-title {
+    border-color: var(--mhdm-secondaryDark);
+    color: var(--mhdm-text-muted);
+}
+
+.pageFrameView .inventoryPage-craftingTable-slot-item.empty .inventoryPage-craftingTable-slot-item-name {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .inventoryPage-item-larryLexicon {
+    background-color: var(--mhdm-secondaryDark);
+    border-color: var(--mhdm-default-black);
+    color: var(--mhdm-text-normal);
+}
