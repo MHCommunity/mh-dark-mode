@@ -26,20 +26,19 @@
             ],
             "css": [
                 "css/main.css",
-                "css/messagebox.css",
-                "css/giftbox.css",
-                "css/trap.css",
-                "css/inbox.css",
-                "css/team.css",
-                "css/marketplace.css",
-                "css/profile.css",
-                "css/shop.css",
-                "css/scoreboard.css",
-                "css/inventory.css",
-                "css/treasuremap.css",
                 "css/camp/camp.css",
                 "css/camp/journal.css",
-                "css/camp/hud.css"
+                "css/camp/trap.css",
+                "css/header/giftbox.css",
+                "css/header/header.css",
+                "css/header/inbox.css",
+                "css/pages/friends.css",
+                "css/pages/inventory.css",
+                "css/pages/mice.css",
+                "css/pages/profile.css",
+                "css/pages/scoreboard.css",
+                "css/pages/shop.css",
+                "css/pages/treasuremap.css"
             ]
         }
     ]
