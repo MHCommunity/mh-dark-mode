@@ -4,15 +4,6 @@
     "version": "0.1.47",
     "manifest_version": 3,
     "permissions": [],
-    "action": {
-        "default_popup": "ui/popup.html",
-        "default_icons": {
-            "16": "assets/icon.png",
-            "32": "assets/icon.png",
-            "48": "assets/icon.png",
-            "128": "assets/icon.png"
-        }
-    },
     "icons": {
         "16": "assets/icon.png",
         "32": "assets/icon.png",
