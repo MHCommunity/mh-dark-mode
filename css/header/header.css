@@ -1,0 +1,43 @@
+.pageFrameView .mousehuntHeaderView {
+    background: var(--mhdm-mainDark);
+}
+
+.pageFrameView .mousehuntHeaderView-gameTabs {
+    background: var(--mhdm-mainDark);
+    border-color: rgb(102 102 102);
+}
+
+.pageFrameView .mousehuntHeaderView .menuItem {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white);
+    border-color: rgb(102 102 102);
+}
+
+.pageFrameView .mousehuntHeaderView-newsTicker {
+    background: var(--mhdm-secondaryDark);
+    color: var(--mhdm-white);
+    border-color: rgb(102 102 102);
+}
+
+.pageFrameView .mousehuntHeaderView-newsTicker .label {
+    color: var(--mhdm-blue)
+}
+
+.pageFrameView .mousehuntHeaderView-newsTicker a {
+    color: var(--mhdm-blue)
+}
+
+.pageFrameView .mousehuntHud-gameInfo {
+    background: var(--mhdm-secondaryDark);
+    border-right: 1px solid var(--mhdm-white);
+    border-color: rgb(102 102 102);
+    padding-bottom: 3px;
+}
+
+.pageFrameView .mousehuntHud-gameInfo span {
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .mousehuntHud-gameInfo a {
+    color: var(--mhdm-blue)
+}

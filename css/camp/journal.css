@@ -1,5 +1,4 @@
-/* mobile / simple camp */
-
+/* Mobile / simple camp */
 .MobilePageCamp .pageFrameView .pageFrameView-content {
     background: var(--mhdm-dark5);
 }
@@ -14,20 +13,11 @@
     color: var(--mhdm-blue);
 }
 
-
-
-/* normal camp page */
-
+/* Normal camp page */
 .pageFrameView #mousehuntContainer.PageCamp,
 .pageFrameView #mousehuntContainer.PageJournal {
     background: var(--mhdm-dark5);
 }
-
-/* .pageFrameView #mousehuntContainer.PageCamp .mousehuntHud-marbleDrawer {
-    background: url(https://www.mousehuntgame.com/images/ui/hud/suede.jpg?asset_cache_version=2) repeat-y;
-    background-size: 101% 101%;
-    background-position: center;
-} */
 
 .pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabContentContainer {
     background: var(--mhdm-tertiaryDark);
@@ -36,7 +26,7 @@
     position: relative;
 }
 
-.pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabContent[data-tab=journal] {
+.pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabContent[data-tab="journal"] {
     background: transparent;
 }
 
@@ -48,7 +38,6 @@
     opacity: 0.9;
 }
 
-
 .pageFrameView #mousehuntContainer.PageCamp .campPage-tabs-tabHeader.active span {
     background: var(--mhdm-tertiaryDark);
     opacity: 1;
@@ -58,76 +47,25 @@
     color: var(--mhdm-blue);
 }
 
-/* adventure book */
-
-.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner-adventureName,
-.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner-goalPadding {
-    background-color: var(--mhdm-lbrown);
-}
-
-.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner {
-    position: relative;
-}
-
-.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--mhdm-dimming-filter);
-    pointer-events: none;
-    z-index: 2;
-}
-
-/* journal */
-
+/* Journal */
 .pageFrameView #mousehuntContainer.PageCamp .journal {
     position: relative
 }
 
-.pageFrameView #mousehuntContainer.PageCamp .journal::before,
-.pageFrameView #mousehuntContainer.PageJournal .journal::before {
-    /* dimming filter on journal */
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--mhdm-dimming-filter);
-    pointer-events: none;
-    z-index: 2;
+.pageFrameView #mousehuntContainer.PageCamp .journal .content .journalbody .journaltext,
+.pageFrameView #mousehuntContainer.PageJournal .journal .content .journalbody .journaltext,
+.pageFrameView #mousehuntContainer.PageCamp .journal .content .journalbody .journaldate,
+.pageFrameView #mousehuntContainer.PageJournal .journal .content .journalbody .journaldate {
+    color: var(--mhdm-black);
 }
 
-.pageFrameView #mousehuntContainer.PageCamp .journal .content .journalbody .journaltext {
-    font-size: 12px;
-    font-weight: normal;
-}
-
-/* fix transparent journal content bg for some themes with white child element */
+/* Fix transparent journal content bg for some themes with white child elements. */
 .pageFrameView #mousehuntContainer.PageCamp .journal .content .journalEntries,
 .pageFrameView #mousehuntContainer.PageJournal .journal .content .journalEntries {
-    background: var(--mhdm-journal-bg)
+    background: var(--mhdm-dark7);
 }
 
-/* .pageFrameView #mousehuntContainer.PageCamp .journal .content .catchfailure {
-    background: url('https://www.mousehuntgame.com/images/ui/journal/steal.gif?asset_cache_version=2') no-repeat 8px 8px;
+.pageFrameView #mousehuntContainer.PageCamp .journal a,
+.pageFrameView #mousehuntContainer.PageJournal .journal a {
+    color: var(--mhdm-default-blue);
 }
-
-.pageFrameView #mousehuntContainer.PageCamp .journal .content .catchfailuredamage {
-    background: #b97979 url('https://www.mousehuntgame.com/images/ui/journal/pillage.gif?asset_cache_version=2') no-repeat 8px 8px;
-}
-
-.pageFrameView #mousehuntContainer.PageCamp .journal .content .catchsuccess {
-    background-color: #f5f59d;
-}
-
-.pageFrameView #mousehuntContainer.PageCamp .journal .content .catchsuccessloot {
-    background-color: #e2d880;
-} */

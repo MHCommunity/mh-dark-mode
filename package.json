@@ -1,0 +1,29 @@
+{
+  "name": "mh-dark-mode-extension",
+  "version": "0.1.47",
+  "description": "Dark mode for MouseHunt's browser version",
+  "main": "main.js",
+  "scripts": {
+    "lint": "npx stylelint **/*.css",
+    "lint:fix": "npx stylelint **/*.css --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MHCommunity/mh-dark-mode.git"
+  },
+  "keywords": [
+    "mousehunt",
+    "dark-mode",
+    "chrome-extension"
+  ],
+  "author": "Angelo <ramuzuconcepcion@gmail.com>, Brad Parbs <brad@bradparbs.com> (https://bradparbs.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MHCommunity/mh-dark-mode/issues"
+  },
+  "homepage": "https://github.com/MHCommunity/mh-dark-mode#readme",
+  "devDependencies": {
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard": "^32.0.0"
+  }
+}

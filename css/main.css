@@ -1,46 +1,39 @@
 :root {
+    /* stylelint-disable */
     --mhdm-white: #ebebeb;
     --mhdm-black: #0c0c0c;
-    --mhdm-xlgray: #e4e4e4;
+
     --mhdm-lgray: #c8c8c8;
     --mhdm-dgray: #9b9b9b;
-    --mhdm-darkest: #0f0f0f;
     --mhdm-mainDark: #1a1a1a;
     --mhdm-secondaryDark: #242424;
     --mhdm-tertiaryDark: #2e2e2e;
-    --mhdm-dark4: #333333;
+    --mhdm-dark4: #333;
     --mhdm-dark5: #424242;
-    --mhdm-dark6: #888888;
-    --mhdm-dark7: #a0a0a0;
+    --mhdm-dark6: #888;
+    --mhdm-dark7: #e4e4e4;
 
     --mhdm-blue: #009adf;
     --mhdm-yellow: #9c8418;
     --mhdm-yellow-self: #e6b963;
-    --mhdm-dbrown: #2e2a1f;
-
     --mhdm-brown: #e2d6b5;
     --mhdm-lbrown: #f4eee1;
-    --mhdm-xlbrown: #f6f3eb;
-
-    --mhdm-dimming-filter: rgba(0, 0, 0, 0.1);
-    --mhdm-dimming-filter2: rgba(0, 0, 0, 0.05);
-    --mhdm-dimming-filter-max: rgba(0, 0, 0, 0.5);
-    --mhdm-journal-bg: #f5f5f5;
 
     --mhdm-default-black: #000;
     --mhdm-default-grey: #333;
     --mhdm-default-white: #fff;
-
-    --mhdm-loader-brightness: 0.2;
+    --mhdm-default-blue: #3b5998;
 
     --mhdm-text-normal: #dcddde;
     --mhdm-text-muted: #a3a6aa;
     --mhdm-text-link: var(--mhdm-blue);
-    --mhdm-text-positive: hsl(139, 51.6%, 52.2%);
-    --mhdm-text-danger: hsl(359, 82%, 73.9%);
+    --mhdm-text-positive: hsl(139deg 51.6% 52.2%);
+    --mhdm-text-danger: hsl(359deg 82% 73.9%);
+
+    /* stylelint-enable */
 }
 
-/*SCROLL BAR FOR NON BODY ELEMENTS*/
+/** Scrollbar for non-body elements */
 body .pageFrameView *::-webkit-scrollbar {
     width: 3px;
 }
@@ -57,9 +50,14 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     background: #8a8a8a;
 }
 
-/* Container */
+/** Common elements **/
+body a {
+    color: var(--mhdm-text-link);
+}
+
+/** Container **/
 .pageFrameView .pageFrameView-content {
-    background: var(--mhdm-lbrown);
+    background: var(--mhdm-dark4);
 }
 
 .pageFrameView .pageFrameView-contentContainer {
@@ -68,13 +66,13 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
 
 .pageFrameView .pageFrameView-column.left {
     background-image: none;
-    background: var(--mhdm-mainDark);
+    background: var(--mhdm-mainDark); /* stylelint-disable-line */
     border-right-color: var(--mhdm-secondaryDark);
 }
 
 .pageFrameView .pageFrameView-column.right {
     background-image: none;
-    background: var(--mhdm-mainDark);
+    background: var(--mhdm-mainDark); /* stylelint-disable-line */
     border-left-color: var(--mhdm-secondaryDark);
 }
 
@@ -82,67 +80,208 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     position: relative
 }
 
-.pageFrameView .pageFrameView-column::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--mhdm-dimming-filter-max);
-    pointer-events: none;
-    z-index: 96;
+.pageFrameView .mousehuntHud-page-subTabContent-margin {
+    background-color: var(--mhdm-dark4);
 }
 
-/* Header */
-
-.pageFrameView .mousehuntHeaderView {
-    background: var(--mhdm-mainDark);
+.pageFrameView-contentContainer {
+    color: var(--mhdm-text-muted);
 }
 
-.pageFrameView .mousehuntHeaderView-gameTabs {
-    background: var(--mhdm-mainDark);
-    border-color: rgb(102, 102, 102);
+.pageFrameView .mousehuntHud-page-tabContentContainer.clear-block {
+    color: var(--mhdm-text-normal);
 }
 
-.pageFrameView .mousehuntHeaderView .menuItem {
-    background: var(--mhdm-secondaryDark);
+.pageFrameView h1,
+.pageFrameView h2,
+.pageFrameView h3,
+.pageFrameView h4,
+.pageFrameView h5,
+.pageFrameView h6 {
+    color: var(--mhdm-default-white);
+}
+
+/** Loading **/
+.pageFrameView .giftSelectorView-confirmOverlay.loading .giftSelectorView-confirmPopup-content {
+    background-image: url(https://www.mousehuntgame.com/images/ui/loaders/mouse_loading_small.gif?asset_cache_version=2) 50% 50% no-repeat;
+    background-color: var(--mhdm-dark5);
+}
+
+/* same as current but without the overlay image */
+.pageFrameView .mousehuntHud-page-tabContent-loading, .mousehuntHud-page-subTabContent-loading {
+    background: url(https://www.mousehuntgame.com/images/ui/loaders/mouse_loading_large.gif?asset_cache_version=2) 50% 50% no-repeat;
+}
+
+/** Tabs **/
+.pageFrameView .mousehuntHud-page-tabHeader span {
+    background-color: var(--mhdm-dark4);
+    color: var(--mhdm-default-white);
+    box-shadow: 1px 1px var(--mhdm-black);
+    border-color: var(--mhdm-black);
+}
+
+.pageFrameView .mousehuntHud-page-tabHeader.active span,
+.pageFrameView .mousehuntHude-page-tabHeader:focus span,
+.pageFrameView .mousehuntHud-page-tabHeader:hover span {
+    border-color: var(--mhdm-black);
+}
+
+.pageFrameView .mousehuntHud-page-subTabHeader-prefix {
     color: var(--mhdm-white);
-    border-color: rgb(102, 102, 102);
 }
 
-.pageFrameView .mousehuntHeaderView-newsTicker {
-    background: var(--mhdm-secondaryDark);
+.pageFrameView .mousehuntHud-page-subTabHeader span,
+.pageFrameView .mousehuntHud-page-subTabContent-prefix-filter-option {
+    background: var(--mhdm-tertiaryDark);
+    border-color: var(--mhdm-secondaryDark);
+    box-shadow: 1px 1px 1px var(--mhdm-secondaryDark) inset;
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView .mousehuntHud-page-subTabHeader-container .mousehuntHud-page-subTabHeader:last-child span {
+    border-color: var(--mhdm-secondaryDark);
+}
+
+.pageFrameView .mousehuntHud-page-subTabHeader.active span,
+.pageFrameView .mousehuntHud-page-subTabHeader:hover span,
+.pageFrameView .mousehuntHud-page-subTabHeader:focus span,
+.pageFrameView .mousehuntHud-page-subTabContent-prefix-filter-option.active,
+.pageFrameView .mousehuntHud-page-subTabContent-prefix-filter-option:hover,
+.pageFrameView .mousehuntHud-page-subTabContent-prefix-filter-option:focus {
+    background-color: var(--mhdm-dark6);
+    color: var(--mhdm-default-white);
+}
+
+/** Overlay Modals **/
+.pageFrameView #overlayContainer {
+    padding-top: 0;
+}
+
+.pageFrameView #overlayBg {
+    background-image: none;
+    background: rgb(0 0 0 / 80%); /* stylelint-disable-line */
+}
+
+.pageFrameView #overlayPopup .jsDialogContainer,
+.pageFrameView #overlayPopup .jsDialogContainer .convertibleOpenView-header {
+    background-color: var(--mhdm-mainDark);
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView #overlayPopup .jsDialogContainer .convertibleOpenView a {
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView #overlayPopup .title {
+    color: var(--mhdm-text-normal);
+}
+
+.pageFrameView #overlayPopup .jsDialogContainer .suffix {
+    background-color: var(--mhdm-dark4);
+    border-top-color: var(--mhdm-dark5);
+}
+
+.pageFrameView .inventoryPage-confirmPopup-itemContainer, .inventoryPage-confirmPopup-itemContainer.received {
+    background-color: var(--mhdm-dark5);
+}
+
+.pageFrameView .inventoryPage-confirmPopup-itemTable {
+    background-color: var(--mhdm-dark4);
+}
+
+.pageFrameView .inventoryPage-confirmPopup-suffix-quantityContainer-setMax {
+    color: var(--mhdm-brown);
+}
+
+/** Input Fields **/
+.pageFrameView .inventoryPage-tagDirectory-searchBar {
+    color: var(--mhdm-default-white);
+}
+
+.pageFrameView .mousehuntPage-content input,
+.pageFrameView .mousehuntPage-content input[type="text"],
+.pageFrameView .mousehuntPage-content input[type="password"],
+.pageFrameView .mousehuntPage-content select,
+.pageFrameView .mousehuntPage-content textarea,
+.pageFrameView input.treasureMapView-block-search-text,
+.pageFrameView .select2-search input {
+    background-color: var(--mhdm-lgray);
+    border-color: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-black);
+}
+
+.pageFrameView #overlayPopup .button,
+.pageFrameView input[type="button"],
+.pageFrameView input[type="submit"],
+.pageFrameView .mousehuntPage-content input[type="submit"],
+.pageFrameView .mousehuntPage-content input[type="button"] {
+    background-color: var(--mhdm-yellow-self);
+    color: var(--mhdm-secondaryDark);
+    border: 1px inset var(--mhdm-dark5);
+}
+
+.pageFrameView #overlayPopup .button:hover,
+.pageFrameView #overlayPopup .button:focus,
+.pageFrameView input[type="button"]:hover,
+.pageFrameView input[type="button"]:focus,
+.pageFrameView .mousehuntPage-content input[type="button"]:hover,
+.pageFrameView .mousehuntPage-content input[type="button"]:focus {
+    filter: brightness(1.1);
+}
+
+.pageFrameView input.treasureMapView-block-search-text {
+    border-width: 1px;
+}
+
+body .select2-search input {
+    background: var(--mhdm-default-white);
+}
+
+body .select2-drop {
+    background: var(--mhdm-lgray);
+}
+
+body .select2-container .select2-choice {
+    background-color: var(--mhdm-lgray);
+    background-image: linear-gradient(to top, var(--mhdm-dgray) 0%, var(--mhdm-lgray) 50%);
+}
+
+/** Pagination **/
+.pageFrameView .pagerView-container {
+    background: var(--mhdm-default-black);
+    color: var(--mhdm-text-muted);
+}
+
+.pageFrameView .friendsPage-subduedLink {
+    background-color: var(--mhdm-secondaryDark);
+    color: var(--mhdm-text-link);
+}
+
+.pageFrameView .pagerView-section.next.active .pagerView-link,
+.pageFrameView .pagerView-section.previous.active .pagerView-link {
     color: var(--mhdm-white);
-    border-color: rgb(102, 102, 102);
+    border: 0;
 }
 
-.pageFrameView .mousehuntHeaderView-newsTicker .label {
-    color: var(--mhdm-blue)
-}
-
-.pageFrameView .mousehuntHeaderView-newsTicker a {
-    color: var(--mhdm-blue)
-}
-
-.pageFrameView .mousehuntHud-gameInfo {
+.pageFrameView .pagerView-section.next.active .pagerView-link:hover,
+.pageFrameView .pagerView-section.previous.active .pagerView-link:hover {
+    color: var(--mhdm-white);
     background: var(--mhdm-secondaryDark);
-    border-right: 1px solid var(--mhdm-white);
-    border-color: rgb(102, 102, 102);
-    padding-bottom: 3px;
 }
 
-.pageFrameView .mousehuntHud-gameInfo span {
-    color: var(--mhdm-white)
+.pageFrameView .pagerView-section.previous .pagerView-link,
+.pageFrameView .pagerView-section.next .pagerView-link {
+    border: 0;
+    color: var(--mhdm-dgray);
 }
 
-.pageFrameView .mousehuntHud-gameInfo a {
-    color: var(--mhdm-blue)
+.pageFrameView .pagerView-section.next .pagerView-link:hover,
+.pageFrameView .pagerView-section.previous .pagerView-link:hover {
+    color: var(--mhdm-dgray);
+    background: var(--mhdm-secondaryDark);
 }
 
-/* Sidebar */
+/** Sidebar **/
 .pageFrameView .pageSidebarView {
     background: var(--mhdm-secondaryDark);
 }
@@ -169,103 +308,151 @@ body .pageFrameView *::-webkit-scrollbar-thumb:hover {
     color: var(--mhdm-blue);
 }
 
-/* Sidebar Scoreboard */
-
-.pageFrameView .scoreboardRelativeRankingTableView-table {
-    border: 0;
+/** Footer **/
+.pageFrameView .mousehuntFooter {
+    color: var(--mhdm-dark4);
 }
 
-.pageFrameView .scoreboardRelativeRankingTableView-table .highlight td:last-child,
-.pageFrameView .scoreboardRelativeRankingTableView-table .highlight td:first-child {
-    color: var(--mhdm-black)
+.mousehuntFooter a.mousehuntFooter-toggleMobile {
+    color: var(--mhdm-default-blue);
 }
 
+/** Dimming **/
 
-/* inventory */
-
-.mousehuntPage-content[data-page='PageInventory'] .mousehuntHud-page-subTabHeader-container {
-    padding: 0 10px;
+.pageFrameView .pageFrameView-column::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    background: rgb(0 0 0 / 50%);
+    pointer-events: none;
+    z-index: 96;
 }
 
-.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-item-name {
-    background: var(--mhdm-xlgray)
-}
-
-.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-tagDirectory-tag {
-    background: var(--mhdm-xlgray)
-}
-
-.mousehuntPage-content[data-page='PageInventory'] .inventoryPage-tagDirectory-tag.active {
-    background: var(--mhdm-dgray)
-}
-
-.mousehuntHud-page-tabContent.crafting .mousehuntHud-page-subTabContent-margin {
-    background: var(--mhdm-lbrown) !important;
-    border: 0;
-    box-shadow: none;
-}
-
-/* Overlay Modal */
-
-.pageFrameView #overlayContainer {
-    padding-top: 0px;
-}
-
-.pageFrameView #overlayBg {
-    background-image: none;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.pageFrameView #overlayContainer #overlayBg {
-    /* position: relative; */
-}
-
+.pageFrameView .PageClaimGift .claimGiftPage__body::before,
 .pageFrameView #overlayContainer #overlayBg::before {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--mhdm-dimming-filter2);
+    inset: 0;
+    background: rgb(0 0 0 / 5%);
     pointer-events: none;
     z-index: 96;
 }
 
-/* mice list */
 
-.pageFrameView .mouseListView-categoryContent-category {
-    background: var(--mhdm-lbrown)
-}
-
-.pageFrameView .mouseListView-categoryContent:before {
-    display: none;
-}
-
-
-/* claim gift */
-
-.pageFrameView .PageClaimGift {
-    background-color: var(--mhdm-mainDark);
-}
-
-.pageFrameView .PageClaimGift .mousehuntPage-content {
-    padding: 0 10px;
-
-}
-
-.pageFrameView .PageClaimGift .claimGiftPage__body::before {
+.pageFrameView #mousehuntContainer.PageCamp .gameHeader::before, /* Menu & location HUDs. */
+.pageFrameView #mousehuntContainer.PageJournal .gameHeader::before,
+.pageFrameView #mousehuntContainer.PageCamp .journal::before, /* Journal. */
+.pageFrameView #mousehuntContainer.PageJournal .journal::before,
+.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner::before { /* Adventure book. */
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--mhdm-dimming-filter2);
+    inset: 0;
+    background: rgb(0 0 0 / 10%);
     pointer-events: none;
-    z-index: 96;
+    z-index: 2;
+}
+
+
+/** Misc styles **/
+
+/* Message/Cork Boards */
+.pageFrameView .messageBoardView-title {
+    color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .messageBoardView-message {
+    background: var(--mhdm-tertiaryDark);
+    border-width: 0;
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .messageBoardView-message.new {
+    border: 0 !important;
+}
+
+.pageFrameView .messageBoardView-message-textarea {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white)
+}
+
+.pageFrameView .messageBoardView .pagerView-container {
+    background: var(--mhdm-tertiaryDark);
+    color: var(--mhdm-white)
+}
+
+
+/* Adventure Book */
+.pageFrameView .adventureBookPopup-adventure-details-block-goalGroup.visible {
+    background: var(--mhdm-dark4);
+    box-shadow: -1px -1px 1px var(--mhdm-dark5) inset;
+}
+
+.pageFrameView .adventureBookPopup-adventure-details-powerTypeContainer {
+    background: var(--mhdm-dark6);
+    border-color: var(--mhdm-dark5);
+}
+
+.pageFrameView .adventureBookPopup-adventure-details-description-reason {
+    background-color: var(--mhdm-yellow-self);
+    color: var(--mhdm-tertiaryDark);
+}
+
+.pageFrameView .pageFrameView .mousehuntPage-content input[type="button"] {
+    background-color: var(--mhdm-default-black);
+    color: var(--mhdm-default-white);
+    border: 2px inset var(--mhdm-dark5);
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner-adventureName,
+.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner-goalPadding {
+    background-color: var(--mhdm-lbrown);
+}
+
+.pageFrameView #mousehuntContainer.PageCamp .adventureBookBanner {
+    position: relative;
+}
+
+/* King's Reward */
+.pageFrameView .mousehuntPage-puzzle {
+  color: var(--mhdm-black);
+}
+
+/* Team Page */
+.pageFrameView .teamPage-profile-description {
+    font-size: 1rem;
+}
+
+.pageFrameView .teamPage-container .mousehuntTabContentContainer-padding {
+    background: var(--mhdm-lbrown);
+}
+
+.pageFrameView .teamPage-profile-awardContainer-awardList {
+    background: var(--mhdm-lbrown);
+    border: 0;
+    box-shadow: none;
+}
+
+.pageFrameView .teamPage-container .teamPage-memberRow.available {
+    background: var(--mhdm-lgray);
+}
+
+/* Travel Page */
+.pageFrameView .travelPage-map-pieces-detail-title {
+    color: var(--mhdm-text-normal);
+    background-color: var(--mhdm-dark5);
+    border-color: var(--mhdm-dark6);
+}
+
+.pageFrameView .travelPage-map-pieces-row {
+    border-color: var(--mhdm-dark6);
+}
+
+.pageFrameView .travelPage-map-pieces-detail-environment {
+    color: var(--mhdm-text-muted);
 }
